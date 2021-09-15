@@ -24,19 +24,13 @@
 			"title": "LeekTool",
 			"properties": {
 				"leektool.username": {
-					"type": [
-						"string",
-						"null"
-					],
-					"default": null,
+					"type": "string",
+					"default": "",
 					"description": "Your leekwars username."
 				},
 				"leektool.password": {
-					"type": [
-						"string",
-						"null"
-					],
-					"default": null,
+					"type": "string",
+					"default": "",
 					"description": "Your leekwars password."
 				}
 			}
