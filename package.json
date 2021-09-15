@@ -4,13 +4,14 @@
 	"description": "Sync with Leekwars",
 	"version": "0.0.1",
 	"engines": {
-		"vscode": "^1.60.0"
+		"vscode": "^1.58.0"
 	},
 	"categories": [
+		"Programming Languages",
 		"Other"
 	],
 	"activationEvents": [
-		"onLanguage:leekscript v1"
+		"onLanguage:leekscript v1.1"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -40,7 +41,28 @@
 					"description": "Your leekwars password."
 				}
 			}
-		}
+		},
+		"languages": [
+			{
+				"id": "leekscript v1.1",
+				"extensions": [
+					".leek",
+					".lk"
+				],
+				"aliases": [
+					"LeekScript",
+					"LeekScript V1.1"
+				],
+				"configuration": "./src/language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "leekscript v1.1",
+				"scopeName": "source.leekscript.v1.1",
+				"path": "./src/syntaxes/leekscript.tmLanguage.json"
+			}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
@@ -63,9 +85,7 @@
 		"typescript": "^4.3.2",
 		"vscode-test": "^1.5.2"
 	},
-	"extensionDependencies": [
-		"telokis.leekscript"
-	],
+	"extensionDependencies": [],
 	"dependencies": {
 		"form-data": "^4.0.0",
 		"got": "^11.8.2"
