@@ -1,5 +1,5 @@
-export type Potion = {
-    id: number,
-    template: number,
-    quantity: number,
+export interface Potion {
+  id: number;
+  template: number;
+  quantity: number;
 };

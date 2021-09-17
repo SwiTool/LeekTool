@@ -1,4 +1,4 @@
-export type Tournament = {
-    registered: boolean,
-    current: null
-}
+export interface Tournament {
+  registered: boolean;
+  current: null;
+};
