@@ -6,7 +6,6 @@ import * as leek from './leek';
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export async function activate(context: vscode.ExtensionContext) {
-
 	const conf = vscode.workspace.getConfiguration('leektool');
 	if (!conf) {
 		return vscode.window.showErrorMessage('Cannot load LeekTool configuration');

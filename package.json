@@ -8,6 +8,7 @@
 	},
 	"categories": [
 		"Programming Languages",
+		"Snippets",
 		"Other"
 	],
 	"activationEvents": [
@@ -15,6 +16,12 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"snippets": [
+			{
+				"language": "leekscript v1.1",
+				"path": "./src/snippets/leekscript.json"
+			}
+		],
 		"commands": [
 			{
 				"command": "leektool.helloWorld",
@@ -44,6 +51,8 @@
 					".lk"
 				],
 				"aliases": [
+					"leekscript",
+					"leekscript v1.1",
 					"LeekScript",
 					"LeekScript V1.1"
 				],
