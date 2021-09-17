@@ -1,4 +1,4 @@
-import got, { Got } from "got";
+import got, { Got, HTTPError } from "got";
 import { IncomingHttpHeaders } from "http";
 import { CookieJar } from "tough-cookie";
 import { debug } from "./debug";
@@ -48,13 +48,18 @@ class LeekApi {
     reqHeaders?: Record<string, string | string[] | undefined> | undefined
   ): Promise<U> => {
     debug(`requesting ${path}`);
-    const { body } = await this.client[method](path, {
-      headers: reqHeaders,
-      searchParams: method === "get" ? opts : undefined,
-      form: method === "post" ? opts : undefined,
-      responseType: "json"
-    });
-    return body as U;
+    try {
+      const { body } = await this.client[method](path, {
+        headers: reqHeaders,
+        searchParams: method === "get" ? opts : undefined,
+        form: method === "post" ? opts : undefined,
+        responseType: "json"
+      });
+      return body as U;
+    } catch (e: any) {
+      console.error(e.response);
+      throw e;
+    }
   };
 
   setToken(token: string) {
@@ -75,6 +80,17 @@ class LeekApi {
 
   aiGetFarmerAi(id: number): Promise<{ ai: AIContent }> {
     return this.request("get", `ai/get/${id}`);
+  }
+
+  aiChangeFolder(id: number, folderId: number): void {
+    this.request("post", "ai/change-folder", {
+      ai_id: id,
+      folder: folderId
+    });
+  }
+
+  aiSave(id: number, code: string): void {
+    this.request("post", "ai/save", { ai_id: id, code });
   }
 
   functionGetAll(): Promise<{ functions: Functions[] }> {

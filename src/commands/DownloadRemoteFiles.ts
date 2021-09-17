@@ -1,6 +1,14 @@
 import * as vscode from "vscode";
 import { Api } from "../LeekApi";
 import { FarmerAIs } from "../types/Farmer";
+import {
+  FileTreeState,
+  FolderState,
+  AIState,
+  instanceOfFolderState
+} from "../State";
+
+const state: FileTreeState = {};
 
 async function createDirectories(farmerAis: FarmerAIs) {
   const files = await vscode.workspace.fs.readDirectory(
@@ -17,57 +25,87 @@ async function createDirectories(farmerAis: FarmerAIs) {
     );
   }
 
-  const folders: Record<number, any> = {};
+  const baseFolderState: FolderState = {
+    id: 0,
+    folder: -1,
+    name: "",
+    path: "",
+    folders: [],
+    ais: []
+  };
 
-  farmerAis.folders.forEach((v: any) => {
-    v.path = v.name;
-    folders[v.id] = v;
-  });
+  const folders = farmerAis.folders.reduce((value, c) => {
+    value[c.id] = { ...c, path: c.name, ais: [], folders: [] };
+    return value;
+  }, {} as Record<number, FolderState>);
+  folders[0] = baseFolderState;
 
-  function myRecFunc(folder: any): string {
+  function myRecFunc(folder: FolderState): string {
+    if (
+      folders[folder.folder].folders.findIndex(f => f.id === folder.id) === -1
+    ) {
+      folders[folder.folder].folders.push(folder);
+    }
     if (folder.folder) {
       return `${myRecFunc(folders[folder.folder])}/${folder.name}`;
     }
     return folder.path;
   }
 
-  farmerAis.folders = Object.values(folders)
+  const sortedFolders = Object.values(folders)
     .map(v => {
-      if (v.folder) {
-        v.path = myRecFunc(v);
-      }
+      v.path = v.folder > -1 ? myRecFunc(v) : v.name;
       return v;
     })
     .sort((a, b) => a.path.split("/").length - b.path.split("/").length);
 
-  for (const v of farmerAis.folders) {
+  for (const v of sortedFolders) {
     const folderToCreate = `${vscode.workspace.workspaceFolders?.[0]?.uri.path}/${v.path}`;
+    state[v.path] = v;
     await vscode.workspace.fs.createDirectory(vscode.Uri.file(folderToCreate));
   }
 }
 
 async function createFiles(farmerAis: FarmerAIs) {
-  farmerAis.ais.forEach(async ai => {
+  for (const ai of farmerAis.ais) {
     const file = await Api.aiGetFarmerAi(ai.id);
-    let path = "";
 
-    if (ai.folder) {
-      path = "/" + farmerAis.folders.find(f => f.id === ai.folder)?.path;
+    const folder = Object.values(state).find(f => {
+      if (instanceOfFolderState(f)) {
+        return f.id === ai.folder;
+      }
+      return false;
+    });
+    if (!folder || !instanceOfFolderState(folder)) {
+      return;
     }
 
     file.ai.name += ".leek";
-
-    const fileToCreate = `${vscode.workspace.workspaceFolders?.[0]?.uri.path}${path}/${file.ai.name}`;
+    const path = (folder.path ? folder.path + "/" : "") + file.ai.name;
+    const aiState = { ...ai, parentFolder: folder.path, path } as AIState;
+    if (folder.ais.findIndex(a => a.id === ai.id) === -1) {
+      folder.ais.push(aiState);
+    }
+    state[path] = aiState;
+    const fileToCreate = `${vscode.workspace.workspaceFolders?.[0]?.uri.path}/${path}`;
     vscode.workspace.fs.writeFile(
       vscode.Uri.file(fileToCreate),
       Buffer.from(file.ai.code)
     );
-  });
+  }
 }
 
-export async function DownloadRemoteFiles() {
+export async function DownloadRemoteFiles(context: vscode.ExtensionContext) {
   const ais = await Api.aiGetFarmerAis();
 
+  // try {
   await createDirectories(ais);
   await createFiles(ais);
+  await context.workspaceState.update("fileTree", state);
+  const workspaceState = context.workspaceState.get<FileTreeState>("fileTree");
+  console.dir(state, { depth: null });
+  // } catch (e) {
+  //   console.error(e);
+  // }
+  return workspaceState;
 }

@@ -10,7 +10,6 @@
   // "typescript.tsserver.useSyntaxServer": "always",
   "editor.rulers": [
     80,
-    120
   ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
