@@ -1,96 +1,92 @@
 {
-	"name": "leektool",
-	"displayName": "leektool",
-	"description": "Sync with Leekwars",
-	"version": "0.0.1",
-	"engines": {
-		"vscode": "^1.58.0"
-	},
-	"categories": [
-		"Programming Languages",
-		"Snippets",
-		"Other"
-	],
-	"activationEvents": [
-		"onLanguage:leekscript v1.1"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"snippets": [
-			{
-				"language": "leekscript v1.1",
-				"path": "./src/snippets/leekscript.json"
-			}
-		],
-		"commands": [
-			{
-				"command": "leektool.helloWorld",
-				"title": "Hello World"
-			}
-		],
-		"configuration": {
-			"title": "LeekTool",
-			"properties": {
-				"leektool.username": {
-					"type": "string",
-					"default": "",
-					"description": "Your leekwars username."
-				},
-				"leektool.password": {
-					"type": "string",
-					"default": "",
-					"description": "Your leekwars password."
-				}
-			}
-		},
-		"languages": [
-			{
-				"id": "leekscript v1.1",
-				"extensions": [
-					".leek",
-					".lk"
-				],
-				"aliases": [
-					"leekscript",
-					"leekscript v1.1",
-					"LeekScript",
-					"LeekScript V1.1"
-				],
-				"configuration": "./src/language-configuration.json"
-			}
-		],
-		"grammars": [
-			{
-				"language": "leekscript v1.1",
-				"scopeName": "source.leekscript.v1.1",
-				"path": "./src/syntaxes/leekscript.tmLanguage.json"
-			}
-		]
-	},
-	"scripts": {
-		"vscode:prepublish": "yarn run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"pretest": "yarn run compile && yarn run lint",
-		"lint": "eslint src --ext ts",
-		"test": "node ./out/test/runTest.js"
-	},
-	"devDependencies": {
-		"@types/glob": "^7.1.3",
-		"@types/mocha": "^8.2.2",
-		"@types/node": "14.x",
-		"@types/vscode": "^1.60.0",
-		"@typescript-eslint/eslint-plugin": "^4.26.0",
-		"@typescript-eslint/parser": "^4.26.0",
-		"eslint": "^7.27.0",
-		"glob": "^7.1.7",
-		"mocha": "^8.4.0",
-		"typescript": "^4.3.2",
-		"vscode-test": "^1.5.2"
-	},
-	"extensionDependencies": [],
-	"dependencies": {
-		"form-data": "^4.0.0",
-		"got": "^11.8.2"
-	}
+  "name": "leektool",
+  "displayName": "leektool",
+  "description": "Sync with Leekwars",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.58.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:leekscript v1.1",
+    "onCommand:leektool.downloadRemoteFiles"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "leektool.downloadRemoteFiles",
+        "title": "Download remote files"
+      }
+    ],
+    "configuration": {
+      "title": "LeekTool",
+      "properties": {
+        "leektool.username": {
+          "type": "string",
+          "default": "",
+          "description": "Your leekwars username."
+        },
+        "leektool.password": {
+          "type": "string",
+          "default": "",
+          "description": "Your leekwars password."
+        }
+      }
+    },
+    "languages": [
+      {
+        "id": "leekscript v1.1",
+        "extensions": [
+          ".leek",
+          ".lk"
+        ],
+        "aliases": [
+          "LeekScript",
+          "LeekScript V1.1"
+        ],
+        "configuration": "./src/language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "leekscript v1.1",
+        "scopeName": "source.leekscript.v1.1",
+        "path": "./src/syntaxes/leekscript.tmLanguage.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "yarn run compile && yarn run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "14.x",
+    "@types/tough-cookie": "^4.0.1",
+    "@types/vscode": "^1.60.0",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "eslint": "^7.27.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "glob": "^7.1.7",
+    "mocha": "^8.4.0",
+    "prettier": "^2.0.3",
+    "typescript": "^4.3.2",
+    "vscode-test": "^1.5.2"
+  },
+  "extensionDependencies": [],
+  "dependencies": {
+    "got": "^11.8.2",
+    "tough-cookie": "^4.0.0"
+  }
 }

@@ -1,118 +1,118 @@
 {
-    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-    "name": "LeekScript V1.1",
-    "patterns": [
-        {
-            "include": "#keywords"
-        },
-        {
-            "include": "#strings"
-        },
-        {
-            "include": "#comments"
-        },
-        {
-            "include": "#operators"
-        },
-        {
-            "comment": "Floating-point literals",
-            "match": "(\\.\\d+([Ee][-+]\\d+)?i?)\\b|\\b\\d+\\.\\d*(([Ee][-+]\\d+)?i?\\b)?",
-            "name": "constant.numeric.floating-point.leekscript"
-        },
-        {
-            "comment": "Integers",
-            "match": "\\b((0x[0-9a-fA-F]+)|(0[0-7]+i?)|(\\d+([Ee]\\d+)?i?)|(\\d+[Ee][-+]\\d+i?))\\b",
-            "name": "constant.numeric.integer.leekscript"
-        },
-        {
-            "comment": "Language constants",
-            "match": "\\b(true|false|null|undefined)\\b",
-            "name": "constant.language.leekscript"
-        },
-        {
-            "comment": "Leekwars constants",
-            "match": "\\b(AREA_CIRCLE_1|AREA_CIRCLE_2|AREA_CIRCLE_3|AREA_FIRST_INLINE|AREA_LASER_LINE|AREA_PLUS_1|AREA_PLUS_2|AREA_PLUS_3|AREA_POINT|AREA_SQUARE_1|AREA_SQUARE_2|AREA_X_1|AREA_X_2|AREA_X_3|CELL_EMPTY|CELL_ENTITY|CELL_OBSTACLE|CELL_PLAYER|CHIP_ACCELERATION|CHIP_ADRENALINE|CHIP_ALTERATION|CHIP_ANTIDOTE|CHIP_ARMOR|CHIP_ARMORING|CHIP_ARSENIC|CHIP_BALL_AND_CHAIN|CHIP_BANDAGE|CHIP_BARK|CHIP_BOXING_GLOVE|CHIP_BRAINWASHING|CHIP_BRAMBLE|CHIP_BURNING|CHIP_CARAPACE|CHIP_COLLAR|CHIP_COVETOUSNESS|CHIP_COVID|CHIP_CRUSHING|CHIP_CURE|CHIP_DESINTEGRATION|CHIP_DEVIL_STRIKE|CHIP_DOME|CHIP_DOPING|CHIP_DRIP|CHIP_ELEVATION|CHIP_FEROCITY|CHIP_FERTILIZER|CHIP_FIRE_BULB|CHIP_FLAME|CHIP_FLASH|CHIP_FORTRESS|CHIP_FRACTURE|CHIP_GRAPPLE|CHIP_HEALER_BULB|CHIP_HELMET|CHIP_ICE|CHIP_ICEBERG|CHIP_ICED_BULB|CHIP_INVERSION|CHIP_JUMP|CHIP_KNOWLEDGE|CHIP_LEATHER_BOOTS|CHIP_LIBERATION|CHIP_LIGHTNING|CHIP_LIGHTNING_BULB|CHIP_LOAM|CHIP_MANUMISSION|CHIP_METALLIC_BULB|CHIP_METEORITE|CHIP_MIRROR|CHIP_MOTIVATION|CHIP_MUTATION|CHIP_PEBBLE|CHIP_PLAGUE|CHIP_PLASMA|CHIP_PRECIPITATION|CHIP_PROTEIN|CHIP_PUNISHMENT|CHIP_PUNY_BULB|CHIP_RAGE|CHIP_RAMPART|CHIP_REFLEXES|CHIP_REGENERATION|CHIP_REMISSION|CHIP_REPOTTING|CHIP_RESURRECTION|CHIP_ROCK|CHIP_ROCKFALL|CHIP_ROCKY_BULB|CHIP_SAVANT_BULB|CHIP_SERUM|CHIP_SEVEN_LEAGUE_BOOTS|CHIP_SHIELD|CHIP_SHOCK|CHIP_SLOW_DOWN|CHIP_SOLIDIFICATION|CHIP_SOPORIFIC|CHIP_SPARK|CHIP_STALACTITE|CHIP_STEROID|CHIP_STRETCHING|CHIP_TACTICIAN_BULB|CHIP_TELEPORTATION|CHIP_THERAPY|CHIP_THORN|CHIP_TOXIN|CHIP_TRANQUILIZER|CHIP_TRANSMUTATION|CHIP_VACCINE|CHIP_VAMPIRIZATION|CHIP_VENOM|CHIP_WALL|CHIP_WARM_UP|CHIP_WHIP|CHIP_WINGED_BOOTS|CHIP_WIZARD_BULB|CHIP_WIZARDRY|COLOR_BLUE|COLOR_GREEN|COLOR_RED|CRITICAL_FACTOR|E|EFFECT_ABSOLUTE_SHIELD|EFFECT_ABSOLUTE_VULNERABILITY|EFFECT_AFTEREFFECT|EFFECT_ANTIDOTE|EFFECT_ATTRACT|EFFECT_BOOST_MAX_LIFE|EFFECT_BUFF_AGILITY|EFFECT_BUFF_FORCE|EFFECT_BUFF_MP|EFFECT_BUFF_RESISTANCE|EFFECT_BUFF_STRENGTH|EFFECT_BUFF_TP|EFFECT_BUFF_WISDOM|EFFECT_DAMAGE|EFFECT_DAMAGE_RETURN|EFFECT_DAMAGE_TO_ABSOLUTE_SHIELD|EFFECT_DAMAGE_TO_STRENGTH|EFFECT_DEBUFF|EFFECT_HEAL|EFFECT_INVERT|EFFECT_KILL|EFFECT_LIFE_DAMAGE|EFFECT_MODIFIER_IRREDUCTIBLE|EFFECT_MODIFIER_MULTIPLIED_BY_TARGETS|EFFECT_MODIFIER_NOT_REPLACEABLE|EFFECT_MODIFIER_ON_CASTER|EFFECT_MODIFIER_STACKABLE|EFFECT_MOVED_TO_MP|EFFECT_NOVA_DAMAGE|EFFECT_NOVA_DAMAGE_TO_MAGIC|EFFECT_NOVA_VITALITY|EFFECT_POISON|EFFECT_POISON_TO_SCIENCE|EFFECT_PROPAGATION|EFFECT_PUSH|EFFECT_RAW_ABSOLUTE_SHIELD|EFFECT_RAW_BUFF_AGILITY|EFFECT_RAW_BUFF_MAGIC|EFFECT_RAW_BUFF_MP|EFFECT_RAW_BUFF_RESISTANCE|EFFECT_RAW_BUFF_SCIENCE|EFFECT_RAW_BUFF_STRENGTH|EFFECT_RAW_BUFF_TP|EFFECT_RAW_BUFF_WISDOM|EFFECT_RELATIVE_SHIELD|EFFECT_REMOVE_SHACKLES|EFFECT_RESURRECT|EFFECT_SHACKLE_AGILITY|EFFECT_SHACKLE_MAGIC|EFFECT_SHACKLE_MP|EFFECT_SHACKLE_STRENGTH|EFFECT_SHACKLE_TP|EFFECT_SHACKLE_WISDOM|EFFECT_SLIDE_TO|EFFECT_STEAL_ABSOLUTE_SHIELD|EFFECT_SUMMON|EFFECT_TARGET_ALLIES|EFFECT_TARGET_ALWAYS_CASTER|EFFECT_TARGET_CASTER|EFFECT_TARGET_ENEMIES|EFFECT_TARGET_NON_SUMMONS|EFFECT_TARGET_NOT_CASTER|EFFECT_TARGET_SUMMONS|EFFECT_TELEPORT|EFFECT_VULNERABILITY|ENTITY_BULB|ENTITY_LEEK|ENTITY_TURRET|FIGHT_CONTEXT_BATTLE_ROYALE|FIGHT_CONTEXT_CHALLENGE|FIGHT_CONTEXT_GARDEN|FIGHT_CONTEXT_TEST|FIGHT_CONTEXT_TOURNAMENT|FIGHT_TYPE_BATTLE_ROYALE|FIGHT_TYPE_FARMER|FIGHT_TYPE_SOLO|FIGHT_TYPE_TEAM|INSTRUCTIONS_LIMIT|MAP_BEACH|MAP_DESERT|MAP_FACTORY|MAP_FOREST|MAP_GLACIER|MAP_NEXUS|MAX_TURNS|MESSAGE_ATTACK|MESSAGE_BUFF_AGILITY|MESSAGE_BUFF_FORCE|MESSAGE_BUFF_MP|MESSAGE_BUFF_TP|MESSAGE_CUSTOM|MESSAGE_DEBUFF|MESSAGE_HEAL|MESSAGE_MOVE_AWAY|MESSAGE_MOVE_AWAY_CELL|MESSAGE_MOVE_TOWARD|MESSAGE_MOVE_TOWARD_CELL|MESSAGE_SHIELD|OPERATIONS_LIMIT|PI|SORT_ASC|SORT_DESC|SUMMON_LIMIT|TYPE_ARRAY|TYPE_BOOLEAN|TYPE_CLASS|TYPE_FUNCTION|TYPE_NULL|TYPE_NUMBER|TYPE_OBJECT|TYPE_STRING|USE_CRITICAL|USE_FAILED|USE_INVALID_COOLDOWN|USE_INVALID_POSITION|USE_INVALID_TARGET|USE_NOT_ENOUGH_TP|USE_RESURRECT_INVALID_ENTITY|USE_SUCCESS|USE_TOO_MANY_SUMMONS|WEAPON_AXE|WEAPON_B_LASER|WEAPON_BROADSWORD|WEAPON_DESTROYER|WEAPON_DOUBLE_GUN|WEAPON_ELECTRISOR|WEAPON_EXPLORER_RIFLE|WEAPON_FLAME_THROWER|WEAPON_GAZOR|WEAPON_GRENADE_LAUNCHER|WEAPON_ILLICIT_GRENADE_LAUNCHER|WEAPON_J_LASER|WEAPON_KATANA|WEAPON_LASER|WEAPON_MACHINE_GUN|WEAPON_MAGNUM|WEAPON_M_LASER|WEAPON_MYSTERIOUS_ELECTRISOR|WEAPON_PISTOL|WEAPON_REVOKED_M_LASER|WEAPON_RHINO|WEAPON_RIFLE|WEAPON_SHOTGUN|WEAPON_UNBRIDLED_GAZOR)\\b",
-            "name": "constant.language.leekscript"
-        },
-        {
-            "comment": "Built-in functions",
-            "match": "\\b(abs|acos|arrayConcat|arrayFilter|arrayFlatten|arrayFoldLeft|arrayFoldRight|arrayIter|arrayMap|arrayMax|arrayMin|arrayPartition|arraySort|asin|assocSort|atan|atan2|average|canUseChip|canUseChipOnCell|canUseWeapon|canUseWeaponOnCell|cbrt|ceil|charAt|chipNeedLos|clearMarks|clone|contains|cos|count|debug|debugC|debugE|debugW|deleteRegister|endsWith|exp|fill|floor|getAbsoluteShield|getAgility|getAIID|getAIName|getAliveAllies|getAliveEnemies|getAliveEnemiesCount|getAllChips|getAllEffects|getAlliedTurret|getAllies|getAlliesCount|getAlliesLife|getAllWeapons|getBirthTurn|getBlue|getBulbChips|getCell|getCellContent|getCellDistance|getCellFromXY|getCellsToUseChip|getCellsToUseChipOnCell|getCellsToUseWeapon|getCellsToUseWeaponOnCell|getCellToUseChip|getCellToUseChipOnCell|getCellToUseWeapon|getCellToUseWeaponOnCell|getCellX|getCellY|getChipArea|getChipCooldown|getChipCost|getChipEffectiveArea|getChipEffects|getChipFailure|getChipMaxRange|getChipMaxScope|getChipMinRange|getChipMinScope|getChipName|getChips|getChipTargets|getColor|getCooldown|getCores|getDamageReturn|getDate|getDeadAllies|getDeadEnemies|getDeadEnemiesCount|getDistance|getEffects|getEnemies|getEnemiesCount|getEnemiesLife|getEnemyTurret|getEntity|getEntityOnCell|getEntityTurnOrder|getFarmerCountry|getFarmerID|getFarmerName|getFarthestAlly|getFarthestEnemy|getFightContext|getFightID|getFightType|getForce|getFrequency|getGreen|getInstructionsCount|getLaunchedEffects|getLeek|getLeekID|getLeekOnCell|getLevel|getLife|getMagic|getMapType|getMessageAuthor|getMessageParams|getMessages|getMessageType|getMP|getName|getNearestAlly|getNearestAllyTo|getNearestAllyToCell|getNearestEnemy|getNearestEnemyTo|getNearestEnemyToCell|getNextPlayer|getObstacles|getOperations|getPassiveEffects|getPath|getPathLength|getPower|getPreviousPlayer|getRed|getRegister|getRegisters|getRelativeShield|getResistance|getScience|getStrength|getSummoner|getSummons|getTeamID|getTeamName|getTime|getTimestamp|getTotalLife|getTotalMP|getTotalTP|getTP|getTurn|getType|getWeapon|getWeaponArea|getWeaponCost|getWeaponEffectiveArea|getWeaponEffects|getWeaponFailure|getWeaponMaxRange|getWeaponMaxScope|getWeaponMinRange|getWeaponMinScope|getWeaponName|getWeaponPassiveEffects|getWeapons|getWeaponTargets|getWisdom|hypot|inArray|include|indexOf|insert|isAlive|isAlly|isChip|isDead|isEmpty|isEmptyCell|isEnemy|isEntity|isInlineChip|isInlineWeapon|isLeek|isObstacle|isOnSameLine|isStatic|isSummon|isWeapon|join|jsonDecode|jsonEncode|keySort|length|lineOfSight|listen|log|log10|mark|markText|max|min|moveAwayFrom|moveAwayFromCell|moveAwayFromCells|moveAwayFromEntities|moveAwayFromLeeks|moveAwayFromLine|moveToward|moveTowardCell|moveTowardCells|moveTowardEntities|moveTowardLeeks|moveTowardLine|number|pause|pop|pow|push|pushAll|rand|randFloat|randInt|remove|removeElement|removeKey|replace|resurrect|reverse|round|say|search|sendAll|sendTo|setRegister|setWeapon|shift|show|shuffle|signum|sin|sort|split|sqrt|startsWith|string|subArray|substring|sum|summon|tan|toDegrees|toLower|toRadians|toUpper|typeOf|unshift|useChip|useChipOnCell|useWeapon|useWeaponOnCell|weaponNeedLos)\\b",
-            "name": "support.function.builtin.leekscript"
-        }
-    ],
-    "repository": {
-        "keywords": {
-            "patterns": [
-                {
-                    "name": "keyword.control.leekscript",
-                    "match": "\\b(if|while|for|return|else|function|var)\\b"
-                }
-            ]
-        },
-        "strings": {
-            "name": "string.quoted.double.leekscript",
-            "begin": "\"",
-            "end": "\"",
-            "patterns": [
-                {
-                    "name": "constant.character.escape.leekscript",
-                    "match": "\\\\."
-                }
-            ]
-        },
-        "comments": {
-            "patterns": [
-                {
-                    "begin": "/\\*",
-                    "end": "\\*/",
-                    "captures": {
-                        "0": {
-                            "name": "punctuation.definition.comment.leekscript"
-                        }
-                    },
-                    "name": "comment.block.leekscript"
-                },
-                {
-                    "begin": "//",
-                    "beginCaptures": {
-                        "0": {
-                            "name": "punctuation.definition.comment.leekscript"
-                        }
-                    },
-                    "end": "$",
-                    "name": "comment.line.double-slash.leekscript"
-                }
-            ]
-        },
-        "operators": {
-            "comment": "Note that the order here is very important!",
-            "patterns": [
-                {
-                    "match": "\\-\\-",
-                    "name": "keyword.operator.decrement.leekscript"
-                },
-                {
-                    "match": "\\+\\+",
-                    "name": "keyword.operator.increment.leekscript"
-                },
-                {
-                    "match": "(==|!=|<=|>=|<[^<]|>[^>])",
-                    "name": "keyword.operator.comparison.leekscript"
-                },
-                {
-                    "match": "(&&|\\|\\||!)",
-                    "name": "keyword.operator.logical.leekscript"
-                },
-                {
-                    "match": "(=|\\+=|\\-=|\\*=|/=|%=)",
-                    "name": "keyword.operator.assignment.leekscript"
-                },
-                {
-                    "match": "(\\+|\\-|\\*|/|%)",
-                    "name": "keyword.operator.arithmetic.leekscript"
-                }
-            ]
-        }
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "LeekScript V1.1",
+  "patterns": [
+    {
+      "include": "#keywords"
     },
-    "scopeName": "source.leekscript.v1.1"
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#operators"
+    },
+    {
+      "comment": "Floating-point literals",
+      "match": "(\\.\\d+([Ee][-+]\\d+)?i?)\\b|\\b\\d+\\.\\d*(([Ee][-+]\\d+)?i?\\b)?",
+      "name": "constant.numeric.floating-point.leekscript"
+    },
+    {
+      "comment": "Integers",
+      "match": "\\b((0x[0-9a-fA-F]+)|(0[0-7]+i?)|(\\d+([Ee]\\d+)?i?)|(\\d+[Ee][-+]\\d+i?))\\b",
+      "name": "constant.numeric.integer.leekscript"
+    },
+    {
+      "comment": "Language constants",
+      "match": "\\b(true|false|null|undefined)\\b",
+      "name": "constant.language.leekscript"
+    },
+    {
+      "comment": "Leekwars constants",
+      "match": "\\b(AREA_CIRCLE_1|AREA_CIRCLE_2|AREA_CIRCLE_3|AREA_FIRST_INLINE|AREA_LASER_LINE|AREA_PLUS_1|AREA_PLUS_2|AREA_PLUS_3|AREA_POINT|AREA_SQUARE_1|AREA_SQUARE_2|AREA_X_1|AREA_X_2|AREA_X_3|CELL_EMPTY|CELL_ENTITY|CELL_OBSTACLE|CELL_PLAYER|CHIP_ACCELERATION|CHIP_ADRENALINE|CHIP_ALTERATION|CHIP_ANTIDOTE|CHIP_ARMOR|CHIP_ARMORING|CHIP_ARSENIC|CHIP_BALL_AND_CHAIN|CHIP_BANDAGE|CHIP_BARK|CHIP_BOXING_GLOVE|CHIP_BRAINWASHING|CHIP_BRAMBLE|CHIP_BURNING|CHIP_CARAPACE|CHIP_COLLAR|CHIP_COVETOUSNESS|CHIP_COVID|CHIP_CRUSHING|CHIP_CURE|CHIP_DESINTEGRATION|CHIP_DEVIL_STRIKE|CHIP_DOME|CHIP_DOPING|CHIP_DRIP|CHIP_ELEVATION|CHIP_FEROCITY|CHIP_FERTILIZER|CHIP_FIRE_BULB|CHIP_FLAME|CHIP_FLASH|CHIP_FORTRESS|CHIP_FRACTURE|CHIP_GRAPPLE|CHIP_HEALER_BULB|CHIP_HELMET|CHIP_ICE|CHIP_ICEBERG|CHIP_ICED_BULB|CHIP_INVERSION|CHIP_JUMP|CHIP_KNOWLEDGE|CHIP_LEATHER_BOOTS|CHIP_LIBERATION|CHIP_LIGHTNING|CHIP_LIGHTNING_BULB|CHIP_LOAM|CHIP_MANUMISSION|CHIP_METALLIC_BULB|CHIP_METEORITE|CHIP_MIRROR|CHIP_MOTIVATION|CHIP_MUTATION|CHIP_PEBBLE|CHIP_PLAGUE|CHIP_PLASMA|CHIP_PRECIPITATION|CHIP_PROTEIN|CHIP_PUNISHMENT|CHIP_PUNY_BULB|CHIP_RAGE|CHIP_RAMPART|CHIP_REFLEXES|CHIP_REGENERATION|CHIP_REMISSION|CHIP_REPOTTING|CHIP_RESURRECTION|CHIP_ROCK|CHIP_ROCKFALL|CHIP_ROCKY_BULB|CHIP_SAVANT_BULB|CHIP_SERUM|CHIP_SEVEN_LEAGUE_BOOTS|CHIP_SHIELD|CHIP_SHOCK|CHIP_SLOW_DOWN|CHIP_SOLIDIFICATION|CHIP_SOPORIFIC|CHIP_SPARK|CHIP_STALACTITE|CHIP_STEROID|CHIP_STRETCHING|CHIP_TACTICIAN_BULB|CHIP_TELEPORTATION|CHIP_THERAPY|CHIP_THORN|CHIP_TOXIN|CHIP_TRANQUILIZER|CHIP_TRANSMUTATION|CHIP_VACCINE|CHIP_VAMPIRIZATION|CHIP_VENOM|CHIP_WALL|CHIP_WARM_UP|CHIP_WHIP|CHIP_WINGED_BOOTS|CHIP_WIZARD_BULB|CHIP_WIZARDRY|COLOR_BLUE|COLOR_GREEN|COLOR_RED|CRITICAL_FACTOR|E|EFFECT_ABSOLUTE_SHIELD|EFFECT_ABSOLUTE_VULNERABILITY|EFFECT_AFTEREFFECT|EFFECT_ANTIDOTE|EFFECT_ATTRACT|EFFECT_BOOST_MAX_LIFE|EFFECT_BUFF_AGILITY|EFFECT_BUFF_FORCE|EFFECT_BUFF_MP|EFFECT_BUFF_RESISTANCE|EFFECT_BUFF_STRENGTH|EFFECT_BUFF_TP|EFFECT_BUFF_WISDOM|EFFECT_DAMAGE|EFFECT_DAMAGE_RETURN|EFFECT_DAMAGE_TO_ABSOLUTE_SHIELD|EFFECT_DAMAGE_TO_STRENGTH|EFFECT_DEBUFF|EFFECT_HEAL|EFFECT_INVERT|EFFECT_KILL|EFFECT_LIFE_DAMAGE|EFFECT_MODIFIER_IRREDUCTIBLE|EFFECT_MODIFIER_MULTIPLIED_BY_TARGETS|EFFECT_MODIFIER_NOT_REPLACEABLE|EFFECT_MODIFIER_ON_CASTER|EFFECT_MODIFIER_STACKABLE|EFFECT_MOVED_TO_MP|EFFECT_NOVA_DAMAGE|EFFECT_NOVA_DAMAGE_TO_MAGIC|EFFECT_NOVA_VITALITY|EFFECT_POISON|EFFECT_POISON_TO_SCIENCE|EFFECT_PROPAGATION|EFFECT_PUSH|EFFECT_RAW_ABSOLUTE_SHIELD|EFFECT_RAW_BUFF_AGILITY|EFFECT_RAW_BUFF_MAGIC|EFFECT_RAW_BUFF_MP|EFFECT_RAW_BUFF_RESISTANCE|EFFECT_RAW_BUFF_SCIENCE|EFFECT_RAW_BUFF_STRENGTH|EFFECT_RAW_BUFF_TP|EFFECT_RAW_BUFF_WISDOM|EFFECT_RELATIVE_SHIELD|EFFECT_REMOVE_SHACKLES|EFFECT_RESURRECT|EFFECT_SHACKLE_AGILITY|EFFECT_SHACKLE_MAGIC|EFFECT_SHACKLE_MP|EFFECT_SHACKLE_STRENGTH|EFFECT_SHACKLE_TP|EFFECT_SHACKLE_WISDOM|EFFECT_SLIDE_TO|EFFECT_STEAL_ABSOLUTE_SHIELD|EFFECT_SUMMON|EFFECT_TARGET_ALLIES|EFFECT_TARGET_ALWAYS_CASTER|EFFECT_TARGET_CASTER|EFFECT_TARGET_ENEMIES|EFFECT_TARGET_NON_SUMMONS|EFFECT_TARGET_NOT_CASTER|EFFECT_TARGET_SUMMONS|EFFECT_TELEPORT|EFFECT_VULNERABILITY|ENTITY_BULB|ENTITY_LEEK|ENTITY_TURRET|FIGHT_CONTEXT_BATTLE_ROYALE|FIGHT_CONTEXT_CHALLENGE|FIGHT_CONTEXT_GARDEN|FIGHT_CONTEXT_TEST|FIGHT_CONTEXT_TOURNAMENT|FIGHT_TYPE_BATTLE_ROYALE|FIGHT_TYPE_FARMER|FIGHT_TYPE_SOLO|FIGHT_TYPE_TEAM|INSTRUCTIONS_LIMIT|MAP_BEACH|MAP_DESERT|MAP_FACTORY|MAP_FOREST|MAP_GLACIER|MAP_NEXUS|MAX_TURNS|MESSAGE_ATTACK|MESSAGE_BUFF_AGILITY|MESSAGE_BUFF_FORCE|MESSAGE_BUFF_MP|MESSAGE_BUFF_TP|MESSAGE_CUSTOM|MESSAGE_DEBUFF|MESSAGE_HEAL|MESSAGE_MOVE_AWAY|MESSAGE_MOVE_AWAY_CELL|MESSAGE_MOVE_TOWARD|MESSAGE_MOVE_TOWARD_CELL|MESSAGE_SHIELD|OPERATIONS_LIMIT|PI|SORT_ASC|SORT_DESC|SUMMON_LIMIT|TYPE_ARRAY|TYPE_BOOLEAN|TYPE_CLASS|TYPE_FUNCTION|TYPE_NULL|TYPE_NUMBER|TYPE_OBJECT|TYPE_STRING|USE_CRITICAL|USE_FAILED|USE_INVALID_COOLDOWN|USE_INVALID_POSITION|USE_INVALID_TARGET|USE_NOT_ENOUGH_TP|USE_RESURRECT_INVALID_ENTITY|USE_SUCCESS|USE_TOO_MANY_SUMMONS|WEAPON_AXE|WEAPON_B_LASER|WEAPON_BROADSWORD|WEAPON_DESTROYER|WEAPON_DOUBLE_GUN|WEAPON_ELECTRISOR|WEAPON_EXPLORER_RIFLE|WEAPON_FLAME_THROWER|WEAPON_GAZOR|WEAPON_GRENADE_LAUNCHER|WEAPON_ILLICIT_GRENADE_LAUNCHER|WEAPON_J_LASER|WEAPON_KATANA|WEAPON_LASER|WEAPON_MACHINE_GUN|WEAPON_MAGNUM|WEAPON_M_LASER|WEAPON_MYSTERIOUS_ELECTRISOR|WEAPON_PISTOL|WEAPON_REVOKED_M_LASER|WEAPON_RHINO|WEAPON_RIFLE|WEAPON_SHOTGUN|WEAPON_UNBRIDLED_GAZOR)\\b",
+      "name": "constant.language.leekscript"
+    },
+    {
+      "comment": "Built-in functions",
+      "match": "\\b(abs|acos|arrayConcat|arrayFilter|arrayFlatten|arrayFoldLeft|arrayFoldRight|arrayIter|arrayMap|arrayMax|arrayMin|arrayPartition|arraySort|asin|assocSort|atan|atan2|average|canUseChip|canUseChipOnCell|canUseWeapon|canUseWeaponOnCell|cbrt|ceil|charAt|chipNeedLos|clearMarks|clone|contains|cos|count|debug|debugC|debugE|debugW|deleteRegister|endsWith|exp|fill|floor|getAbsoluteShield|getAgility|getAIID|getAIName|getAliveAllies|getAliveEnemies|getAliveEnemiesCount|getAllChips|getAllEffects|getAlliedTurret|getAllies|getAlliesCount|getAlliesLife|getAllWeapons|getBirthTurn|getBlue|getBulbChips|getCell|getCellContent|getCellDistance|getCellFromXY|getCellsToUseChip|getCellsToUseChipOnCell|getCellsToUseWeapon|getCellsToUseWeaponOnCell|getCellToUseChip|getCellToUseChipOnCell|getCellToUseWeapon|getCellToUseWeaponOnCell|getCellX|getCellY|getChipArea|getChipCooldown|getChipCost|getChipEffectiveArea|getChipEffects|getChipFailure|getChipMaxRange|getChipMaxScope|getChipMinRange|getChipMinScope|getChipName|getChips|getChipTargets|getColor|getCooldown|getCores|getDamageReturn|getDate|getDeadAllies|getDeadEnemies|getDeadEnemiesCount|getDistance|getEffects|getEnemies|getEnemiesCount|getEnemiesLife|getEnemyTurret|getEntity|getEntityOnCell|getEntityTurnOrder|getFarmerCountry|getFarmerID|getFarmerName|getFarthestAlly|getFarthestEnemy|getFightContext|getFightID|getFightType|getForce|getFrequency|getGreen|getInstructionsCount|getLaunchedEffects|getLeek|getLeekID|getLeekOnCell|getLevel|getLife|getMagic|getMapType|getMessageAuthor|getMessageParams|getMessages|getMessageType|getMP|getName|getNearestAlly|getNearestAllyTo|getNearestAllyToCell|getNearestEnemy|getNearestEnemyTo|getNearestEnemyToCell|getNextPlayer|getObstacles|getOperations|getPassiveEffects|getPath|getPathLength|getPower|getPreviousPlayer|getRed|getRegister|getRegisters|getRelativeShield|getResistance|getScience|getStrength|getSummoner|getSummons|getTeamID|getTeamName|getTime|getTimestamp|getTotalLife|getTotalMP|getTotalTP|getTP|getTurn|getType|getWeapon|getWeaponArea|getWeaponCost|getWeaponEffectiveArea|getWeaponEffects|getWeaponFailure|getWeaponMaxRange|getWeaponMaxScope|getWeaponMinRange|getWeaponMinScope|getWeaponName|getWeaponPassiveEffects|getWeapons|getWeaponTargets|getWisdom|hypot|inArray|include|indexOf|insert|isAlive|isAlly|isChip|isDead|isEmpty|isEmptyCell|isEnemy|isEntity|isInlineChip|isInlineWeapon|isLeek|isObstacle|isOnSameLine|isStatic|isSummon|isWeapon|join|jsonDecode|jsonEncode|keySort|length|lineOfSight|listen|log|log10|mark|markText|max|min|moveAwayFrom|moveAwayFromCell|moveAwayFromCells|moveAwayFromEntities|moveAwayFromLeeks|moveAwayFromLine|moveToward|moveTowardCell|moveTowardCells|moveTowardEntities|moveTowardLeeks|moveTowardLine|number|pause|pop|pow|push|pushAll|rand|randFloat|randInt|remove|removeElement|removeKey|replace|resurrect|reverse|round|say|search|sendAll|sendTo|setRegister|setWeapon|shift|show|shuffle|signum|sin|sort|split|sqrt|startsWith|string|subArray|substring|sum|summon|tan|toDegrees|toLower|toRadians|toUpper|typeOf|unshift|useChip|useChipOnCell|useWeapon|useWeaponOnCell|weaponNeedLos)\\b",
+      "name": "support.function.builtin.leekscript"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.leekscript",
+          "match": "\\b(if|while|for|return|else|function|var)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.leekscript",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.leekscript",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "comments": {
+      "patterns": [
+        {
+          "begin": "/\\*",
+          "end": "\\*/",
+          "captures": {
+            "0": {
+              "name": "punctuation.definition.comment.leekscript"
+            }
+          },
+          "name": "comment.block.leekscript"
+        },
+        {
+          "begin": "//",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.comment.leekscript"
+            }
+          },
+          "end": "$",
+          "name": "comment.line.double-slash.leekscript"
+        }
+      ]
+    },
+    "operators": {
+      "comment": "Note that the order here is very important!",
+      "patterns": [
+        {
+          "match": "\\-\\-",
+          "name": "keyword.operator.decrement.leekscript"
+        },
+        {
+          "match": "\\+\\+",
+          "name": "keyword.operator.increment.leekscript"
+        },
+        {
+          "match": "(==|!=|<=|>=|<[^<]|>[^>])",
+          "name": "keyword.operator.comparison.leekscript"
+        },
+        {
+          "match": "(&&|\\|\\||!)",
+          "name": "keyword.operator.logical.leekscript"
+        },
+        {
+          "match": "(=|\\+=|\\-=|\\*=|/=|%=)",
+          "name": "keyword.operator.assignment.leekscript"
+        },
+        {
+          "match": "(\\+|\\-|\\*|/|%)",
+          "name": "keyword.operator.arithmetic.leekscript"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.leekscript.v1.1"
 }

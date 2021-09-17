@@ -1,25 +1,23 @@
-export type Functions = {
-    functions: Function[]
-};
+export interface Functions {
+  id: number;
 
-export type Function = {
-    id: number,
-    name: string,
-    level: number,
-    category: number,
-    operations: number,
-    argumentsNames: ArgumentName[],
-    argumentsTypes: ArgumentType[],
-    returnType: number,
-    returnName: string,
-    deprecated: number,
-    replacement: number | null
-};
+  name: string;
 
-export type ArgumentName = {
-    name: string
-};
+  level: number;
 
-export type ArgumentType = {
-    name: string
-};
+  category: number;
+
+  operations: number;
+
+  arguments_names: string[];
+
+  arguments_types: string[];
+
+  return_name: string | null;
+
+  return_type: number;
+
+  deprecated: number;
+
+  replacement: number | null;
+}
