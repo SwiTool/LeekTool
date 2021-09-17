@@ -1,0 +1,2966 @@
+{
+  "AREA_CIRCLE_1": {
+    "prefix": "AREA_CIRCLE_1",
+    "body": "AREA_CIRCLE_1",
+    "description": "Zone circulaire de 3 cases de diamètre (croix)."
+  },
+  "AREA_CIRCLE_2": {
+    "prefix": "AREA_CIRCLE_2",
+    "body": "AREA_CIRCLE_2",
+    "description": "Zone circulaire de 5 cases de diamètre."
+  },
+  "AREA_CIRCLE_3": {
+    "prefix": "AREA_CIRCLE_3",
+    "body": "AREA_CIRCLE_3",
+    "description": "Zone circulaire de 7 cases de diamètre."
+  },
+  "AREA_FIRST_INLINE": {
+    "prefix": "AREA_FIRST_INLINE",
+    "body": "AREA_FIRST_INLINE"
+  },
+  "AREA_LASER_LINE": {
+    "prefix": "AREA_LASER_LINE",
+    "body": "AREA_LASER_LINE",
+    "description": "Zone d'une laser, ligne depuis la portée minimum du laser jusqu’à sa portée maximum ou bien un obstacle."
+  },
+  "AREA_PLUS_1": {
+    "prefix": "AREA_PLUS_1",
+    "body": "AREA_PLUS_1"
+  },
+  "AREA_PLUS_2": {
+    "prefix": "AREA_PLUS_2",
+    "body": "AREA_PLUS_2"
+  },
+  "AREA_PLUS_3": {
+    "prefix": "AREA_PLUS_3",
+    "body": "AREA_PLUS_3"
+  },
+  "AREA_POINT": {
+    "prefix": "AREA_POINT",
+    "body": "AREA_POINT",
+    "description": "Zone constituée d'une seule case."
+  },
+  "AREA_SQUARE_1": {
+    "prefix": "AREA_SQUARE_1",
+    "body": "AREA_SQUARE_1"
+  },
+  "AREA_SQUARE_2": {
+    "prefix": "AREA_SQUARE_2",
+    "body": "AREA_SQUARE_2"
+  },
+  "AREA_X_1": {
+    "prefix": "AREA_X_1",
+    "body": "AREA_X_1"
+  },
+  "AREA_X_2": {
+    "prefix": "AREA_X_2",
+    "body": "AREA_X_2"
+  },
+  "AREA_X_3": {
+    "prefix": "AREA_X_3",
+    "body": "AREA_X_3"
+  },
+  "CELL_EMPTY": {
+    "prefix": "CELL_EMPTY",
+    "body": "CELL_EMPTY",
+    "description": "Valeur de retour de getCellContent(cell) pour une case vide."
+  },
+  "CELL_ENTITY": {
+    "prefix": "CELL_ENTITY",
+    "body": "CELL_ENTITY",
+    "description": "Valeur de retour de getCellContent(cell) pour une case contenant une entité."
+  },
+  "CELL_OBSTACLE": {
+    "prefix": "CELL_OBSTACLE",
+    "body": "CELL_OBSTACLE",
+    "description": "Valeur de retour de getCellContent(cell) pour une case contenant un obstacle."
+  },
+  "CELL_PLAYER": {
+    "prefix": "CELL_PLAYER",
+    "body": "CELL_PLAYER",
+    "description": "Valeur de retour de getCellContent(cell) pour une case contenant une entité."
+  },
+  "CHIP_ACCELERATION": {
+    "prefix": "CHIP_ACCELERATION",
+    "body": "CHIP_ACCELERATION"
+  },
+  "CHIP_ADRENALINE": {
+    "prefix": "CHIP_ADRENALINE",
+    "body": "CHIP_ADRENALINE"
+  },
+  "CHIP_ALTERATION": {
+    "prefix": "CHIP_ALTERATION",
+    "body": "CHIP_ALTERATION"
+  },
+  "CHIP_ANTIDOTE": {
+    "prefix": "CHIP_ANTIDOTE",
+    "body": "CHIP_ANTIDOTE"
+  },
+  "CHIP_ARMOR": {
+    "prefix": "CHIP_ARMOR",
+    "body": "CHIP_ARMOR"
+  },
+  "CHIP_ARMORING": {
+    "prefix": "CHIP_ARMORING",
+    "body": "CHIP_ARMORING"
+  },
+  "CHIP_ARSENIC": {
+    "prefix": "CHIP_ARSENIC",
+    "body": "CHIP_ARSENIC"
+  },
+  "CHIP_BALL_AND_CHAIN": {
+    "prefix": "CHIP_BALL_AND_CHAIN",
+    "body": "CHIP_BALL_AND_CHAIN"
+  },
+  "CHIP_BANDAGE": {
+    "prefix": "CHIP_BANDAGE",
+    "body": "CHIP_BANDAGE"
+  },
+  "CHIP_BARK": {
+    "prefix": "CHIP_BARK",
+    "body": "CHIP_BARK"
+  },
+  "CHIP_BOXING_GLOVE": {
+    "prefix": "CHIP_BOXING_GLOVE",
+    "body": "CHIP_BOXING_GLOVE"
+  },
+  "CHIP_BRAINWASHING": {
+    "prefix": "CHIP_BRAINWASHING",
+    "body": "CHIP_BRAINWASHING"
+  },
+  "CHIP_BRAMBLE": {
+    "prefix": "CHIP_BRAMBLE",
+    "body": "CHIP_BRAMBLE"
+  },
+  "CHIP_BURNING": {
+    "prefix": "CHIP_BURNING",
+    "body": "CHIP_BURNING"
+  },
+  "CHIP_CARAPACE": {
+    "prefix": "CHIP_CARAPACE",
+    "body": "CHIP_CARAPACE"
+  },
+  "CHIP_COLLAR": {
+    "prefix": "CHIP_COLLAR",
+    "body": "CHIP_COLLAR"
+  },
+  "CHIP_COVETOUSNESS": {
+    "prefix": "CHIP_COVETOUSNESS",
+    "body": "CHIP_COVETOUSNESS"
+  },
+  "CHIP_COVID": {
+    "prefix": "CHIP_COVID",
+    "body": "CHIP_COVID"
+  },
+  "CHIP_CRUSHING": {
+    "prefix": "CHIP_CRUSHING",
+    "body": "CHIP_CRUSHING"
+  },
+  "CHIP_CURE": {
+    "prefix": "CHIP_CURE",
+    "body": "CHIP_CURE"
+  },
+  "CHIP_DESINTEGRATION": {
+    "prefix": "CHIP_DESINTEGRATION",
+    "body": "CHIP_DESINTEGRATION"
+  },
+  "CHIP_DEVIL_STRIKE": {
+    "prefix": "CHIP_DEVIL_STRIKE",
+    "body": "CHIP_DEVIL_STRIKE"
+  },
+  "CHIP_DOME": {
+    "prefix": "CHIP_DOME",
+    "body": "CHIP_DOME"
+  },
+  "CHIP_DOPING": {
+    "prefix": "CHIP_DOPING",
+    "body": "CHIP_DOPING"
+  },
+  "CHIP_DRIP": {
+    "prefix": "CHIP_DRIP",
+    "body": "CHIP_DRIP"
+  },
+  "CHIP_ELEVATION": {
+    "prefix": "CHIP_ELEVATION",
+    "body": "CHIP_ELEVATION"
+  },
+  "CHIP_FEROCITY": {
+    "prefix": "CHIP_FEROCITY",
+    "body": "CHIP_FEROCITY"
+  },
+  "CHIP_FERTILIZER": {
+    "prefix": "CHIP_FERTILIZER",
+    "body": "CHIP_FERTILIZER"
+  },
+  "CHIP_FIRE_BULB": {
+    "prefix": "CHIP_FIRE_BULB",
+    "body": "CHIP_FIRE_BULB"
+  },
+  "CHIP_FLAME": {
+    "prefix": "CHIP_FLAME",
+    "body": "CHIP_FLAME"
+  },
+  "CHIP_FLASH": {
+    "prefix": "CHIP_FLASH",
+    "body": "CHIP_FLASH"
+  },
+  "CHIP_FORTRESS": {
+    "prefix": "CHIP_FORTRESS",
+    "body": "CHIP_FORTRESS"
+  },
+  "CHIP_FRACTURE": {
+    "prefix": "CHIP_FRACTURE",
+    "body": "CHIP_FRACTURE"
+  },
+  "CHIP_GRAPPLE": {
+    "prefix": "CHIP_GRAPPLE",
+    "body": "CHIP_GRAPPLE"
+  },
+  "CHIP_HEALER_BULB": {
+    "prefix": "CHIP_HEALER_BULB",
+    "body": "CHIP_HEALER_BULB"
+  },
+  "CHIP_HELMET": {
+    "prefix": "CHIP_HELMET",
+    "body": "CHIP_HELMET"
+  },
+  "CHIP_ICE": {
+    "prefix": "CHIP_ICE",
+    "body": "CHIP_ICE"
+  },
+  "CHIP_ICEBERG": {
+    "prefix": "CHIP_ICEBERG",
+    "body": "CHIP_ICEBERG"
+  },
+  "CHIP_ICED_BULB": {
+    "prefix": "CHIP_ICED_BULB",
+    "body": "CHIP_ICED_BULB"
+  },
+  "CHIP_INVERSION": {
+    "prefix": "CHIP_INVERSION",
+    "body": "CHIP_INVERSION"
+  },
+  "CHIP_JUMP": {
+    "prefix": "CHIP_JUMP",
+    "body": "CHIP_JUMP"
+  },
+  "CHIP_KNOWLEDGE": {
+    "prefix": "CHIP_KNOWLEDGE",
+    "body": "CHIP_KNOWLEDGE"
+  },
+  "CHIP_LEATHER_BOOTS": {
+    "prefix": "CHIP_LEATHER_BOOTS",
+    "body": "CHIP_LEATHER_BOOTS"
+  },
+  "CHIP_LIBERATION": {
+    "prefix": "CHIP_LIBERATION",
+    "body": "CHIP_LIBERATION"
+  },
+  "CHIP_LIGHTNING": {
+    "prefix": "CHIP_LIGHTNING",
+    "body": "CHIP_LIGHTNING"
+  },
+  "CHIP_LIGHTNING_BULB": {
+    "prefix": "CHIP_LIGHTNING_BULB",
+    "body": "CHIP_LIGHTNING_BULB"
+  },
+  "CHIP_LOAM": {
+    "prefix": "CHIP_LOAM",
+    "body": "CHIP_LOAM"
+  },
+  "CHIP_MANUMISSION": {
+    "prefix": "CHIP_MANUMISSION",
+    "body": "CHIP_MANUMISSION"
+  },
+  "CHIP_METALLIC_BULB": {
+    "prefix": "CHIP_METALLIC_BULB",
+    "body": "CHIP_METALLIC_BULB"
+  },
+  "CHIP_METEORITE": {
+    "prefix": "CHIP_METEORITE",
+    "body": "CHIP_METEORITE"
+  },
+  "CHIP_MIRROR": {
+    "prefix": "CHIP_MIRROR",
+    "body": "CHIP_MIRROR"
+  },
+  "CHIP_MOTIVATION": {
+    "prefix": "CHIP_MOTIVATION",
+    "body": "CHIP_MOTIVATION"
+  },
+  "CHIP_MUTATION": {
+    "prefix": "CHIP_MUTATION",
+    "body": "CHIP_MUTATION"
+  },
+  "CHIP_PEBBLE": {
+    "prefix": "CHIP_PEBBLE",
+    "body": "CHIP_PEBBLE"
+  },
+  "CHIP_PLAGUE": {
+    "prefix": "CHIP_PLAGUE",
+    "body": "CHIP_PLAGUE"
+  },
+  "CHIP_PLASMA": {
+    "prefix": "CHIP_PLASMA",
+    "body": "CHIP_PLASMA"
+  },
+  "CHIP_PRECIPITATION": {
+    "prefix": "CHIP_PRECIPITATION",
+    "body": "CHIP_PRECIPITATION"
+  },
+  "CHIP_PROTEIN": {
+    "prefix": "CHIP_PROTEIN",
+    "body": "CHIP_PROTEIN"
+  },
+  "CHIP_PUNISHMENT": {
+    "prefix": "CHIP_PUNISHMENT",
+    "body": "CHIP_PUNISHMENT"
+  },
+  "CHIP_PUNY_BULB": {
+    "prefix": "CHIP_PUNY_BULB",
+    "body": "CHIP_PUNY_BULB"
+  },
+  "CHIP_RAGE": {
+    "prefix": "CHIP_RAGE",
+    "body": "CHIP_RAGE"
+  },
+  "CHIP_RAMPART": {
+    "prefix": "CHIP_RAMPART",
+    "body": "CHIP_RAMPART"
+  },
+  "CHIP_REFLEXES": {
+    "prefix": "CHIP_REFLEXES",
+    "body": "CHIP_REFLEXES"
+  },
+  "CHIP_REGENERATION": {
+    "prefix": "CHIP_REGENERATION",
+    "body": "CHIP_REGENERATION"
+  },
+  "CHIP_REMISSION": {
+    "prefix": "CHIP_REMISSION",
+    "body": "CHIP_REMISSION"
+  },
+  "CHIP_REPOTTING": {
+    "prefix": "CHIP_REPOTTING",
+    "body": "CHIP_REPOTTING"
+  },
+  "CHIP_RESURRECTION": {
+    "prefix": "CHIP_RESURRECTION",
+    "body": "CHIP_RESURRECTION"
+  },
+  "CHIP_ROCK": {
+    "prefix": "CHIP_ROCK",
+    "body": "CHIP_ROCK"
+  },
+  "CHIP_ROCKFALL": {
+    "prefix": "CHIP_ROCKFALL",
+    "body": "CHIP_ROCKFALL"
+  },
+  "CHIP_ROCKY_BULB": {
+    "prefix": "CHIP_ROCKY_BULB",
+    "body": "CHIP_ROCKY_BULB"
+  },
+  "CHIP_SAVANT_BULB": {
+    "prefix": "CHIP_SAVANT_BULB",
+    "body": "CHIP_SAVANT_BULB"
+  },
+  "CHIP_SERUM": {
+    "prefix": "CHIP_SERUM",
+    "body": "CHIP_SERUM"
+  },
+  "CHIP_SEVEN_LEAGUE_BOOTS": {
+    "prefix": "CHIP_SEVEN_LEAGUE_BOOTS",
+    "body": "CHIP_SEVEN_LEAGUE_BOOTS"
+  },
+  "CHIP_SHIELD": {
+    "prefix": "CHIP_SHIELD",
+    "body": "CHIP_SHIELD"
+  },
+  "CHIP_SHOCK": {
+    "prefix": "CHIP_SHOCK",
+    "body": "CHIP_SHOCK"
+  },
+  "CHIP_SLOW_DOWN": {
+    "prefix": "CHIP_SLOW_DOWN",
+    "body": "CHIP_SLOW_DOWN"
+  },
+  "CHIP_SOLIDIFICATION": {
+    "prefix": "CHIP_SOLIDIFICATION",
+    "body": "CHIP_SOLIDIFICATION"
+  },
+  "CHIP_SOPORIFIC": {
+    "prefix": "CHIP_SOPORIFIC",
+    "body": "CHIP_SOPORIFIC"
+  },
+  "CHIP_SPARK": {
+    "prefix": "CHIP_SPARK",
+    "body": "CHIP_SPARK"
+  },
+  "CHIP_STALACTITE": {
+    "prefix": "CHIP_STALACTITE",
+    "body": "CHIP_STALACTITE"
+  },
+  "CHIP_STEROID": {
+    "prefix": "CHIP_STEROID",
+    "body": "CHIP_STEROID"
+  },
+  "CHIP_STRETCHING": {
+    "prefix": "CHIP_STRETCHING",
+    "body": "CHIP_STRETCHING"
+  },
+  "CHIP_TACTICIAN_BULB": {
+    "prefix": "CHIP_TACTICIAN_BULB",
+    "body": "CHIP_TACTICIAN_BULB"
+  },
+  "CHIP_TELEPORTATION": {
+    "prefix": "CHIP_TELEPORTATION",
+    "body": "CHIP_TELEPORTATION"
+  },
+  "CHIP_THERAPY": {
+    "prefix": "CHIP_THERAPY",
+    "body": "CHIP_THERAPY"
+  },
+  "CHIP_THORN": {
+    "prefix": "CHIP_THORN",
+    "body": "CHIP_THORN"
+  },
+  "CHIP_TOXIN": {
+    "prefix": "CHIP_TOXIN",
+    "body": "CHIP_TOXIN"
+  },
+  "CHIP_TRANQUILIZER": {
+    "prefix": "CHIP_TRANQUILIZER",
+    "body": "CHIP_TRANQUILIZER"
+  },
+  "CHIP_TRANSMUTATION": {
+    "prefix": "CHIP_TRANSMUTATION",
+    "body": "CHIP_TRANSMUTATION"
+  },
+  "CHIP_VACCINE": {
+    "prefix": "CHIP_VACCINE",
+    "body": "CHIP_VACCINE"
+  },
+  "CHIP_VAMPIRIZATION": {
+    "prefix": "CHIP_VAMPIRIZATION",
+    "body": "CHIP_VAMPIRIZATION"
+  },
+  "CHIP_VENOM": {
+    "prefix": "CHIP_VENOM",
+    "body": "CHIP_VENOM"
+  },
+  "CHIP_WALL": {
+    "prefix": "CHIP_WALL",
+    "body": "CHIP_WALL"
+  },
+  "CHIP_WARM_UP": {
+    "prefix": "CHIP_WARM_UP",
+    "body": "CHIP_WARM_UP"
+  },
+  "CHIP_WHIP": {
+    "prefix": "CHIP_WHIP",
+    "body": "CHIP_WHIP"
+  },
+  "CHIP_WINGED_BOOTS": {
+    "prefix": "CHIP_WINGED_BOOTS",
+    "body": "CHIP_WINGED_BOOTS"
+  },
+  "CHIP_WIZARD_BULB": {
+    "prefix": "CHIP_WIZARD_BULB",
+    "body": "CHIP_WIZARD_BULB"
+  },
+  "CHIP_WIZARDRY": {
+    "prefix": "CHIP_WIZARDRY",
+    "body": "CHIP_WIZARDRY"
+  },
+  "COLOR_BLUE": {
+    "prefix": "COLOR_BLUE",
+    "body": "COLOR_BLUE",
+    "description": "Couleur bleue."
+  },
+  "COLOR_GREEN": {
+    "prefix": "COLOR_GREEN",
+    "body": "COLOR_GREEN",
+    "description": "Couleur verte."
+  },
+  "COLOR_RED": {
+    "prefix": "COLOR_RED",
+    "body": "COLOR_RED",
+    "description": "Couleur rouge."
+  },
+  "CRITICAL_FACTOR": {
+    "prefix": "CRITICAL_FACTOR",
+    "body": "CRITICAL_FACTOR"
+  },
+  "E": {
+    "prefix": "E",
+    "body": "E",
+    "description": "Nombre d'Euler."
+  },
+  "EFFECT_ABSOLUTE_SHIELD": {
+    "prefix": "EFFECT_ABSOLUTE_SHIELD",
+    "body": "EFFECT_ABSOLUTE_SHIELD",
+    "description": "Procure du bouclier absolu à une entité, permettant de réduire la quantité de points de vie retirée par les dégâts (EFFECT_DAMAGE) d'un montant fixe. Amplifié par la résistance."
+  },
+  "EFFECT_ABSOLUTE_VULNERABILITY": {
+    "prefix": "EFFECT_ABSOLUTE_VULNERABILITY",
+    "body": "EFFECT_ABSOLUTE_VULNERABILITY",
+    "description": "Retire du bouclier absolu à une entité. N'est pas amplifié par une caractéristique. Permet d'augmenter les points de vie retiré par les dégâts (EFFECT_DAMAGE) d'un montant absolu."
+  },
+  "EFFECT_AFTEREFFECT": {
+    "prefix": "EFFECT_AFTEREFFECT",
+    "body": "EFFECT_AFTEREFFECT",
+    "description": "Retire des points de vie à une entité. Amplifié par la science. Réduit le maximum de points de vie de 5% du montant de points de vie retiré."
+  },
+  "EFFECT_ANTIDOTE": {
+    "prefix": "EFFECT_ANTIDOTE",
+    "body": "EFFECT_ANTIDOTE",
+    "description": "Retire tous les poison (EFFECT_POISON) présent sur une cible."
+  },
+  "EFFECT_ATTRACT": {
+    "prefix": "EFFECT_ATTRACT",
+    "body": "EFFECT_ATTRACT"
+  },
+  "EFFECT_BOOST_MAX_LIFE": {
+    "prefix": "EFFECT_BOOST_MAX_LIFE",
+    "body": "EFFECT_BOOST_MAX_LIFE",
+    "description": "Augmente les points de vie et le maximum de points de vie d'une entité. Amplifié par la sagesse."
+  },
+  "EFFECT_BUFF_AGILITY": {
+    "prefix": "EFFECT_BUFF_AGILITY",
+    "body": "EFFECT_BUFF_AGILITY",
+    "description": "Procure de l'agilité à une entité. Amplifié par la science."
+  },
+  "EFFECT_BUFF_FORCE": {
+    "prefix": "EFFECT_BUFF_FORCE",
+    "body": "EFFECT_BUFF_FORCE"
+  },
+  "EFFECT_BUFF_MP": {
+    "prefix": "EFFECT_BUFF_MP",
+    "body": "EFFECT_BUFF_MP",
+    "description": "Procure des points de mouvement à une entité. Amplifié par la science."
+  },
+  "EFFECT_BUFF_RESISTANCE": {
+    "prefix": "EFFECT_BUFF_RESISTANCE",
+    "body": "EFFECT_BUFF_RESISTANCE",
+    "description": "Procure de la résistance à une entité. Amplifié par la science."
+  },
+  "EFFECT_BUFF_STRENGTH": {
+    "prefix": "EFFECT_BUFF_STRENGTH",
+    "body": "EFFECT_BUFF_STRENGTH",
+    "description": "Procure de la force à une entité. Amplifié par la science."
+  },
+  "EFFECT_BUFF_TP": {
+    "prefix": "EFFECT_BUFF_TP",
+    "body": "EFFECT_BUFF_TP",
+    "description": "Procure des points d'action à une entité. Amplifié par la science."
+  },
+  "EFFECT_BUFF_WISDOM": {
+    "prefix": "EFFECT_BUFF_WISDOM",
+    "body": "EFFECT_BUFF_WISDOM",
+    "description": "Procure de la sagesse à une entité. Amplifié par la science."
+  },
+  "EFFECT_DAMAGE": {
+    "prefix": "EFFECT_DAMAGE",
+    "body": "EFFECT_DAMAGE",
+    "description": "Retire des points de vie à une entité. Amplifié par le force. Interagit avec les boucliers (EFFECT_ABSOLUTE_SHIELD, EFFECT_RELATIVE_SHIELD, EFFECT_VULNERABILITY, EFFECT_ABSOLUTE_VULNERABILITY), le vol de vie (à l'exception du lanceur), et le retour de dégâts (EFFECT_DAMAGE_RETURN). Réduit le maximum de points de vie de 5% du montant de points de vie retiré."
+  },
+  "EFFECT_DAMAGE_RETURN": {
+    "prefix": "EFFECT_DAMAGE_RETURN",
+    "body": "EFFECT_DAMAGE_RETURN",
+    "description": "Procure du renvoi de dégâts à une entité, permettant de retirer des points de vie aux entités infligeant des dégâts au bénéficiaire. Amplifié par l'agilité. Réduit le maximum de points de vie de 5% du montant de points de vie retiré."
+  },
+  "EFFECT_DAMAGE_TO_ABSOLUTE_SHIELD": {
+    "prefix": "EFFECT_DAMAGE_TO_ABSOLUTE_SHIELD",
+    "body": "EFFECT_DAMAGE_TO_ABSOLUTE_SHIELD"
+  },
+  "EFFECT_DAMAGE_TO_STRENGTH": {
+    "prefix": "EFFECT_DAMAGE_TO_STRENGTH",
+    "body": "EFFECT_DAMAGE_TO_STRENGTH"
+  },
+  "EFFECT_DEBUFF": {
+    "prefix": "EFFECT_DEBUFF",
+    "body": "EFFECT_DEBUFF",
+    "description": "Réduit la valeur de tous les effets présents sur une entité d'un pourcentage."
+  },
+  "EFFECT_HEAL": {
+    "prefix": "EFFECT_HEAL",
+    "body": "EFFECT_HEAL",
+    "description": "Rend des points de vie à une entité, limité par le maximum de points de vie. Amplifié par la sagesse."
+  },
+  "EFFECT_INVERT": {
+    "prefix": "EFFECT_INVERT",
+    "body": "EFFECT_INVERT",
+    "description": "Échange la position du lanceur avec celle d'une entité."
+  },
+  "EFFECT_KILL": {
+    "prefix": "EFFECT_KILL",
+    "body": "EFFECT_KILL",
+    "description": "Retire tous les points de vie d'une entité."
+  },
+  "EFFECT_LIFE_DAMAGE": {
+    "prefix": "EFFECT_LIFE_DAMAGE",
+    "body": "EFFECT_LIFE_DAMAGE",
+    "description": "Retire des points de vie à une entité, dépendant d'un pourcentage de la vie du lanceur. Interagit avec les boucliers (EFFECT_ABSOLUTE_SHIELD, EFFECT_RELATIVE_SHIELD, EFFECT_VULNERABILITY, EFFECT_ABSOLUTE_VULNERABILITY) et le retour de dégâts (EFFECT_DAMAGE_RETURN). Réduit le maximum de points de vie de 5% du montant de points de vie retiré."
+  },
+  "EFFECT_MODIFIER_IRREDUCTIBLE": {
+    "prefix": "EFFECT_MODIFIER_IRREDUCTIBLE",
+    "body": "EFFECT_MODIFIER_IRREDUCTIBLE"
+  },
+  "EFFECT_MODIFIER_MULTIPLIED_BY_TARGETS": {
+    "prefix": "EFFECT_MODIFIER_MULTIPLIED_BY_TARGETS",
+    "body": "EFFECT_MODIFIER_MULTIPLIED_BY_TARGETS",
+    "description": "L'effet est multiplié par le nombre d'entités affectées dans la zone."
+  },
+  "EFFECT_MODIFIER_NOT_REPLACEABLE": {
+    "prefix": "EFFECT_MODIFIER_NOT_REPLACEABLE",
+    "body": "EFFECT_MODIFIER_NOT_REPLACEABLE"
+  },
+  "EFFECT_MODIFIER_ON_CASTER": {
+    "prefix": "EFFECT_MODIFIER_ON_CASTER",
+    "body": "EFFECT_MODIFIER_ON_CASTER",
+    "description": "L'effet affecte toujours le lanceur."
+  },
+  "EFFECT_MODIFIER_STACKABLE": {
+    "prefix": "EFFECT_MODIFIER_STACKABLE",
+    "body": "EFFECT_MODIFIER_STACKABLE",
+    "description": "L'effet est cumulable."
+  },
+  "EFFECT_MOVED_TO_MP": {
+    "prefix": "EFFECT_MOVED_TO_MP",
+    "body": "EFFECT_MOVED_TO_MP"
+  },
+  "EFFECT_NOVA_DAMAGE": {
+    "prefix": "EFFECT_NOVA_DAMAGE",
+    "body": "EFFECT_NOVA_DAMAGE",
+    "description": "Retire des points de vie max. Amplifié par la science."
+  },
+  "EFFECT_NOVA_DAMAGE_TO_MAGIC": {
+    "prefix": "EFFECT_NOVA_DAMAGE_TO_MAGIC",
+    "body": "EFFECT_NOVA_DAMAGE_TO_MAGIC"
+  },
+  "EFFECT_NOVA_VITALITY": {
+    "prefix": "EFFECT_NOVA_VITALITY",
+    "body": "EFFECT_NOVA_VITALITY"
+  },
+  "EFFECT_POISON": {
+    "prefix": "EFFECT_POISON",
+    "body": "EFFECT_POISON",
+    "description": "Retire des points de vie à une entité. Amplifié par la magie. Réduit le maximum de points de vie de 10% du montant de points de vie retiré."
+  },
+  "EFFECT_POISON_TO_SCIENCE": {
+    "prefix": "EFFECT_POISON_TO_SCIENCE",
+    "body": "EFFECT_POISON_TO_SCIENCE"
+  },
+  "EFFECT_PROPAGATION": {
+    "prefix": "EFFECT_PROPAGATION",
+    "body": "EFFECT_PROPAGATION"
+  },
+  "EFFECT_PUSH": {
+    "prefix": "EFFECT_PUSH",
+    "body": "EFFECT_PUSH"
+  },
+  "EFFECT_RAW_ABSOLUTE_SHIELD": {
+    "prefix": "EFFECT_RAW_ABSOLUTE_SHIELD",
+    "body": "EFFECT_RAW_ABSOLUTE_SHIELD",
+    "description": "Procure du bouclier absolu à une entité, permettant de réduire la quantité de points de vie retirée par les dégâts (EFFECT_DAMAGE) d'un montant fixe. Non amplifiable."
+  },
+  "EFFECT_RAW_BUFF_AGILITY": {
+    "prefix": "EFFECT_RAW_BUFF_AGILITY",
+    "body": "EFFECT_RAW_BUFF_AGILITY",
+    "description": "Procure de l'agilité à une entité. Non amplifiable."
+  },
+  "EFFECT_RAW_BUFF_MAGIC": {
+    "prefix": "EFFECT_RAW_BUFF_MAGIC",
+    "body": "EFFECT_RAW_BUFF_MAGIC",
+    "description": "Procure de la magie à une entité. Non amplifiable."
+  },
+  "EFFECT_RAW_BUFF_MP": {
+    "prefix": "EFFECT_RAW_BUFF_MP",
+    "body": "EFFECT_RAW_BUFF_MP",
+    "description": "Procure des points de mouvement à une entité. Non amplifiable."
+  },
+  "EFFECT_RAW_BUFF_RESISTANCE": {
+    "prefix": "EFFECT_RAW_BUFF_RESISTANCE",
+    "body": "EFFECT_RAW_BUFF_RESISTANCE"
+  },
+  "EFFECT_RAW_BUFF_SCIENCE": {
+    "prefix": "EFFECT_RAW_BUFF_SCIENCE",
+    "body": "EFFECT_RAW_BUFF_SCIENCE",
+    "description": "Procure de la science à une entité. Non amplifiable."
+  },
+  "EFFECT_RAW_BUFF_STRENGTH": {
+    "prefix": "EFFECT_RAW_BUFF_STRENGTH",
+    "body": "EFFECT_RAW_BUFF_STRENGTH",
+    "description": "Procure de la force à une entité. Non amplifiable."
+  },
+  "EFFECT_RAW_BUFF_TP": {
+    "prefix": "EFFECT_RAW_BUFF_TP",
+    "body": "EFFECT_RAW_BUFF_TP",
+    "description": "Procure des points d'action à une entité. Non amplifiable."
+  },
+  "EFFECT_RAW_BUFF_WISDOM": {
+    "prefix": "EFFECT_RAW_BUFF_WISDOM",
+    "body": "EFFECT_RAW_BUFF_WISDOM"
+  },
+  "EFFECT_RELATIVE_SHIELD": {
+    "prefix": "EFFECT_RELATIVE_SHIELD",
+    "body": "EFFECT_RELATIVE_SHIELD",
+    "description": "Procure un bouclier relatif, permettant de réduire la quantité de points de vie retiré par les dégâts (EFFECT_DAMAGE) d'un montant relatif. Amplifié par la résistance."
+  },
+  "EFFECT_REMOVE_SHACKLES": {
+    "prefix": "EFFECT_REMOVE_SHACKLES",
+    "body": "EFFECT_REMOVE_SHACKLES"
+  },
+  "EFFECT_RESURRECT": {
+    "prefix": "EFFECT_RESURRECT",
+    "body": "EFFECT_RESURRECT",
+    "description": "Ressuscite une entité, avec un nombre de PV maximum égal à la moitié du nombre de PV maximum de l'entité avant résurrection, et un nombre de PV courant égal au quart du nombre de PV maximum avant résurrection."
+  },
+  "EFFECT_SHACKLE_AGILITY": {
+    "prefix": "EFFECT_SHACKLE_AGILITY",
+    "body": "EFFECT_SHACKLE_AGILITY"
+  },
+  "EFFECT_SHACKLE_MAGIC": {
+    "prefix": "EFFECT_SHACKLE_MAGIC",
+    "body": "EFFECT_SHACKLE_MAGIC",
+    "description": "Retire de la magie à une entité. Amplifié par la magie."
+  },
+  "EFFECT_SHACKLE_MP": {
+    "prefix": "EFFECT_SHACKLE_MP",
+    "body": "EFFECT_SHACKLE_MP",
+    "description": "Retire des points de mouvement à une entité. Amplifié par la magie."
+  },
+  "EFFECT_SHACKLE_STRENGTH": {
+    "prefix": "EFFECT_SHACKLE_STRENGTH",
+    "body": "EFFECT_SHACKLE_STRENGTH",
+    "description": "Retire de la force à une entité. Amplifié par la magie."
+  },
+  "EFFECT_SHACKLE_TP": {
+    "prefix": "EFFECT_SHACKLE_TP",
+    "body": "EFFECT_SHACKLE_TP",
+    "description": "Retire des points d'action à une entité. Amplifié par la magie."
+  },
+  "EFFECT_SHACKLE_WISDOM": {
+    "prefix": "EFFECT_SHACKLE_WISDOM",
+    "body": "EFFECT_SHACKLE_WISDOM"
+  },
+  "EFFECT_SLIDE_TO": {
+    "prefix": "EFFECT_SLIDE_TO",
+    "body": "EFFECT_SLIDE_TO"
+  },
+  "EFFECT_STEAL_ABSOLUTE_SHIELD": {
+    "prefix": "EFFECT_STEAL_ABSOLUTE_SHIELD",
+    "body": "EFFECT_STEAL_ABSOLUTE_SHIELD"
+  },
+  "EFFECT_SUMMON": {
+    "prefix": "EFFECT_SUMMON",
+    "body": "EFFECT_SUMMON",
+    "description": "Invoque un bulbe. Aucun effet si la limite d'invocation de l'équipe est atteinte."
+  },
+  "EFFECT_TARGET_ALLIES": {
+    "prefix": "EFFECT_TARGET_ALLIES",
+    "body": "EFFECT_TARGET_ALLIES",
+    "description": "Affecte les alliés."
+  },
+  "EFFECT_TARGET_ALWAYS_CASTER": {
+    "prefix": "EFFECT_TARGET_ALWAYS_CASTER",
+    "body": "EFFECT_TARGET_ALWAYS_CASTER"
+  },
+  "EFFECT_TARGET_CASTER": {
+    "prefix": "EFFECT_TARGET_CASTER",
+    "body": "EFFECT_TARGET_CASTER",
+    "description": "Affecte le lanceur."
+  },
+  "EFFECT_TARGET_ENEMIES": {
+    "prefix": "EFFECT_TARGET_ENEMIES",
+    "body": "EFFECT_TARGET_ENEMIES",
+    "description": "Affecte les ennemis."
+  },
+  "EFFECT_TARGET_NON_SUMMONS": {
+    "prefix": "EFFECT_TARGET_NON_SUMMONS",
+    "body": "EFFECT_TARGET_NON_SUMMONS",
+    "description": "Affecte les entités non-invoquées (Poireaux et tourelles)."
+  },
+  "EFFECT_TARGET_NOT_CASTER": {
+    "prefix": "EFFECT_TARGET_NOT_CASTER",
+    "body": "EFFECT_TARGET_NOT_CASTER"
+  },
+  "EFFECT_TARGET_SUMMONS": {
+    "prefix": "EFFECT_TARGET_SUMMONS",
+    "body": "EFFECT_TARGET_SUMMONS",
+    "description": "Affecte les entités invoquées (Bulbes)."
+  },
+  "EFFECT_TELEPORT": {
+    "prefix": "EFFECT_TELEPORT",
+    "body": "EFFECT_TELEPORT",
+    "description": "Change la position du lanceur."
+  },
+  "EFFECT_VULNERABILITY": {
+    "prefix": "EFFECT_VULNERABILITY",
+    "body": "EFFECT_VULNERABILITY",
+    "description": "Retire du bouclier relatif à une entité. N'est pas amplifié par une caractéristique. Permet d'augmenter les points de vie retiré par les dégâts (EFFECT_DAMAGE) d'un montant relatif."
+  },
+  "ENTITY_BULB": {
+    "prefix": "ENTITY_BULB",
+    "body": "ENTITY_BULB",
+    "description": "Désigne une entité de type Bulbe."
+  },
+  "ENTITY_LEEK": {
+    "prefix": "ENTITY_LEEK",
+    "body": "ENTITY_LEEK",
+    "description": "Désigne une entité de type Poireau."
+  },
+  "ENTITY_TURRET": {
+    "prefix": "ENTITY_TURRET",
+    "body": "ENTITY_TURRET",
+    "description": "Désigne une entité de type Tourelle."
+  },
+  "FIGHT_CONTEXT_BATTLE_ROYALE": {
+    "prefix": "FIGHT_CONTEXT_BATTLE_ROYALE",
+    "body": "FIGHT_CONTEXT_BATTLE_ROYALE",
+    "description": "Contexte de combat en Battle Royale."
+  },
+  "FIGHT_CONTEXT_CHALLENGE": {
+    "prefix": "FIGHT_CONTEXT_CHALLENGE",
+    "body": "FIGHT_CONTEXT_CHALLENGE",
+    "description": "Contexte de combat de type défi."
+  },
+  "FIGHT_CONTEXT_GARDEN": {
+    "prefix": "FIGHT_CONTEXT_GARDEN",
+    "body": "FIGHT_CONTEXT_GARDEN",
+    "description": "Contexte de combat dans le potager."
+  },
+  "FIGHT_CONTEXT_TEST": {
+    "prefix": "FIGHT_CONTEXT_TEST",
+    "body": "FIGHT_CONTEXT_TEST",
+    "description": "Contexte de combat de test."
+  },
+  "FIGHT_CONTEXT_TOURNAMENT": {
+    "prefix": "FIGHT_CONTEXT_TOURNAMENT",
+    "body": "FIGHT_CONTEXT_TOURNAMENT",
+    "description": "Contexte de combat de tournois."
+  },
+  "FIGHT_TYPE_BATTLE_ROYALE": {
+    "prefix": "FIGHT_TYPE_BATTLE_ROYALE",
+    "body": "FIGHT_TYPE_BATTLE_ROYALE",
+    "description": "Combat en Battle Royale."
+  },
+  "FIGHT_TYPE_FARMER": {
+    "prefix": "FIGHT_TYPE_FARMER",
+    "body": "FIGHT_TYPE_FARMER",
+    "description": "Combat d'éleveur."
+  },
+  "FIGHT_TYPE_SOLO": {
+    "prefix": "FIGHT_TYPE_SOLO",
+    "body": "FIGHT_TYPE_SOLO",
+    "description": "Combat en solo."
+  },
+  "FIGHT_TYPE_TEAM": {
+    "prefix": "FIGHT_TYPE_TEAM",
+    "body": "FIGHT_TYPE_TEAM",
+    "description": "Combat en équipe.\n"
+  },
+  "INSTRUCTIONS_LIMIT": {
+    "prefix": "INSTRUCTIONS_LIMIT",
+    "body": "INSTRUCTIONS_LIMIT",
+    "description": "Nombre d'instructions maximales qu'une entité peut utiliser pendant son tour."
+  },
+  "MAP_BEACH": {
+    "prefix": "MAP_BEACH",
+    "body": "MAP_BEACH"
+  },
+  "MAP_DESERT": {
+    "prefix": "MAP_DESERT",
+    "body": "MAP_DESERT"
+  },
+  "MAP_FACTORY": {
+    "prefix": "MAP_FACTORY",
+    "body": "MAP_FACTORY"
+  },
+  "MAP_FOREST": {
+    "prefix": "MAP_FOREST",
+    "body": "MAP_FOREST"
+  },
+  "MAP_GLACIER": {
+    "prefix": "MAP_GLACIER",
+    "body": "MAP_GLACIER"
+  },
+  "MAP_NEXUS": {
+    "prefix": "MAP_NEXUS",
+    "body": "MAP_NEXUS"
+  },
+  "MAX_TURNS": {
+    "prefix": "MAX_TURNS",
+    "body": "MAX_TURNS",
+    "description": "Nombre de tours maximum dans un combat."
+  },
+  "MESSAGE_ATTACK": {
+    "prefix": "MESSAGE_ATTACK",
+    "body": "MESSAGE_ATTACK"
+  },
+  "MESSAGE_BUFF_AGILITY": {
+    "prefix": "MESSAGE_BUFF_AGILITY",
+    "body": "MESSAGE_BUFF_AGILITY"
+  },
+  "MESSAGE_BUFF_FORCE": {
+    "prefix": "MESSAGE_BUFF_FORCE",
+    "body": "MESSAGE_BUFF_FORCE"
+  },
+  "MESSAGE_BUFF_MP": {
+    "prefix": "MESSAGE_BUFF_MP",
+    "body": "MESSAGE_BUFF_MP"
+  },
+  "MESSAGE_BUFF_TP": {
+    "prefix": "MESSAGE_BUFF_TP",
+    "body": "MESSAGE_BUFF_TP"
+  },
+  "MESSAGE_CUSTOM": {
+    "prefix": "MESSAGE_CUSTOM",
+    "body": "MESSAGE_CUSTOM"
+  },
+  "MESSAGE_DEBUFF": {
+    "prefix": "MESSAGE_DEBUFF",
+    "body": "MESSAGE_DEBUFF"
+  },
+  "MESSAGE_HEAL": {
+    "prefix": "MESSAGE_HEAL",
+    "body": "MESSAGE_HEAL"
+  },
+  "MESSAGE_MOVE_AWAY": {
+    "prefix": "MESSAGE_MOVE_AWAY",
+    "body": "MESSAGE_MOVE_AWAY"
+  },
+  "MESSAGE_MOVE_AWAY_CELL": {
+    "prefix": "MESSAGE_MOVE_AWAY_CELL",
+    "body": "MESSAGE_MOVE_AWAY_CELL"
+  },
+  "MESSAGE_MOVE_TOWARD": {
+    "prefix": "MESSAGE_MOVE_TOWARD",
+    "body": "MESSAGE_MOVE_TOWARD"
+  },
+  "MESSAGE_MOVE_TOWARD_CELL": {
+    "prefix": "MESSAGE_MOVE_TOWARD_CELL",
+    "body": "MESSAGE_MOVE_TOWARD_CELL"
+  },
+  "MESSAGE_SHIELD": {
+    "prefix": "MESSAGE_SHIELD",
+    "body": "MESSAGE_SHIELD"
+  },
+  "OPERATIONS_LIMIT": {
+    "prefix": "OPERATIONS_LIMIT",
+    "body": "OPERATIONS_LIMIT",
+    "description": "Nombre d'opérations maximales qu'une entité peut utiliser pendant son tour."
+  },
+  "PI": {
+    "prefix": "PI",
+    "body": "PI",
+    "description": "Le rapport de la circonférence d’un cercle à son diamètre."
+  },
+  "SORT_ASC": {
+    "prefix": "SORT_ASC",
+    "body": "SORT_ASC",
+    "description": "Indique à la fonction #sort un tri dans l'ordre croissant."
+  },
+  "SORT_DESC": {
+    "prefix": "SORT_DESC",
+    "body": "SORT_DESC",
+    "description": "Indique à la fonction #sort un tri dans l'ordre décroissant."
+  },
+  "SUMMON_LIMIT": {
+    "prefix": "SUMMON_LIMIT",
+    "body": "SUMMON_LIMIT"
+  },
+  "TYPE_ARRAY": {
+    "prefix": "TYPE_ARRAY",
+    "body": "TYPE_ARRAY",
+    "description": "Type de valeur <b>tableau</b>"
+  },
+  "TYPE_BOOLEAN": {
+    "prefix": "TYPE_BOOLEAN",
+    "body": "TYPE_BOOLEAN",
+    "description": "Type de valeur <b>booléen</b>"
+  },
+  "TYPE_CLASS": {
+    "prefix": "TYPE_CLASS",
+    "body": "TYPE_CLASS"
+  },
+  "TYPE_FUNCTION": {
+    "prefix": "TYPE_FUNCTION",
+    "body": "TYPE_FUNCTION",
+    "description": "Type de valeur <b>fonction</b>"
+  },
+  "TYPE_NULL": {
+    "prefix": "TYPE_NULL",
+    "body": "TYPE_NULL",
+    "description": "Type de valeur <b>null</b>"
+  },
+  "TYPE_NUMBER": {
+    "prefix": "TYPE_NUMBER",
+    "body": "TYPE_NUMBER",
+    "description": "Type de valeur <b>nombre</b>"
+  },
+  "TYPE_OBJECT": {
+    "prefix": "TYPE_OBJECT",
+    "body": "TYPE_OBJECT"
+  },
+  "TYPE_STRING": {
+    "prefix": "TYPE_STRING",
+    "body": "TYPE_STRING",
+    "description": "Type de valeur <b>chaîne de caractères</b>"
+  },
+  "USE_CRITICAL": {
+    "prefix": "USE_CRITICAL",
+    "body": "USE_CRITICAL",
+    "description": "Valeur renvoyée par les fonctions #useWeapon, #useWeaponOnCell, #useChip et #useChipOnCell en cas de coup critique."
+  },
+  "USE_FAILED": {
+    "prefix": "USE_FAILED",
+    "body": "USE_FAILED",
+    "description": "Valeur renvoyée par les fonctions #useWeapon, #useWeaponOnCell, #useChip et #useChipOnCell en cas de d'échec."
+  },
+  "USE_INVALID_COOLDOWN": {
+    "prefix": "USE_INVALID_COOLDOWN",
+    "body": "USE_INVALID_COOLDOWN",
+    "description": "Valeur renvoyée par les fonctions #useChip et #useChipOnCell si la puce n'est pas encore utilisable."
+  },
+  "USE_INVALID_POSITION": {
+    "prefix": "USE_INVALID_POSITION",
+    "body": "USE_INVALID_POSITION",
+    "description": "Valeur renvoyée par les fonctions #useWeapon, #useWeaponOnCell, #useChip et #useChipOnCell si la portée est mauvaise ou la ligne de vue n'est pas dégagée."
+  },
+  "USE_INVALID_TARGET": {
+    "prefix": "USE_INVALID_TARGET",
+    "body": "USE_INVALID_TARGET",
+    "description": "Valeur renvoyée par les fonctions #useWeapon et #useChip si la cible n'existe pas."
+  },
+  "USE_NOT_ENOUGH_TP": {
+    "prefix": "USE_NOT_ENOUGH_TP",
+    "body": "USE_NOT_ENOUGH_TP",
+    "description": "Valeur renvoyée par les fonctions #useWeapon, #useWeaponOnCell, #useChip et #useChipOnCell si le lanceur n'a pas assez de points d'action pour utiliser l'objet."
+  },
+  "USE_RESURRECT_INVALID_ENTITY": {
+    "prefix": "USE_RESURRECT_INVALID_ENTITY",
+    "body": "USE_RESURRECT_INVALID_ENTITY",
+    "description": "Valeur renvoyée par la fonction #resurrect lorsque l'entité spécifiée n'existe pas ou n'est pas encore morte."
+  },
+  "USE_SUCCESS": {
+    "prefix": "USE_SUCCESS",
+    "body": "USE_SUCCESS",
+    "description": "Valeur renvoyée par les fonctions #useWeapon, #useWeaponOnCell, #useChip et #useChipOnCell en cas de réussite."
+  },
+  "USE_TOO_MANY_SUMMONS": {
+    "prefix": "USE_TOO_MANY_SUMMONS",
+    "body": "USE_TOO_MANY_SUMMONS",
+    "description": "Erreur renvoyée par #summon lorsque vous avez déjà <b>6</b> invocations vivantes.\n"
+  },
+  "WEAPON_AXE": {
+    "prefix": "WEAPON_AXE",
+    "body": "WEAPON_AXE"
+  },
+  "WEAPON_B_LASER": {
+    "prefix": "WEAPON_B_LASER",
+    "body": "WEAPON_B_LASER"
+  },
+  "WEAPON_BROADSWORD": {
+    "prefix": "WEAPON_BROADSWORD",
+    "body": "WEAPON_BROADSWORD"
+  },
+  "WEAPON_DESTROYER": {
+    "prefix": "WEAPON_DESTROYER",
+    "body": "WEAPON_DESTROYER"
+  },
+  "WEAPON_DOUBLE_GUN": {
+    "prefix": "WEAPON_DOUBLE_GUN",
+    "body": "WEAPON_DOUBLE_GUN"
+  },
+  "WEAPON_ELECTRISOR": {
+    "prefix": "WEAPON_ELECTRISOR",
+    "body": "WEAPON_ELECTRISOR"
+  },
+  "WEAPON_EXPLORER_RIFLE": {
+    "prefix": "WEAPON_EXPLORER_RIFLE",
+    "body": "WEAPON_EXPLORER_RIFLE"
+  },
+  "WEAPON_FLAME_THROWER": {
+    "prefix": "WEAPON_FLAME_THROWER",
+    "body": "WEAPON_FLAME_THROWER"
+  },
+  "WEAPON_GAZOR": {
+    "prefix": "WEAPON_GAZOR",
+    "body": "WEAPON_GAZOR"
+  },
+  "WEAPON_GRENADE_LAUNCHER": {
+    "prefix": "WEAPON_GRENADE_LAUNCHER",
+    "body": "WEAPON_GRENADE_LAUNCHER"
+  },
+  "WEAPON_ILLICIT_GRENADE_LAUNCHER": {
+    "prefix": "WEAPON_ILLICIT_GRENADE_LAUNCHER",
+    "body": "WEAPON_ILLICIT_GRENADE_LAUNCHER"
+  },
+  "WEAPON_J_LASER": {
+    "prefix": "WEAPON_J_LASER",
+    "body": "WEAPON_J_LASER"
+  },
+  "WEAPON_KATANA": {
+    "prefix": "WEAPON_KATANA",
+    "body": "WEAPON_KATANA"
+  },
+  "WEAPON_LASER": {
+    "prefix": "WEAPON_LASER",
+    "body": "WEAPON_LASER"
+  },
+  "WEAPON_MACHINE_GUN": {
+    "prefix": "WEAPON_MACHINE_GUN",
+    "body": "WEAPON_MACHINE_GUN"
+  },
+  "WEAPON_MAGNUM": {
+    "prefix": "WEAPON_MAGNUM",
+    "body": "WEAPON_MAGNUM"
+  },
+  "WEAPON_M_LASER": {
+    "prefix": "WEAPON_M_LASER",
+    "body": "WEAPON_M_LASER"
+  },
+  "WEAPON_MYSTERIOUS_ELECTRISOR": {
+    "prefix": "WEAPON_MYSTERIOUS_ELECTRISOR",
+    "body": "WEAPON_MYSTERIOUS_ELECTRISOR"
+  },
+  "WEAPON_PISTOL": {
+    "prefix": "WEAPON_PISTOL",
+    "body": "WEAPON_PISTOL"
+  },
+  "WEAPON_REVOKED_M_LASER": {
+    "prefix": "WEAPON_REVOKED_M_LASER",
+    "body": "WEAPON_REVOKED_M_LASER"
+  },
+  "WEAPON_RHINO": {
+    "prefix": "WEAPON_RHINO",
+    "body": "WEAPON_RHINO"
+  },
+  "WEAPON_RIFLE": {
+    "prefix": "WEAPON_RIFLE",
+    "body": "WEAPON_RIFLE"
+  },
+  "WEAPON_SHOTGUN": {
+    "prefix": "WEAPON_SHOTGUN",
+    "body": "WEAPON_SHOTGUN"
+  },
+  "WEAPON_UNBRIDLED_GAZOR": {
+    "prefix": "WEAPON_UNBRIDLED_GAZOR",
+    "body": "WEAPON_UNBRIDLED_GAZOR"
+  },
+  "abs": {
+    "prefix": "abs",
+    "body": "abs(number)",
+    "description": "Renvoie la valeur absolue du nombre <b>number</b>."
+  },
+  "acos": {
+    "prefix": "acos",
+    "body": "acos(argument)",
+    "description": "Calcule l'arc cosinus d'<b>argument</b>, dans l'intervalle [0, #PI]."
+  },
+  "arrayConcat": {
+    "prefix": "arrayConcat",
+    "body": "arrayConcat(array1, array2)",
+    "description": "Ajoute les deux tableaux bout à bout. Les clés textuelles sont conservées et toutes les clés numériques sont réindexées."
+  },
+  "arrayFilter": {
+    "prefix": "arrayFilter",
+    "body": "arrayFilter(array, callback)",
+    "description": "Retourne un nouveau tableau contenant tous les couples clé/valeur du tableau source pour lesquels la fonction callback a renvoyé true. Si la fonction callback prend un paramètre, c'est la valeur du tableau source qui sera envoyée, si elle prend deux paramètres c'est la clé et la valeur qui seront envoyées."
+  },
+  "arrayFlatten": {
+    "prefix": "arrayFlatten",
+    "body": "arrayFlatten(array)",
+    "description": "Retourne un nouveau tableau contenant tous les éléments du tableau source. Tous les éléments contenus dans un sous tableau sont extraits dans le nouveau tableau.\n<code>var tableau = [1, 2, [3, 4], 5, [6]];\ndebug(arrayFlatten(tableau)); // [1,2,3,4,5,6]</code>"
+  },
+  "arrayFlatten_1": {
+    "prefix": "arrayFlatten",
+    "body": "arrayFlatten(array, depth)",
+    "description": "Retourne un nouveau tableau contenant tous les éléments du tableau source. Tous les éléments contenus dans un sous tableau sont extraits dans le nouveau tableau.L'argument depth détermine la profondeur maximale de sous tableau à extraire.\n<code>var tableau = [1, 2, [3, 4], 5, [6]];\ndebug(arrayFlatten(tableau)); // [1,2,3,4,5,6]</code>"
+  },
+  "arrayFoldLeft": {
+    "prefix": "arrayFoldLeft",
+    "body": "arrayFoldLeft(array, f, v0)",
+    "description": "Réduit le tableau <b>array</b> [v1, v2, ..., vn] par la gauche en partant de la valeur <b>v0</b> et en appliquant la fonction <b>f</b>. Équivaut à :\n<code>f(f(f(v0, v1), v2), ...)</code>"
+  },
+  "arrayFoldRight": {
+    "prefix": "arrayFoldRight",
+    "body": "arrayFoldRight(array, f, v0)",
+    "description": "Réduit le tableau <b>array</b> [v1, v2, ..., vn] par la droite en partant de la valeur <b>v0</b> et en appliquant la fonction <b>f</b>. Équivaut à :\n<code>f(v1, f(v2, ..., f(vn, v0)))</code>."
+  },
+  "arrayIter": {
+    "prefix": "arrayIter",
+    "body": "arrayIter(array, callback)",
+    "description": "Appelle la fonction callback pour chaque élément du tableau. Si la fonction callback prend un paramètre, c'est la valeur du tableau source qui sera envoyée, si elle prend deux paramètres c'est la clé et la valeur qui seront envoyées."
+  },
+  "arrayMap": {
+    "prefix": "arrayMap",
+    "body": "arrayMap(array, callback)",
+    "description": "Retourne un nouveau tableau contenant pour chaque clé du tableau source, la valeur retournée par la fonction callback. Si la fonction callback prend un paramètre, c'est la valeur du tableau source qui sera envoyée, si elle prend deux paramètres c'est la clé et la valeur qui seront envoyées."
+  },
+  "arrayMax": {
+    "prefix": "arrayMax",
+    "body": "arrayMax(array)",
+    "description": "Retourne l'élément de valeur maximale du tableau <b>array</b>.<br/>Pour plus d'informations sur la valeur maximale d'un tableau voir #sort."
+  },
+  "arrayMin": {
+    "prefix": "arrayMin",
+    "body": "arrayMin(array)",
+    "description": "Retourne l'élément de valeur minimale du tableau <b>array</b>.<br/>Pour plus d'informations sur la valeur minimale d'un tableau voir #sort."
+  },
+  "arrayPartition": {
+    "prefix": "arrayPartition",
+    "body": "arrayPartition(array, callback)",
+    "description": "Retourne un nouveau tableau contenant deux listes, dans la première se trouvent tous les couples clés/valeurs pour lesquels la fonction callback a renvoyé true, dans la seconde se trouvent tous les autres. Si la fonction callback prend un paramètre, c'est la valeur du tableau source qui sera envoyée, si elle prend deux paramètres c'est la clé et la valeur qui seront envoyées."
+  },
+  "arraySort": {
+    "prefix": "arraySort",
+    "body": "arraySort(array, callback)",
+    "description": "Trie le tableau selon l'ordre définit par la fonction callback. Les éléments sont comparés deux à deux, la fonction callback doit renvoyer les valeurs -1, 0 ou 1 selon si la premiere valeur est avant, au même niveau ou après la seconde valeur. Si la fonction callback prend 2 paramètre, ce sont les deux valeurs qui sont envoyées, si elle en prend 4, ce sont les couples clé/valeur qui sont envoyés."
+  },
+  "asin": {
+    "prefix": "asin",
+    "body": "asin(argument)",
+    "description": "Calcule l'arc sinus d'<b>argument</b>, dans l'intervalle [0, #PI]."
+  },
+  "assocSort": {
+    "prefix": "assocSort",
+    "body": "assocSort(array)",
+    "description": "Trie le tableau <b>array</b> en conservant l'association clé : valeur."
+  },
+  "assocSort_1": {
+    "prefix": "assocSort",
+    "body": "assocSort(array, order)",
+    "description": "Trie le tableau <b>array</b> en conservant l'association clé : valeur selon l'order <b>order</b>."
+  },
+  "atan": {
+    "prefix": "atan",
+    "body": "atan(argument)",
+    "description": "Calcule l'arc tangente d'<b>argument</b>, dans l'intervalle [0, #PI]."
+  },
+  "atan2": {
+    "prefix": "atan2",
+    "body": "atan2(y, x)",
+    "description": "Convertit les coordonnées cartésiennes (<b>x</b>, <b>y</b>) en coordonnées polaires (<b>r</b>, <b>theta</b>). Cette fonction retourne l'angle <b>theta</b> entre -#PI et #PI en utilisant les signes des arguments."
+  },
+  "average": {
+    "prefix": "average",
+    "body": "average(array)",
+    "description": "Calcule la moyenne des éléments contenus dans le tableau <b>array</b>."
+  },
+  "canUseChip": {
+    "prefix": "canUseChip",
+    "body": "canUseChip(chip, entity)",
+    "description": "Détermine si votre entité peut utiliser la puce <b>chip</b> sur l'entité d'id <b>entity</b>."
+  },
+  "canUseChipOnCell": {
+    "prefix": "canUseChipOnCell",
+    "body": "canUseChipOnCell(chip, cell)",
+    "description": "Détermine si votre entité peut utiliser la puce <b>chip</b> sur la cellule <b>cell</b>."
+  },
+  "canUseWeapon": {
+    "prefix": "canUseWeapon",
+    "body": "canUseWeapon(entity)",
+    "description": "Détermine si votre entité peut tirer sur l'entité d'id <b>entity</b> avec son arme courante."
+  },
+  "canUseWeapon_1": {
+    "prefix": "canUseWeapon",
+    "body": "canUseWeapon(weapon, entity)",
+    "description": "Détermine si votre entité peut tirer sur l'entité d'id <b>entity</b> avec l'arme <b>weapon</b>."
+  },
+  "canUseWeaponOnCell": {
+    "prefix": "canUseWeaponOnCell",
+    "body": "canUseWeaponOnCell(cell)",
+    "description": "Détermine si votre entité peut tirer sur la cellule <b>cell</b> avec son arme courante."
+  },
+  "canUseWeaponOnCell_1": {
+    "prefix": "canUseWeaponOnCell",
+    "body": "canUseWeaponOnCell(weapon, cell)",
+    "description": "Détermine si votre entité peut tirer sur la cellule <b>cell</b> avec l'arme <b>weapon</b>."
+  },
+  "cbrt": {
+    "prefix": "cbrt",
+    "body": "cbrt(number)",
+    "description": "Calcule la racine cubique de <b>number</b>"
+  },
+  "ceil": {
+    "prefix": "ceil",
+    "body": "ceil(number)",
+    "description": "Retourne l'arrondi à l'entier supérieur de <b>number</b>.<br/>Vous pouvez trouver l'arrondi à l'entier inférieur avec #floor, et l'arrondi avec #round."
+  },
+  "charAt": {
+    "prefix": "charAt",
+    "body": "charAt(string, position)",
+    "description": "Retourne le caractère de la chaîne <b>string</b> situé à la position <b>position</b>.<br/>Le premier caractère de la chaîne se trouve à la position 0."
+  },
+  "chipNeedLos": {
+    "prefix": "chipNeedLos",
+    "body": "chipNeedLos(chip)",
+    "description": "Renvoie si la puce <b>chip</b> a besoin d'une ligne de vue pour être utilisée."
+  },
+  "clearMarks": {
+    "prefix": "clearMarks",
+    "body": "clearMarks()",
+    "description": "Efface tous les marquages effectués par mark() et markText() sur le terrain."
+  },
+  "clone": {
+    "prefix": "clone",
+    "body": "clone(value)",
+    "description": "Copie la valeur <b>value</b> passée en paramètre et retourne la copie."
+  },
+  "clone_1": {
+    "prefix": "clone",
+    "body": "clone(value, level)",
+    "description": "Copie la valeur <b>value</b> passée en paramètre sur <b>level</b> niveaux et retourne la copie. Dans le cas d'un tableau par exemple, un clone(tableau, 1) copiera le tableau mais pas ses éléments, un clone(tableau, 2) copiera le tableau ainsi que tous les éléments."
+  },
+  "contains": {
+    "prefix": "contains",
+    "body": "contains(string, search)",
+    "description": "Détermine si une chaîne <b>search</b> se trouve dans une chaîne <b>string</b>."
+  },
+  "cos": {
+    "prefix": "cos",
+    "body": "cos(angle)",
+    "description": "Calcule le cosinus de <b>angle</b>."
+  },
+  "count": {
+    "prefix": "count",
+    "body": "count(array)",
+    "description": "Compte le nombre d'éléments du tableau <b>array</b>."
+  },
+  "debug": {
+    "prefix": "debug",
+    "body": "debug(object)",
+    "description": "Enregistre un message <b>object</b> dans le log personnel, disponible dans le rapport à la fin du combat."
+  },
+  "debugC": {
+    "prefix": "debugC",
+    "body": "debugC(object, color)",
+    "description": "Enregistre un message <b>object</b> dans le log personnel, disponible dans le rapport à la fin du combat, de la couleur <b>color</b>."
+  },
+  "debugE": {
+    "prefix": "debugE",
+    "body": "debugE(object)",
+    "description": "Enregistre un message d'erreur <b>object</b> dans le log personnel, disponible dans le rapport à la fin du combat.<br />Les messages d'erreur apparaissent en rouge dans le rapport de combat."
+  },
+  "debugW": {
+    "prefix": "debugW",
+    "body": "debugW(object)",
+    "description": "Enregistre un message d'avertissement <b>object</b> dans le log personnel, disponible dans le rapport à la fin du combat. <br />Les messages d'avertissement apparaissent en orange dans le rapport de combat."
+  },
+  "deleteRegister": {
+    "prefix": "deleteRegister",
+    "body": "deleteRegister(key)",
+    "description": "Supprime le registre associé à la clé <b>key</b> s'il existe."
+  },
+  "endsWith": {
+    "prefix": "endsWith",
+    "body": "endsWith(string, suffix)",
+    "description": "Détermine si une chaîne <b>string</b> se termine par une chaîne <b>suffix</b>."
+  },
+  "exp": {
+    "prefix": "exp",
+    "body": "exp(number)",
+    "description": "Éleve le nombre d'Euler #E à la puissance <b>number</b>."
+  },
+  "fill": {
+    "prefix": "fill",
+    "body": "fill(array, value)",
+    "description": "Remplit le tableau <b>array</b> en remplaçant chaque élément déjà existant par <b>value</b>."
+  },
+  "fill_1": {
+    "prefix": "fill",
+    "body": "fill(array, value, size)",
+    "description": "Redimensionne le tableau <b>array</b> à la taille <b>size</b> et remplit toutes ses cases avec <b>value</b>."
+  },
+  "floor": {
+    "prefix": "floor",
+    "body": "floor(number)",
+    "description": "Calcule l'arrondi à l'entier inférieur de <b>number</b>.<br/>Vous pouvez trouver l'arrondi à l'entier supérieur avec #ceil, et l'arrondi avec #round."
+  },
+  "getAbsoluteShield": {
+    "prefix": "getAbsoluteShield",
+    "body": "getAbsoluteShield()",
+    "description": "Retourne le bouclier absolu de votre entité."
+  },
+  "getAbsoluteShield_1": {
+    "prefix": "getAbsoluteShield",
+    "body": "getAbsoluteShield(entity)",
+    "description": "Retourne le bouclier absolu de l'entité d'id <b>entity</b>. Pour récupérer directement le bouclier absolu de votre entité, utilisez #getAbsoluteShield() sans paramètre."
+  },
+  "getAgility": {
+    "prefix": "getAgility",
+    "body": "getAgility()",
+    "description": "Retourne l'agilité de votre entité."
+  },
+  "getAgility_1": {
+    "prefix": "getAgility",
+    "body": "getAgility(entity)",
+    "description": "Retourne l'agilité de l'entité d'id <b>entity</b>. Pour récupérer directement l'agilité de votre entité, utilisez #getAgility() sans paramètre."
+  },
+  "getAIID": {
+    "prefix": "getAIID",
+    "body": "getAIID()",
+    "description": "Renvoie l'id de votre IA."
+  },
+  "getAIID_1": {
+    "prefix": "getAIID",
+    "body": "getAIID(entity)",
+    "description": "Renvoie l'id de l'IA de l'entité <b>entity</b>."
+  },
+  "getAIName": {
+    "prefix": "getAIName",
+    "body": "getAIName()",
+    "description": "Renvoie le nom de votre IA."
+  },
+  "getAIName_1": {
+    "prefix": "getAIName",
+    "body": "getAIName(entity)",
+    "description": "Renvoie le nom de l'IA de l'entité <b>entity</b>."
+  },
+  "getAliveAllies": {
+    "prefix": "getAliveAllies",
+    "body": "getAliveAllies()",
+    "description": "Retourne un tableau de tous vos alliés vivants dans le combat."
+  },
+  "getAliveEnemies": {
+    "prefix": "getAliveEnemies",
+    "body": "getAliveEnemies()",
+    "description": "Retourne un tableau de tous vos ennemis vivants dans le combat."
+  },
+  "getAliveEnemiesCount": {
+    "prefix": "getAliveEnemiesCount",
+    "body": "getAliveEnemiesCount()",
+    "description": "Renvoie le nombre d'ennemis vivants dans le combat."
+  },
+  "getAllChips": {
+    "prefix": "getAllChips",
+    "body": "getAllChips()",
+    "description": "Retourne la liste de toutes les puces du jeu."
+  },
+  "getAllEffects": {
+    "prefix": "getAllEffects",
+    "body": "getAllEffects()",
+    "description": "Retourne la liste de tous les effets du jeu."
+  },
+  "getAlliedTurret": {
+    "prefix": "getAlliedTurret",
+    "body": "getAlliedTurret()",
+    "description": "Retourne l'id de la tourelle de votre équipe ou -1 si elle n'existe pas."
+  },
+  "getAllies": {
+    "prefix": "getAllies",
+    "body": "getAllies()",
+    "description": "Retourne un tableau contenant vos alliés, et votre entité."
+  },
+  "getAlliesCount": {
+    "prefix": "getAlliesCount",
+    "body": "getAlliesCount()",
+    "description": "Renvoie le nombre d'alliés dans le combat."
+  },
+  "getAlliesLife": {
+    "prefix": "getAlliesLife",
+    "body": "getAlliesLife()",
+    "description": "Retourne la vie totale de vos alliés."
+  },
+  "getAllWeapons": {
+    "prefix": "getAllWeapons",
+    "body": "getAllWeapons()",
+    "description": "Retourne la liste de toutes les armes du jeu."
+  },
+  "getBirthTurn": {
+    "prefix": "getBirthTurn",
+    "body": "getBirthTurn()",
+    "description": "Renvoie le numéro du tour de combat ou vous êtes apparu. Renvoie 1 si vous êtes un poireau par exemple, et 5 si vous êtes une invocation invoquée au tour 5."
+  },
+  "getBirthTurn_1": {
+    "prefix": "getBirthTurn",
+    "body": "getBirthTurn(entity)",
+    "description": "Renvoie le tour du combat où est apparue l'entité <b>entity</b>. Renvoie 1 s'il s'agit d'un poireau par exemple, et 5 s'il d'agit d'une invocation invoquée au tour 5."
+  },
+  "getBlue": {
+    "prefix": "getBlue",
+    "body": "getBlue(color)",
+    "description": "Renvoie le taux de bleu dans la couleur <b>color</b>, entre 0 et 255. Par exemple, getBlue(#COLOR_BLUE) = 255 et getBlue(#COLOR_GREEN) = 0."
+  },
+  "getBulbChips": {
+    "prefix": "getBulbChips",
+    "body": "getBulbChips(bulb_chip)",
+    "description": "Renvoie la liste des puces qui seront équipées sur un bulbe invoqué par la puce <b>bulb_chip</b>."
+  },
+  "getCell": {
+    "prefix": "getCell",
+    "body": "getCell()",
+    "description": "Retourne la cellule où se trouve votre entité."
+  },
+  "getCell_1": {
+    "prefix": "getCell",
+    "body": "getCell(entity)",
+    "description": "Retourne la cellule où se trouve l'entité d'id <b>entity</b>."
+  },
+  "getCellContent": {
+    "prefix": "getCellContent",
+    "body": "getCellContent(cell)",
+    "description": "Retourne le contenu d'une cellule d'id <b>cell</b>."
+  },
+  "getCellDistance": {
+    "prefix": "getCellDistance",
+    "body": "getCellDistance(cell1, cell2)",
+    "description": "Retourne la distance entre deux cellules <b>cell1</b> et <b>cell2</b>. <br />La distance retournée est exprimée en nombre de cellules, et ne tient pas compte des divers obstacles entre les deux cellules.\nPour obtenir la distance à vol d'oiseau, voir #getDistance et pour obtenir la distance du chemin entre les deux cellules en évitant les obstacles, voir #getPathLength."
+  },
+  "getCellFromXY": {
+    "prefix": "getCellFromXY",
+    "body": "getCellFromXY(x, y)",
+    "description": "Retourne l'id de la cellule se trouvant à la position (<b>x</b>, <b>y</b>)."
+  },
+  "getCellsToUseChip": {
+    "prefix": "getCellsToUseChip",
+    "body": "getCellsToUseChip(chip, entity)",
+    "description": "Retourne la liste des cellules à  partir desquelles votre entité pourra utiliser la puce <b>chip</b> sur l'entité <b>entity</b>."
+  },
+  "getCellsToUseChip_1": {
+    "prefix": "getCellsToUseChip",
+    "body": "getCellsToUseChip(chip, entity, ignoredCells)",
+    "description": "Retourne la liste des cellules à partir desquelles votre entité pourra utiliser la puce <b>chip</b> sur l'entité <b>entity</b>."
+  },
+  "getCellsToUseChipOnCell": {
+    "prefix": "getCellsToUseChipOnCell",
+    "body": "getCellsToUseChipOnCell(chip, cell)",
+    "description": "Retourne la liste des cellules à partir desquelles votre entité pourra utiliser la puce <b>chip</b> sur la cellule <b>cell</b>."
+  },
+  "getCellsToUseChipOnCell_1": {
+    "prefix": "getCellsToUseChipOnCell",
+    "body": "getCellsToUseChipOnCell(chip, cell, ignoredCells)",
+    "description": "Retourne la liste des cellules à partir desquelles votre entité pourra utiliser la puce <b>chip</b> sur la cellule <b>cell</b>."
+  },
+  "getCellsToUseWeapon": {
+    "prefix": "getCellsToUseWeapon",
+    "body": "getCellsToUseWeapon(entity)",
+    "description": "Retourne la liste des cellules à partir desquelles votre entité pourra utiliser son arme sur l'entité <b>entity</b>."
+  },
+  "getCellsToUseWeapon_1": {
+    "prefix": "getCellsToUseWeapon",
+    "body": "getCellsToUseWeapon(weapon, entity)",
+    "description": "Retourne la liste des cellules à  partir desquelles votre entité pourra utiliser l'arme <b>weapon</b> sur l'entité <b>entity</b>."
+  },
+  "getCellsToUseWeapon_2": {
+    "prefix": "getCellsToUseWeapon",
+    "body": "getCellsToUseWeapon(weapon, entity, ignoredCells)",
+    "description": "Retourne la liste des cellules à partir desquelles votre entité pourra utiliser l'arme <b>weapon</b> sur l'entité <b>entity</b>."
+  },
+  "getCellsToUseWeaponOnCell": {
+    "prefix": "getCellsToUseWeaponOnCell",
+    "body": "getCellsToUseWeaponOnCell(cell)",
+    "description": "Retourne la liste des cellules à  partir desquelles votre entité pourra utiliser son arme sur une cellule <b>cell</b>."
+  },
+  "getCellsToUseWeaponOnCell_1": {
+    "prefix": "getCellsToUseWeaponOnCell",
+    "body": "getCellsToUseWeaponOnCell(weapon, cell)",
+    "description": "Retourne la liste des cellules à  partir desquelles votre entité pourra utiliser l'arme <b>weapon</b> sur une cellule <b>cell</b>."
+  },
+  "getCellsToUseWeaponOnCell_2": {
+    "prefix": "getCellsToUseWeaponOnCell",
+    "body": "getCellsToUseWeaponOnCell(weapon, cell, ignoredCells)",
+    "description": "Retourne la liste des cellules à partir desquelles votre entité pourra utiliser l'arme <b>weapon</b> sur une cellule <b>cell</b>."
+  },
+  "getCellToUseChip": {
+    "prefix": "getCellToUseChip",
+    "body": "getCellToUseChip(chip, entity)",
+    "description": "Détermine une cellule où votre entité pourra utiliser la puce <b>chip</b> sur l'entité <b>entity</b>."
+  },
+  "getCellToUseChip_1": {
+    "prefix": "getCellToUseChip",
+    "body": "getCellToUseChip(chip, entity, ignoredCells)",
+    "description": "Détermine une cellule où votre entité pourra utiliser la puce <b>chip</b> sur l'entité <b>entity</b>."
+  },
+  "getCellToUseChipOnCell": {
+    "prefix": "getCellToUseChipOnCell",
+    "body": "getCellToUseChipOnCell(chip, cell, ignoredCells)",
+    "description": "Détermine une cellule où votre entité pourra utiliser la puce <b>chip</b> sur la cellule <b>cell</b>."
+  },
+  "getCellToUseChipOnCell_1": {
+    "prefix": "getCellToUseChipOnCell",
+    "body": "getCellToUseChipOnCell(chip, cell)",
+    "description": "Détermine une cellule où votre entité pourra utiliser la puce <b>chip</b> sur la cellule <b>cell</b>."
+  },
+  "getCellToUseWeapon": {
+    "prefix": "getCellToUseWeapon",
+    "body": "getCellToUseWeapon(entity)",
+    "description": "Détermine une cellule où votre entité pourra utiliser son arme sur l'entité <b>entity</b>."
+  },
+  "getCellToUseWeapon_1": {
+    "prefix": "getCellToUseWeapon",
+    "body": "getCellToUseWeapon(weapon, entity)",
+    "description": "Détermine une cellule où votre entité pourra utiliser l'arme <b>weapon</b> sur l'entité <b>entity</b>."
+  },
+  "getCellToUseWeapon_2": {
+    "prefix": "getCellToUseWeapon",
+    "body": "getCellToUseWeapon(weapon, entity, ignoredCells)",
+    "description": "Détermine une cellule où votre entité pourra utiliser son arme sur l'entité <b>entity</b>."
+  },
+  "getCellToUseWeaponOnCell": {
+    "prefix": "getCellToUseWeaponOnCell",
+    "body": "getCellToUseWeaponOnCell(cell)",
+    "description": "Détermine une cellule où votre entité pourra utiliser son arme sur une cellule <b>cell</b>."
+  },
+  "getCellToUseWeaponOnCell_1": {
+    "prefix": "getCellToUseWeaponOnCell",
+    "body": "getCellToUseWeaponOnCell(weapon, cell)",
+    "description": "Détermine une cellule où votre entité pourra utiliser l'arme <b>weapon</b> sur une cellule <b>cell</b>."
+  },
+  "getCellToUseWeaponOnCell_2": {
+    "prefix": "getCellToUseWeaponOnCell",
+    "body": "getCellToUseWeaponOnCell(weapon, cell, ignoredCells)",
+    "description": "Détermine une cellule où votre entité pourra utiliser son arme sur une cellule <b>cell</b>."
+  },
+  "getCellX": {
+    "prefix": "getCellX",
+    "body": "getCellX(cell)",
+    "description": "Détermine la position en X de la cellule <b>cell</b>."
+  },
+  "getCellY": {
+    "prefix": "getCellY",
+    "body": "getCellY(cell)",
+    "description": "Détermine la position en Y de la cellule <b>cell</b>."
+  },
+  "getChipArea": {
+    "prefix": "getChipArea",
+    "body": "getChipArea(chip)",
+    "description": "Renvoie le type de zone d'effet de de la puce <b>chip</b>."
+  },
+  "getChipCooldown": {
+    "prefix": "getChipCooldown",
+    "body": "getChipCooldown(chip)",
+    "description": "Renvoie le temps de récupération de la puce <b>chip</b>, issu du marché."
+  },
+  "getChipCost": {
+    "prefix": "getChipCost",
+    "body": "getChipCost(chip)",
+    "description": "Renvoie le coût en PT de la puce <b>chip</b>."
+  },
+  "getChipEffectiveArea": {
+    "prefix": "getChipEffectiveArea",
+    "body": "getChipEffectiveArea(chip, cell)",
+    "description": "Renvoie la liste des cellules qui seront affectés si la puce <b>chip</b> est utilisée sur la cellule <b>cell</b>."
+  },
+  "getChipEffectiveArea_1": {
+    "prefix": "getChipEffectiveArea",
+    "body": "getChipEffectiveArea(chip, cell, from)",
+    "description": "Renvoie la liste des cellules qui seront affectés si la puce <b>chip</b> est utilisée sur la cellule <b>cell</b> depuis une cellule <b>from</b>."
+  },
+  "getChipEffects": {
+    "prefix": "getChipEffects",
+    "body": "getChipEffects(chip)",
+    "description": "Renvoie les effets de la puce <b>chip</b>."
+  },
+  "getChipFailure": {
+    "prefix": "getChipFailure",
+    "body": "getChipFailure(chip)",
+    "description": "Renvoie le pourcentage de risque d'échec de la puce <b>chip</b>."
+  },
+  "getChipMaxRange": {
+    "prefix": "getChipMaxRange",
+    "body": "getChipMaxRange(chip)",
+    "description": "Renvoie la portée maximale de la puce <b>chip</b>."
+  },
+  "getChipMaxScope": {
+    "prefix": "getChipMaxScope",
+    "body": "getChipMaxScope(chip)",
+    "description": "Renvoie la portée maximale de la puce <b>chip</b>."
+  },
+  "getChipMinRange": {
+    "prefix": "getChipMinRange",
+    "body": "getChipMinRange(chip)",
+    "description": "Renvoie la portée minimale de la puce <b>chip</b>."
+  },
+  "getChipMinScope": {
+    "prefix": "getChipMinScope",
+    "body": "getChipMinScope(chip)",
+    "description": "Renvoie la portée minimale de la puce <b>chip</b>."
+  },
+  "getChipName": {
+    "prefix": "getChipName",
+    "body": "getChipName(chip)",
+    "description": "Renvoie le nom de la puce <b>chip</b>."
+  },
+  "getChips": {
+    "prefix": "getChips",
+    "body": "getChips()",
+    "description": "Renvoie les puces de votre entité."
+  },
+  "getChips_1": {
+    "prefix": "getChips",
+    "body": "getChips(entity)",
+    "description": "Renvoie les puces de l'entité d'id <b>entity</b>."
+  },
+  "getChipTargets": {
+    "prefix": "getChipTargets",
+    "body": "getChipTargets(chip, cell)",
+    "description": "Renvoie les entités qui seront affectées si la puce <b>chip</b> est utilisée sur la cellule <b>cell</b>."
+  },
+  "getColor": {
+    "prefix": "getColor",
+    "body": "getColor(red, green, blue)",
+    "description": "Retourne l'entier correspondant à la couleur (<b>red</b>, <b>green</b>, <b>blue</b>) fournie en paramètres."
+  },
+  "getCooldown": {
+    "prefix": "getCooldown",
+    "body": "getCooldown(chip)",
+    "description": "Renvoie le cooldown actuel de la puce <b>chip</b>."
+  },
+  "getCooldown_1": {
+    "prefix": "getCooldown",
+    "body": "getCooldown(chip, entity)",
+    "description": "Renvoie le cooldown actuel de la puce <b>chip</b> de l'entité <b>entity</b>."
+  },
+  "getCores": {
+    "prefix": "getCores",
+    "body": "getCores()",
+    "description": "Renvoie le nombre de coeurs de votre entité."
+  },
+  "getCores_1": {
+    "prefix": "getCores",
+    "body": "getCores(entity)",
+    "description": "Renvoie le nombre de coeurs de l'entité d'id <b>entity</b>."
+  },
+  "getDamageReturn": {
+    "prefix": "getDamageReturn",
+    "body": "getDamageReturn()",
+    "description": "Retourne le taux de renvoi de dommages de votre entité."
+  },
+  "getDamageReturn_1": {
+    "prefix": "getDamageReturn",
+    "body": "getDamageReturn(entity)",
+    "description": "Retourne le taux de renvoi de dommages de l'entité d'id <b>entity</b>."
+  },
+  "getDate": {
+    "prefix": "getDate",
+    "body": "getDate()",
+    "description": "Renvoie la date du combat, au format dd/MM/yyyy."
+  },
+  "getDeadAllies": {
+    "prefix": "getDeadAllies",
+    "body": "getDeadAllies()",
+    "description": "Renvoie les entités alliées mortes."
+  },
+  "getDeadEnemies": {
+    "prefix": "getDeadEnemies",
+    "body": "getDeadEnemies()",
+    "description": "Renvoie les entités ennemies mortes."
+  },
+  "getDeadEnemiesCount": {
+    "prefix": "getDeadEnemiesCount",
+    "body": "getDeadEnemiesCount()",
+    "description": "Renvoie le nombre d'ennemis morts dans le combat."
+  },
+  "getDistance": {
+    "prefix": "getDistance",
+    "body": "getDistance(cell1, cell2)",
+    "description": "Calcule la distance à vol d'oiseau entre deux cellules <b>cell1</b> et <b>cell2</b>. <br />Pour obtenir la distance en nombre de cellules, voir #getCellDistance, et pour obtenir la longueur du chemin entre les deux cellules en esquivant les divers obstacles, voir #getPathLength."
+  },
+  "getEffects": {
+    "prefix": "getEffects",
+    "body": "getEffects()",
+    "description": "Retourne la liste des effets de votre entité."
+  },
+  "getEffects_1": {
+    "prefix": "getEffects",
+    "body": "getEffects(entity)",
+    "description": "Retourne la liste des effets de l'entité d'id <b>entity</b>. Pour récupérer directement la liste des effets de votre entité, utilisez #getEffects() sans paramètre."
+  },
+  "getEnemies": {
+    "prefix": "getEnemies",
+    "body": "getEnemies()",
+    "description": "Renvoie les entités ennemies (vivantes ou mortes) dans le combat."
+  },
+  "getEnemiesCount": {
+    "prefix": "getEnemiesCount",
+    "body": "getEnemiesCount()",
+    "description": "Renvoie le nombre d'ennemis dans le combat."
+  },
+  "getEnemiesLife": {
+    "prefix": "getEnemiesLife",
+    "body": "getEnemiesLife()",
+    "description": "Calcule la somme des points de vie de tous les entités ennemies."
+  },
+  "getEnemyTurret": {
+    "prefix": "getEnemyTurret",
+    "body": "getEnemyTurret()",
+    "description": "Retourne l'id de la tourelle ennemie ou -1 si elle n'existe pas."
+  },
+  "getEntity": {
+    "prefix": "getEntity",
+    "body": "getEntity()",
+    "description": "Renvoie l'id de votre entité."
+  },
+  "getEntityOnCell": {
+    "prefix": "getEntityOnCell",
+    "body": "getEntityOnCell(cell)",
+    "description": "Renvoie l'entité qui se trouve sur la cellule <b>cell</b>."
+  },
+  "getEntityTurnOrder": {
+    "prefix": "getEntityTurnOrder",
+    "body": "getEntityTurnOrder()",
+    "description": "Retourne une valeur entre 1 et n (nombre d'entités actuellement en jeu) indiquant la position de l'entité actuelle dans l'ordre de jeu."
+  },
+  "getEntityTurnOrder_1": {
+    "prefix": "getEntityTurnOrder",
+    "body": "getEntityTurnOrder(entity)",
+    "description": "Retourne une valeur entre 1 et n (nombre d'entités actuellement en jeu) indiquant la position de l'entité <b>entity</b> dans l'ordre de jeu."
+  },
+  "getFarmerCountry": {
+    "prefix": "getFarmerCountry",
+    "body": "getFarmerCountry()",
+    "description": "Renvoie votre pays."
+  },
+  "getFarmerCountry_1": {
+    "prefix": "getFarmerCountry",
+    "body": "getFarmerCountry(entity)",
+    "description": "Renvoie le pays de l'éleveur de l'entité <b>entity</b>."
+  },
+  "getFarmerID": {
+    "prefix": "getFarmerID",
+    "body": "getFarmerID()",
+    "description": "Renvoie votre id d'éleveur."
+  },
+  "getFarmerID_1": {
+    "prefix": "getFarmerID",
+    "body": "getFarmerID(entity)",
+    "description": "Renvoie l'id de l'éleveur de l'entité <b>entity</b>."
+  },
+  "getFarmerName": {
+    "prefix": "getFarmerName",
+    "body": "getFarmerName()",
+    "description": "Renvoie le nom de votre éleveur."
+  },
+  "getFarmerName_1": {
+    "prefix": "getFarmerName",
+    "body": "getFarmerName(entity)",
+    "description": "Renvoie le nom de l'éleveur de l'entité <b>entity</b>."
+  },
+  "getFarthestAlly": {
+    "prefix": "getFarthestAlly",
+    "body": "getFarthestAlly()",
+    "description": "Détermine l'allié le plus éloigné de votre entité, à vol d'oiseau."
+  },
+  "getFarthestEnemy": {
+    "prefix": "getFarthestEnemy",
+    "body": "getFarthestEnemy()",
+    "description": "Détermine l'ennemi le plus éloigné de votre entité, à vol d'oiseau."
+  },
+  "getFightContext": {
+    "prefix": "getFightContext",
+    "body": "getFightContext()",
+    "description": "Retourne le contexte du combat actuel."
+  },
+  "getFightID": {
+    "prefix": "getFightID",
+    "body": "getFightID()"
+  },
+  "getFightType": {
+    "prefix": "getFightType",
+    "body": "getFightType()",
+    "description": "Retourne le type de combat actuel."
+  },
+  "getForce": {
+    "prefix": "getForce",
+    "body": "getForce()",
+    "description": "Renvoie la force de votre entité."
+  },
+  "getForce_1": {
+    "prefix": "getForce",
+    "body": "getForce(entity)",
+    "description": "Renvoie la force de l'entité d'id <b>entity</b>."
+  },
+  "getFrequency": {
+    "prefix": "getFrequency",
+    "body": "getFrequency()",
+    "description": "Renvoie la fréquence de votre entité."
+  },
+  "getFrequency_1": {
+    "prefix": "getFrequency",
+    "body": "getFrequency(entity)",
+    "description": "Renvoie la fréquence de l'entité d'id <b>entity</b>."
+  },
+  "getGreen": {
+    "prefix": "getGreen",
+    "body": "getGreen(color)",
+    "description": "Renvoie le taux de vert dans la couleur <b>color</b>, entre 0 et 255. Par exemple, getGreen(#COLOR_GREEN) = 255 et getGreen(#COLOR_RED) = 0."
+  },
+  "getInstructionsCount": {
+    "prefix": "getInstructionsCount",
+    "body": "getInstructionsCount()",
+    "description": "Renvoie le nombre d'instructions que votre entité a effectué durant le tour actuel."
+  },
+  "getLaunchedEffects": {
+    "prefix": "getLaunchedEffects",
+    "body": "getLaunchedEffects()",
+    "description": "Renvoie la liste des effets qu'a provoqué votre entité."
+  },
+  "getLaunchedEffects_1": {
+    "prefix": "getLaunchedEffects",
+    "body": "getLaunchedEffects(entity)",
+    "description": "Renvoie la liste des effets qu'a provoqué l'entité d'id <b>entity</b>."
+  },
+  "getLeek": {
+    "prefix": "getLeek",
+    "body": "getLeek()",
+    "description": "Renvoie l'id de votre entité."
+  },
+  "getLeekID": {
+    "prefix": "getLeekID",
+    "body": "getLeekID()",
+    "description": "Renvoie l'id réel de votre poireau."
+  },
+  "getLeekID_1": {
+    "prefix": "getLeekID",
+    "body": "getLeekID(entity)",
+    "description": "Renvoie l'id réel du poireau d'id <b>leek</b>."
+  },
+  "getLeekOnCell": {
+    "prefix": "getLeekOnCell",
+    "body": "getLeekOnCell(cell)",
+    "description": "Renvoie l'entité qui se trouve sur la cellule <b>cell</b>."
+  },
+  "getLevel": {
+    "prefix": "getLevel",
+    "body": "getLevel()",
+    "description": "Renvoie le niveau de votre entité."
+  },
+  "getLevel_1": {
+    "prefix": "getLevel",
+    "body": "getLevel(entity)",
+    "description": "Renvoie le niveau de l'entité d'id <b>entity</b>."
+  },
+  "getLife": {
+    "prefix": "getLife",
+    "body": "getLife()",
+    "description": "Renvoie la vie actuelle de votre entité."
+  },
+  "getLife_1": {
+    "prefix": "getLife",
+    "body": "getLife(entity)",
+    "description": "Renvoie la vie actuelle de l'entité d'id <b>entity</b>."
+  },
+  "getMagic": {
+    "prefix": "getMagic",
+    "body": "getMagic()",
+    "description": "Renvoie la magie de votre entité."
+  },
+  "getMagic_1": {
+    "prefix": "getMagic",
+    "body": "getMagic(entity)",
+    "description": "Renvoie la magie de l'entité d'id <b>entity</b>."
+  },
+  "getMapType": {
+    "prefix": "getMapType",
+    "body": "getMapType()",
+    "description": "Renvoie le type de terrain sur lequel se déroule le combat (usine, désert, forêt etc.), parmi les constantes #MAP_NEXUS, #MAP_FACTORY, #MAP_DESERT, #MAP_FOREST, #MAP_GLACIER et #MAP_BEACH."
+  },
+  "getMessageAuthor": {
+    "prefix": "getMessageAuthor",
+    "body": "getMessageAuthor(message)",
+    "description": "Renvoie l'id de l'entité auteur du message <b>message</b>."
+  },
+  "getMessageParams": {
+    "prefix": "getMessageParams",
+    "body": "getMessageParams(message)",
+    "description": "Renvoie le tableau des paramètres du message <b>message</b>."
+  },
+  "getMessages": {
+    "prefix": "getMessages",
+    "body": "getMessages()",
+    "description": "Renvoie le tableau de vos messages."
+  },
+  "getMessages_1": {
+    "prefix": "getMessages",
+    "body": "getMessages(entity)",
+    "description": "Renvoie le tableau des messages de l'entité <b>entity</b>."
+  },
+  "getMessageType": {
+    "prefix": "getMessageType",
+    "body": "getMessageType(message)",
+    "description": "Renvoie le type du message <b>message</b>."
+  },
+  "getMP": {
+    "prefix": "getMP",
+    "body": "getMP()",
+    "description": "Revoie le nombre de points de mouvements actuel de votre entité."
+  },
+  "getMP_1": {
+    "prefix": "getMP",
+    "body": "getMP(entity)",
+    "description": "Revoie le nombre de points de mouvements actuel de l'entité <b>entity</b>."
+  },
+  "getName": {
+    "prefix": "getName",
+    "body": "getName()",
+    "description": "Renvoie le nom de votre entité."
+  },
+  "getName_1": {
+    "prefix": "getName",
+    "body": "getName(entity)",
+    "description": "Renvoie le nom de l'entité d'id <b>entity</b>."
+  },
+  "getNearestAlly": {
+    "prefix": "getNearestAlly",
+    "body": "getNearestAlly()",
+    "description": "Renvoie l'entité alliée la plus proche de votre entité."
+  },
+  "getNearestAllyTo": {
+    "prefix": "getNearestAllyTo",
+    "body": "getNearestAllyTo(entity)",
+    "description": "Renvoie l'entité alliée la plus proche de l'entité fourni en paramètre."
+  },
+  "getNearestAllyToCell": {
+    "prefix": "getNearestAllyToCell",
+    "body": "getNearestAllyToCell(cell)",
+    "description": "Renvoie l'entité alliée la plus proche de la cellule fournie en paramètre."
+  },
+  "getNearestEnemy": {
+    "prefix": "getNearestEnemy",
+    "body": "getNearestEnemy()",
+    "description": "Renvoie l'entité ennemie la plus proche de votre entité."
+  },
+  "getNearestEnemyTo": {
+    "prefix": "getNearestEnemyTo",
+    "body": "getNearestEnemyTo(entity)",
+    "description": "Renvoie l'entité ennemie la plus proche de l'entité fourni en paramètre."
+  },
+  "getNearestEnemyToCell": {
+    "prefix": "getNearestEnemyToCell",
+    "body": "getNearestEnemyToCell(cell)",
+    "description": "Renvoie l'entité ennemie la plus proche de la cellule fournie en paramètre."
+  },
+  "getNextPlayer": {
+    "prefix": "getNextPlayer",
+    "body": "getNextPlayer()",
+    "description": "Renvoie l'id de l'entité qui jouera après le joueur actuel."
+  },
+  "getObstacles": {
+    "prefix": "getObstacles",
+    "body": "getObstacles()",
+    "description": "Renvoie la liste des cases obstacles du terrain."
+  },
+  "getOperations": {
+    "prefix": "getOperations",
+    "body": "getOperations()",
+    "description": "Renvoie le nombre d'opérations consommées par votre entité depuis le début de son tour. Ce nombre doit rester inférieur à #OPERATIONS_LIMIT pour ne pas que l'entité plante."
+  },
+  "getPassiveEffects": {
+    "prefix": "getPassiveEffects",
+    "body": "getPassiveEffects()",
+    "description": "Retourne la liste des effets passifs de votre entité."
+  },
+  "getPassiveEffects_1": {
+    "prefix": "getPassiveEffects",
+    "body": "getPassiveEffects(entity)",
+    "description": "Retourne la liste des effets passifs de l'entité d'id <b>entity</b>. Pour récupérer directement la liste des effets passifs de votre entité, utilisez #getPassiveEffects() sans paramètre."
+  },
+  "getPath": {
+    "prefix": "getPath",
+    "body": "getPath(cell1, cell2)",
+    "description": "Renvoie le chemin en évitant les obstacles entre deux cellules <b>cell1</b> et <b>cell2</b>, si celui-ci existe."
+  },
+  "getPath_1": {
+    "prefix": "getPath",
+    "body": "getPath(start, end, ignoredCells)",
+    "description": "Renvoie le chemin en évitant les obstacles entre deux cellules <b>cell1</b> et <b>cell2</b>, si celui-ci existe, en ignorant les cellules contenues dans le tableau <b>ignoredCells</b>. Si un joueur se situe sur une cellule ignorée, le chemin peut passer sur lui."
+  },
+  "getPathLength": {
+    "prefix": "getPathLength",
+    "body": "getPathLength(cell1, cell2)",
+    "description": "Renvoie la longueur du chemin entre deux cellules <b>cell1</b> et <b>cell2</b>, en esquivant les obstacles. Cette fonction équivaut à <i>count(getPath(<b>cell1</b>, <b>cell2</b>))</i>.<br /><br />\nPour obtenir la distance à vol d'oiseau, utilisez #getDistance, et pour obtenir la distance entre deux cellules sans tenir compte des obstacles, utilisez #getCellDistance."
+  },
+  "getPathLength_1": {
+    "prefix": "getPathLength",
+    "body": "getPathLength(cell1, cell2, ignoredCells)",
+    "description": "Renvoie la longueur du chemin entre deux cellules <b>cell1</b> et <b>cell2</b>, en esquivant les obstacles, en ignorant les cellules contenues dans le tableau <b>ignoredCells</b>.\nSi un joueur se situe sur une cellule ignorée, le chemin peut passer sur lui."
+  },
+  "getPower": {
+    "prefix": "getPower",
+    "body": "getPower()",
+    "description": "Renvoie la puissance de votre entité."
+  },
+  "getPower_1": {
+    "prefix": "getPower",
+    "body": "getPower(leek)",
+    "description": "Renvoie la puissance de l'entité d'id <b>entity</b>."
+  },
+  "getPreviousPlayer": {
+    "prefix": "getPreviousPlayer",
+    "body": "getPreviousPlayer()",
+    "description": "Renvoie l'id de l'entité ayant joué avant le joueur actuel."
+  },
+  "getRed": {
+    "prefix": "getRed",
+    "body": "getRed(color)",
+    "description": "Renvoie le taux de rouge dans la couleur <b>color</b>, entre 0 et 255. Par exemple, getRed(#COLOR_RED) = 255 et getRed(#COLOR_BLUE) = 0."
+  },
+  "getRegister": {
+    "prefix": "getRegister",
+    "body": "getRegister(key)",
+    "description": "Renvoie la valeur stockée dans le registre de l'entité associé à la clé <b>key</b> ou </i>null</i> si le registre n'existe pas."
+  },
+  "getRegisters": {
+    "prefix": "getRegisters",
+    "body": "getRegisters()",
+    "description": "Renvoie l'ensemble des registres de l'entité sous la forme d'un tableau associatif [<i>clé du registre</i> : <i>valeur du registre</i>]. Exemple : <code>debug(getRegisters());\n// Affiche par exemple :\n// ['reg1' : '314323', 'reg2' : 'test_string']</code>"
+  },
+  "getRelativeShield": {
+    "prefix": "getRelativeShield",
+    "body": "getRelativeShield()",
+    "description": "Retourne le bouclier relatif de votre entité."
+  },
+  "getRelativeShield_1": {
+    "prefix": "getRelativeShield",
+    "body": "getRelativeShield(entity)",
+    "description": "Retourne le bouclier relatif de l'entité d'id <b>entity</b>. Pour récupérer directement le bouclier relatif de votre entité, utilisez #getRelativeShield() sans paramètre."
+  },
+  "getResistance": {
+    "prefix": "getResistance",
+    "body": "getResistance()",
+    "description": "Renvoie la résistance de votre entité."
+  },
+  "getResistance_1": {
+    "prefix": "getResistance",
+    "body": "getResistance(entity)",
+    "description": "Renvoie la résistance de l'entité d'id <b>entity</b>."
+  },
+  "getScience": {
+    "prefix": "getScience",
+    "body": "getScience()",
+    "description": "Renvoie la science de votre entité."
+  },
+  "getScience_1": {
+    "prefix": "getScience",
+    "body": "getScience(entity)",
+    "description": "Renvoie la science de l'entité d'id <b>entity</b>."
+  },
+  "getStrength": {
+    "prefix": "getStrength",
+    "body": "getStrength()",
+    "description": "Renvoie la force de votre entité."
+  },
+  "getStrength_1": {
+    "prefix": "getStrength",
+    "body": "getStrength(entity)",
+    "description": "Renvoie la force de l'entité d'id <b>entity</b>."
+  },
+  "getSummoner": {
+    "prefix": "getSummoner",
+    "body": "getSummoner()",
+    "description": "Renvoie l'entité qui vous a invoqué, si vous êtes une invocation."
+  },
+  "getSummoner_1": {
+    "prefix": "getSummoner",
+    "body": "getSummoner(entity)",
+    "description": "Renvoie l'entité a invoqué l'entité <b>entity</b>, s'il s'agit d'une invocation."
+  },
+  "getSummons": {
+    "prefix": "getSummons",
+    "body": "getSummons()",
+    "description": "Renvoie la liste des ids de vos invocations actuellement en vie."
+  },
+  "getSummons_1": {
+    "prefix": "getSummons",
+    "body": "getSummons(entity)",
+    "description": "Renvoie la liste des ids des invocations actuellement en vie de l'entité d'id <b>entity</b>."
+  },
+  "getTeamID": {
+    "prefix": "getTeamID",
+    "body": "getTeamID()",
+    "description": "Renvoie l'id de votre équipe."
+  },
+  "getTeamID_1": {
+    "prefix": "getTeamID",
+    "body": "getTeamID(entity)",
+    "description": "Renvoie l'id de l'équipe de l'entité <b>entity</b>."
+  },
+  "getTeamName": {
+    "prefix": "getTeamName",
+    "body": "getTeamName()",
+    "description": "Renvoie le nom de votre équipe."
+  },
+  "getTeamName_1": {
+    "prefix": "getTeamName",
+    "body": "getTeamName(entity)",
+    "description": "Renvoie le nom de l'équipe de l'entité <b>entity</b>."
+  },
+  "getTime": {
+    "prefix": "getTime",
+    "body": "getTime()",
+    "description": "Renvoie le temps du combat, au format HH:mm:ss."
+  },
+  "getTimestamp": {
+    "prefix": "getTimestamp",
+    "body": "getTimestamp()",
+    "description": "Renvoie l'horodatage du combat, égual au nombre de secondes depuis le 1er janvier 1970."
+  },
+  "getTotalLife": {
+    "prefix": "getTotalLife",
+    "body": "getTotalLife()",
+    "description": "Renvoie la vie totale de votre entité."
+  },
+  "getTotalLife_1": {
+    "prefix": "getTotalLife",
+    "body": "getTotalLife(entity)",
+    "description": "Renvoie la vie totale de l'entité d'id <b>entity</b>."
+  },
+  "getTotalMP": {
+    "prefix": "getTotalMP",
+    "body": "getTotalMP()",
+    "description": "Renvoie le nombre maximal de points de mouvement de votre entité."
+  },
+  "getTotalMP_1": {
+    "prefix": "getTotalMP",
+    "body": "getTotalMP(entity)",
+    "description": "Renvoie le nombre maximal de points de mouvement de l'entité <b>entity</b>."
+  },
+  "getTotalTP": {
+    "prefix": "getTotalTP",
+    "body": "getTotalTP()",
+    "description": "Renvoie le nombre maximal de points de tour de votre entité."
+  },
+  "getTotalTP_1": {
+    "prefix": "getTotalTP",
+    "body": "getTotalTP(entity)",
+    "description": "Renvoie le nombre maximal de points de tour de l'entité <b>entity</b>."
+  },
+  "getTP": {
+    "prefix": "getTP",
+    "body": "getTP()",
+    "description": "Renvoie le nombre de points de tour de votre entité."
+  },
+  "getTP_1": {
+    "prefix": "getTP",
+    "body": "getTP(entity)",
+    "description": "Renvoie le nombre de points de tour de l'entité <b>entity</b>."
+  },
+  "getTurn": {
+    "prefix": "getTurn",
+    "body": "getTurn()",
+    "description": "Renvoie le tour actuel du combat. Le nombre de tours maximum est #MAX_TURNS."
+  },
+  "getType": {
+    "prefix": "getType",
+    "body": "getType()",
+    "description": "Renvoie votre type d'entité."
+  },
+  "getType_1": {
+    "prefix": "getType",
+    "body": "getType(entity)",
+    "description": "Renvoie le type d'entité de l'entité <b>entity</b>."
+  },
+  "getWeapon": {
+    "prefix": "getWeapon",
+    "body": "getWeapon()",
+    "description": "Renvoie l'arme actuellement équipée sur votre entité."
+  },
+  "getWeapon_1": {
+    "prefix": "getWeapon",
+    "body": "getWeapon(entity)",
+    "description": "Renvoie l'arme actuellement équipée l'entité <b>entity</b>."
+  },
+  "getWeaponArea": {
+    "prefix": "getWeaponArea",
+    "body": "getWeaponArea(weapon)",
+    "description": "Renvoie le type de zone d'effet de l'arme <b>weapon</b>."
+  },
+  "getWeaponCost": {
+    "prefix": "getWeaponCost",
+    "body": "getWeaponCost(weapon)",
+    "description": "Renvoie le coût en PT de l'arme <b>weapon</b>."
+  },
+  "getWeaponEffectiveArea": {
+    "prefix": "getWeaponEffectiveArea",
+    "body": "getWeaponEffectiveArea(cell)",
+    "description": "Renvoie la liste des cellules qui seront affectées si l'arme courante est utilisée sur la cellule <b>cell</b>."
+  },
+  "getWeaponEffectiveArea_1": {
+    "prefix": "getWeaponEffectiveArea",
+    "body": "getWeaponEffectiveArea(weapon, cell)",
+    "description": "Renvoie la liste des cellules qui seront affectées si l'arme <b>weapon</b> est utilisée sur la cellule <b>cell</b>."
+  },
+  "getWeaponEffectiveArea_2": {
+    "prefix": "getWeaponEffectiveArea",
+    "body": "getWeaponEffectiveArea(weapon, cell, from)",
+    "description": "Renvoie la liste des cellules qui seront affectées si l'arme <b>weapon</b> est utilisée sur la cellule <b>cell</b> depuis la cellule <b>from</b>."
+  },
+  "getWeaponEffects": {
+    "prefix": "getWeaponEffects",
+    "body": "getWeaponEffects(weapon)",
+    "description": "Renvoie les effets de l'arme <b>weapon</b>."
+  },
+  "getWeaponFailure": {
+    "prefix": "getWeaponFailure",
+    "body": "getWeaponFailure(weapon)",
+    "description": "Renvoie le pourcentage de risque d'échec de l'arme <b>weapon</b>."
+  },
+  "getWeaponMaxRange": {
+    "prefix": "getWeaponMaxRange",
+    "body": "getWeaponMaxRange(weapon)",
+    "description": "Renvoie la portée maximale de l'arme <b>weapon</b>."
+  },
+  "getWeaponMaxScope": {
+    "prefix": "getWeaponMaxScope",
+    "body": "getWeaponMaxScope(weapon)",
+    "description": "Renvoie la portée maximale de l'arme <b>weapon</b>."
+  },
+  "getWeaponMinRange": {
+    "prefix": "getWeaponMinRange",
+    "body": "getWeaponMinRange(weapon)",
+    "description": "Renvoie la portée minimale de l'arme <b>weapon</b>."
+  },
+  "getWeaponMinScope": {
+    "prefix": "getWeaponMinScope",
+    "body": "getWeaponMinScope(weapon)",
+    "description": "Renvoie la portée minimale de l'arme <b>weapon</b>."
+  },
+  "getWeaponName": {
+    "prefix": "getWeaponName",
+    "body": "getWeaponName(weapon)",
+    "description": "Renvoie le nom de l'arme <b>weapon</b>."
+  },
+  "getWeaponPassiveEffects": {
+    "prefix": "getWeaponPassiveEffects",
+    "body": "getWeaponPassiveEffects(weapon)",
+    "description": "Renvoie les effets passifs de l'arme <b>weapon</b>."
+  },
+  "getWeapons": {
+    "prefix": "getWeapons",
+    "body": "getWeapons()",
+    "description": "Renvoie les armes de votre entité."
+  },
+  "getWeapons_1": {
+    "prefix": "getWeapons",
+    "body": "getWeapons(entity)",
+    "description": "Renvoie les armes de l'entité d'id <b>entity</b>."
+  },
+  "getWeaponTargets": {
+    "prefix": "getWeaponTargets",
+    "body": "getWeaponTargets(cell)",
+    "description": "Renvoie les entités qui seront affectées si l'arme courante est utilisée sur la cellule <b>cell</b>."
+  },
+  "getWeaponTargets_1": {
+    "prefix": "getWeaponTargets",
+    "body": "getWeaponTargets(weapon, cell)",
+    "description": "Renvoie les entités qui seront affectées si l'arme <b>weapon</b> est utilisée sur la cellule <b>cell</b>."
+  },
+  "getWisdom": {
+    "prefix": "getWisdom",
+    "body": "getWisdom()",
+    "description": "Renvoie la sagesse de votre entité."
+  },
+  "getWisdom_1": {
+    "prefix": "getWisdom",
+    "body": "getWisdom(entity)",
+    "description": "Renvoie la sagesse de l'entité d'id <b>entity</b>."
+  },
+  "hypot": {
+    "prefix": "hypot",
+    "body": "hypot(x, y)",
+    "description": "Renvoie l'hypoténuse du triangle rectangle de côtés x et y. Équivaut à <i>sqrt(x**2&nbsp;+&nbsp;y**2)</i>."
+  },
+  "inArray": {
+    "prefix": "inArray",
+    "body": "inArray(array, element)",
+    "description": "Détermine si l'élément <b>element</b> est dans le tableau <b>array</b>."
+  },
+  "include": {
+    "prefix": "include",
+    "body": "include(ai)",
+    "description": "Inclut l'IA de nom <b>ai</b> dans l'IA courante. <br><br><b>Attention</b>, la fonction include doit être appelée uniquement dans le bloc principal, et son paramètre doit être une chaîne écrite directement\ndans le code. Pour plus d'informations, voir la section dans le tutoriel : <a href='http://leekwars.com/help/tutorial#includes'>http://leekwars.com/help/tutorial#includes</a>."
+  },
+  "indexOf": {
+    "prefix": "indexOf",
+    "body": "indexOf(string, search)",
+    "description": "Détermine la position de la première occurrence de la chaîne <b>search</b> dans la chaîne <b>string</b>."
+  },
+  "indexOf_1": {
+    "prefix": "indexOf",
+    "body": "indexOf(string, search, start)",
+    "description": "Détermine la position de la première occurrence de la chaîne <b>search</b> dans la chaîne <b>string</b>, à partir de la position <b>start</b>."
+  },
+  "insert": {
+    "prefix": "insert",
+    "body": "insert(array, element, position)",
+    "description": "Insère un élément <b>element</b> dans le tableau <b>array</b> à la position <b>position</b>."
+  },
+  "isAlive": {
+    "prefix": "isAlive",
+    "body": "isAlive(entity)",
+    "description": "Détermine si une entité <b>entity</b> est vivant. Équivalent à <i>getLife(<b>entity</b>) > 0</i>."
+  },
+  "isAlly": {
+    "prefix": "isAlly",
+    "body": "isAlly(entity)",
+    "description": "Détermine si l'entité <b>entity</b> est votre allié."
+  },
+  "isChip": {
+    "prefix": "isChip",
+    "body": "isChip(value)",
+    "description": "Détermine si une valeur est une constante représentant une puce.<br><br>isChip(CHIP_RAGE) = true;<br>isChip(WEAPON_PISTOL) = false."
+  },
+  "isDead": {
+    "prefix": "isDead",
+    "body": "isDead(entity)",
+    "description": "Détermine si l'entité <b>entity</b> est mort. Équivalent à <i>getLife(<b>entity</b>) == 0</i>."
+  },
+  "isEmpty": {
+    "prefix": "isEmpty",
+    "body": "isEmpty(array)",
+    "description": "Détermine si le tableau <b>array</b> est vide. Équivalent à <i>count(<b>array</b>) == 0</i>."
+  },
+  "isEmptyCell": {
+    "prefix": "isEmptyCell",
+    "body": "isEmptyCell(cell)",
+    "description": "Détermine si une cellule est vide."
+  },
+  "isEnemy": {
+    "prefix": "isEnemy",
+    "body": "isEnemy(entity)",
+    "description": "Détermine si l'entité <b>entity</b> est votre ennemi."
+  },
+  "isEntity": {
+    "prefix": "isEntity",
+    "body": "isEntity(cell)",
+    "description": "Détermine si le contenu de la cellule <b>cell</b> est une entité."
+  },
+  "isInlineChip": {
+    "prefix": "isInlineChip",
+    "body": "isInlineChip(chip)",
+    "description": "Détermine si la puce <b>chip</b> peut être utlisée uniquement en ligne."
+  },
+  "isInlineWeapon": {
+    "prefix": "isInlineWeapon",
+    "body": "isInlineWeapon(weapon)",
+    "description": "Détermine si l'arme <b>weapon</b> peut être utilisée uniquement en ligne."
+  },
+  "isLeek": {
+    "prefix": "isLeek",
+    "body": "isLeek(cell)",
+    "description": "Détermine si le contenu de la cellule <b>cell</b> est une entité."
+  },
+  "isObstacle": {
+    "prefix": "isObstacle",
+    "body": "isObstacle(cell)",
+    "description": "Détermine si le contenu de la cellule <b>cell</b> est un obstacle."
+  },
+  "isOnSameLine": {
+    "prefix": "isOnSameLine",
+    "body": "isOnSameLine(cell1, cell2)",
+    "description": "Détermine si deux cellules <b>cell1</b> et <b>cell2</b> sont sur la même ligne."
+  },
+  "isStatic": {
+    "prefix": "isStatic",
+    "body": "isStatic()",
+    "description": "Renvoie si vous êtes une entité statique ou non. Une entité statique ne peut pas se déplacer ou être déplacée."
+  },
+  "isStatic_1": {
+    "prefix": "isStatic",
+    "body": "isStatic(entity)",
+    "description": "Renvoie si l'entité <b>entity</b> est statique ou non. Une entité statique ne peut pas se déplacer ou être déplacée."
+  },
+  "isSummon": {
+    "prefix": "isSummon",
+    "body": "isSummon()",
+    "description": "Renvoie si vous êtes une invocation ou non."
+  },
+  "isSummon_1": {
+    "prefix": "isSummon",
+    "body": "isSummon(entity)",
+    "description": "Renvoie si l'entité <b>entity</b> est une invocation ou non."
+  },
+  "isWeapon": {
+    "prefix": "isWeapon",
+    "body": "isWeapon(value)",
+    "description": "Détermine si une valeur est une constante représentant une arme.<br><br>isWeapon(WEAPON_LASER) = true;<br>isWeapon(CHIP_TELEPORTATION) = false."
+  },
+  "join": {
+    "prefix": "join",
+    "body": "join(array, glue)",
+    "description": "Fusionne plusieurs éléments en une chaîne de caractères, en les séparant par un délimiteur <b>glue</b>."
+  },
+  "jsonDecode": {
+    "prefix": "jsonDecode",
+    "body": "jsonDecode(json)",
+    "description": "Décode la chaîne <b>json</b> en objet LeekScript (nombre, chaîne, tableau...)."
+  },
+  "jsonEncode": {
+    "prefix": "jsonEncode",
+    "body": "jsonEncode(object)",
+    "description": "Encode l'objet <b>object</b> en chaîne JSON."
+  },
+  "keySort": {
+    "prefix": "keySort",
+    "body": "keySort(array)",
+    "description": "Trie le tableau <b>array</b> selon les clés."
+  },
+  "keySort_1": {
+    "prefix": "keySort",
+    "body": "keySort(array, order)",
+    "description": "Trie le tableau <b>array</b> selon les clés selon l'ordre <b>order</b>."
+  },
+  "length": {
+    "prefix": "length",
+    "body": "length(string)",
+    "description": "Renvoie la longueur de la chaîne <b>string</b>."
+  },
+  "lineOfSight": {
+    "prefix": "lineOfSight",
+    "body": "lineOfSight(start, end)",
+    "description": "Vérifie la ligne de vue entre la cellule <b>start</b> et la cellule <b>end</b>."
+  },
+  "lineOfSight_1": {
+    "prefix": "lineOfSight",
+    "body": "lineOfSight(start, end, entityToIgnore)",
+    "description": "Vérifie la ligne de vue entre la cellule <b>start</b> et la cellule <b>end</b>, en ignorant les entités <b>ignoredEntities</b>."
+  },
+  "listen": {
+    "prefix": "listen",
+    "body": "listen()",
+    "description": "Renvoie le tableau des say() des entités précédentes, sous la forme [entity_id, message]."
+  },
+  "log": {
+    "prefix": "log",
+    "body": "log(number)",
+    "description": "Calcule le logarithme néperien du nombre <b>number</b>."
+  },
+  "log10": {
+    "prefix": "log10",
+    "body": "log10(number)",
+    "description": "Calcule le logarithme en base 10 du nombre <b>number</b>."
+  },
+  "mark": {
+    "prefix": "mark",
+    "body": "mark(cells)",
+    "description": "Marque une ou plusieurs cellules en noir sur le terrain pour 1 tour. Ce marquage n'est visible que par l'éleveur de l'entité."
+  },
+  "mark_1": {
+    "prefix": "mark",
+    "body": "mark(cells, color)",
+    "description": "Marque une ou plusieurs cellules de la couleur indiquée en paramètre sur le terrain pour 1 tour. Ce marquage n'est visible que par l'éleveur de l'entité."
+  },
+  "mark_2": {
+    "prefix": "mark",
+    "body": "mark(cells, color, duration)",
+    "description": "Marque une ou plusieurs cellules de la couleur indiquée en paramètre sur le terrain pour le nombre de tour indiqué en paramètre. Ce marquage n'est visible que par l'éleveur de l'entité."
+  },
+  "markText": {
+    "prefix": "markText",
+    "body": "markText(cells, text)",
+    "description": "Écrit un texte sur une ou plusieurs cellules en noir sur le terrain pour 1 tour. Ces textes ne sont visibles que par l'éleveur de l'entité."
+  },
+  "markText_1": {
+    "prefix": "markText",
+    "body": "markText(cells, text, color)",
+    "description": "Écrit un texte sur une ou plusieurs cellules de la couleur indiquée en paramètre sur le terrain pour 1 tour. Ces textes ne sont visibles que par l'éleveur de l'entité."
+  },
+  "markText_2": {
+    "prefix": "markText",
+    "body": "markText(cells, text, color, duration)",
+    "description": "Écrit un texte sur une ou plusieurs cellules de la couleur indiquée en paramètre sur le terrain pour le nombre de tour indiqué en paramètre. Ces textes ne sont visibles que par l'éleveur de l'entité."
+  },
+  "max": {
+    "prefix": "max",
+    "body": "max(a, b)",
+    "description": "Renvoie le plus grande valeur entre les deux nombres <b>a</b> et <b>b</b>."
+  },
+  "min": {
+    "prefix": "min",
+    "body": "min(a, b)",
+    "description": "Renvoie la plus petite valeur entre les deux nombres <b>a</b> et <b>b</b>."
+  },
+  "moveAwayFrom": {
+    "prefix": "moveAwayFrom",
+    "body": "moveAwayFrom(entity)",
+    "description": "Éloigne votre entité d'une autre entité <b>entity</b>."
+  },
+  "moveAwayFrom_1": {
+    "prefix": "moveAwayFrom",
+    "body": "moveAwayFrom(entity, mp)",
+    "description": "Éloigne votre entité d'un autre entité <b>entity</b>, en utilisant au maximum <b>mp</b> points de mouvement."
+  },
+  "moveAwayFromCell": {
+    "prefix": "moveAwayFromCell",
+    "body": "moveAwayFromCell(cell)",
+    "description": "Éloigne votre entité d'une cellule <b>cell</b>."
+  },
+  "moveAwayFromCell_1": {
+    "prefix": "moveAwayFromCell",
+    "body": "moveAwayFromCell(cell, mp)",
+    "description": "Éloigne votre entité d'une cellule <b>cell</b>, en utilisant au maximum <b>mp</b> points de mouvement."
+  },
+  "moveAwayFromCells": {
+    "prefix": "moveAwayFromCells",
+    "body": "moveAwayFromCells(cells)",
+    "description": "Éloigne votre entité d'un ensemble de cellules <b>cells</b>."
+  },
+  "moveAwayFromCells_1": {
+    "prefix": "moveAwayFromCells",
+    "body": "moveAwayFromCells(cells, mp)",
+    "description": "Éloigne votre entité d'un ensemble de cellules <b>cells</b>, en utilisant au maximum <b>mp</b> points de mouvement."
+  },
+  "moveAwayFromEntities": {
+    "prefix": "moveAwayFromEntities",
+    "body": "moveAwayFromEntities(entities)",
+    "description": "Éloigne votre entité d'un ensemble de entités <b>entities</b>."
+  },
+  "moveAwayFromEntities_1": {
+    "prefix": "moveAwayFromEntities",
+    "body": "moveAwayFromEntities(entities, mp)",
+    "description": "Éloigne votre entité d'un ensemble de entités <b>entities</b>, en utilisant au maximum <b>mp</b> points de mouvement."
+  },
+  "moveAwayFromLeeks": {
+    "prefix": "moveAwayFromLeeks",
+    "body": "moveAwayFromLeeks(entities)",
+    "description": "Éloigne votre entité d'un ensemble de entités <b>entities</b>."
+  },
+  "moveAwayFromLeeks_1": {
+    "prefix": "moveAwayFromLeeks",
+    "body": "moveAwayFromLeeks(entities, mp)",
+    "description": "Éloigne votre entité d'un ensemble de entités <b>entities</b>, en utilisant au maximum <b>mp</b> points de mouvement."
+  },
+  "moveAwayFromLine": {
+    "prefix": "moveAwayFromLine",
+    "body": "moveAwayFromLine(cell1, cell2)",
+    "description": "Éloigne votre entité d'une ligne définie par deux cellules <b>cell1</b> et <b>cell2</b>."
+  },
+  "moveAwayFromLine_1": {
+    "prefix": "moveAwayFromLine",
+    "body": "moveAwayFromLine(cell1, cell2, mp)",
+    "description": "Éloigne votre entité d'une ligne définie par deux cellules <b>cell1</b> et <b>cell2</b>, en utilisant au maximum <b>mp</b> points de mouvement."
+  },
+  "moveToward": {
+    "prefix": "moveToward",
+    "body": "moveToward(entity)",
+    "description": "Rapproche votre entité d'une autre entité <b>entity</b>."
+  },
+  "moveToward_1": {
+    "prefix": "moveToward",
+    "body": "moveToward(entity, mp)",
+    "description": "Rapproche votre entité d'une autre entité <b>entity</b>, en utilisant au maximum <b>mp</b> points de mouvement."
+  },
+  "moveTowardCell": {
+    "prefix": "moveTowardCell",
+    "body": "moveTowardCell(cell)",
+    "description": "Rapproche votre entité d'une cellule <b>cell</b>."
+  },
+  "moveTowardCell_1": {
+    "prefix": "moveTowardCell",
+    "body": "moveTowardCell(cell, mp)",
+    "description": "Rapproche votre entité d'une cellule <b>cell</b>, en utilisant au maximum <b>mp</b> points de mouvement."
+  },
+  "moveTowardCells": {
+    "prefix": "moveTowardCells",
+    "body": "moveTowardCells(cells)",
+    "description": "Rapproche votre entité d'un ensemble de cellules <b>cells</b>."
+  },
+  "moveTowardCells_1": {
+    "prefix": "moveTowardCells",
+    "body": "moveTowardCells(cells, mp)",
+    "description": "Rapproche votre entité d'un ensemble de cellules <b>cells</b>, en utilisant au maximum <b>mp</b> points de mouvement."
+  },
+  "moveTowardEntities": {
+    "prefix": "moveTowardEntities",
+    "body": "moveTowardEntities(entities)",
+    "description": "Rapproche votre entité d'un ensemble d'entités <b>entities</b>."
+  },
+  "moveTowardEntities_1": {
+    "prefix": "moveTowardEntities",
+    "body": "moveTowardEntities(entities, mp)",
+    "description": "Rapproche votre entité d'un ensemble d'entités <b>entities</b>, en utilisant au maximum <b>mp</b> points de mouvement."
+  },
+  "moveTowardLeeks": {
+    "prefix": "moveTowardLeeks",
+    "body": "moveTowardLeeks(entities)",
+    "description": "Rapproche votre entité d'un ensemble d'entités <b>entities</b>."
+  },
+  "moveTowardLeeks_1": {
+    "prefix": "moveTowardLeeks",
+    "body": "moveTowardLeeks(entities, mp)",
+    "description": "Rapproche votre entité d'un ensemble d'entités <b>entities</b>, en utilisant au maximum <b>mp</b> points de mouvement."
+  },
+  "moveTowardLine": {
+    "prefix": "moveTowardLine",
+    "body": "moveTowardLine(cell1, cell2)",
+    "description": "Rapproche votre entité d'une ligne définie par deux cellules <b>cell1</b> et <b>cell2</b>."
+  },
+  "moveTowardLine_1": {
+    "prefix": "moveTowardLine",
+    "body": "moveTowardLine(cell1, cell2, mp)",
+    "description": "Rapproche votre entité d'une ligne définie par deux cellules <b>cell1</b> et <b>cell2</b>, en utilisant au maximum <b>mp</b> points de mouvement."
+  },
+  "number": {
+    "prefix": "number",
+    "body": "number(value)",
+    "description": "Convertit une valeur en nombre. Si la valeur est une chaîne, la fonction number va essayer de la convertir en nombre, si la valeur est déjà un nombre, la fonction renvoie le nombre, et pour tout autre type, elle renvoie <i>null</i>."
+  },
+  "pause": {
+    "prefix": "pause",
+    "body": "pause()",
+    "description": "Met en pause le combat, uniquement pour l'éleveur de l'entité qui utilise la fonction."
+  },
+  "pop": {
+    "prefix": "pop",
+    "body": "pop(array)",
+    "description": "Supprime la dernière case du tableau <b>array</b> et renvoie l'élément correspondant."
+  },
+  "pow": {
+    "prefix": "pow",
+    "body": "pow(base, exp)",
+    "description": "Éleve le nombre base à la puissance exposant."
+  },
+  "push": {
+    "prefix": "push",
+    "body": "push(array, element)",
+    "description": "Ajoute l'élément <b>element</b> à la fin du tableau <b>array</b>."
+  },
+  "pushAll": {
+    "prefix": "pushAll",
+    "body": "pushAll(array, elements)",
+    "description": "Ajoute tous les éléments du tableau <b>elements</b> à la fin du tableau <b>array</b>."
+  },
+  "rand": {
+    "prefix": "rand",
+    "body": "rand()",
+    "description": "Renvoie un nombre aléatoire réel, compris entre 0 (inclus) et 1 (exclu)."
+  },
+  "randFloat": {
+    "prefix": "randFloat",
+    "body": "randFloat(a, b)",
+    "description": "Renvoie un nombre aléatoire réel, compris entre <b>a</b> (inclus) et <b>b</b> (exclu)."
+  },
+  "randInt": {
+    "prefix": "randInt",
+    "body": "randInt(a, b)",
+    "description": "Renvoie un nombre aléatoire entier, compris entre <b>a</b> (inclus) et <b>b</b> (exclu)."
+  },
+  "remove": {
+    "prefix": "remove",
+    "body": "remove(array, position)",
+    "description": "Supprime un élément du tableau <b>array</b> à la position <b>position</b>, et retourne l'élément supprimé."
+  },
+  "removeElement": {
+    "prefix": "removeElement",
+    "body": "removeElement(array, element)",
+    "description": "Supprime la première occurrence d'un élément <b>element</b> dans le tableau <b>array</b>. Si l'élement n'est pas trouvé, le tableau n'est pas modifié."
+  },
+  "removeKey": {
+    "prefix": "removeKey",
+    "body": "removeKey(array, key)",
+    "description": "Supprime un élément du tableau <b>array</b> associé à la clé <b>key</b>."
+  },
+  "replace": {
+    "prefix": "replace",
+    "body": "replace(string, search, replace)",
+    "description": "Remplace toutes les occurrences de <b>search</b> par <b>replace</b> dans la chaîne <b>string</b>."
+  },
+  "resurrect": {
+    "prefix": "resurrect",
+    "body": "resurrect(entity, cell)",
+    "description": "Utilise la puce CHIP_RESURRECTION pour ressusciter une entité d'id <b>entity</b> morte, sur la cellule <b>cell</b>."
+  },
+  "reverse": {
+    "prefix": "reverse",
+    "body": "reverse(array)",
+    "description": "Inverse le tableau <b>array</b>."
+  },
+  "round": {
+    "prefix": "round",
+    "body": "round(number)",
+    "description": "Retourne l'arrondi de <b>number</b>.<br/>Vous pouvez trouver l'arrondi à l'entier inférieur avec #floor, et l'arrondi à l'entier supérieur avec #ceil."
+  },
+  "say": {
+    "prefix": "say",
+    "body": "say(message)",
+    "description": "Fait parler votre entité."
+  },
+  "search": {
+    "prefix": "search",
+    "body": "search(array, element)",
+    "description": "Recherche l'élément <b>element</b> dans le tableau <b>array</b>."
+  },
+  "search_1": {
+    "prefix": "search",
+    "body": "search(array, element, start)",
+    "description": "Recherche l'élément <b>element</b> dans le tableau <b>array</b>, à partir de la position <b>start</b>."
+  },
+  "sendAll": {
+    "prefix": "sendAll",
+    "body": "sendAll(type, params)",
+    "description": "Envoie un message à toute votre équipe."
+  },
+  "sendTo": {
+    "prefix": "sendTo",
+    "body": "sendTo(entity, type, params)",
+    "description": "Envoie un message à l'entité d'id <b>entity</b>."
+  },
+  "setRegister": {
+    "prefix": "setRegister",
+    "body": "setRegister(key, value)",
+    "description": "Stocke la valeur <b>value</b> dans le registre de clé <b>key</b>.\nLa clé et la valeur sont des chaînes qui doivent contenir respectivement <i>100</i> et <i>5000</i> caractères au maximum. Un poireau peut posséder au maximum <i>100</i> registres, le stockage dans un nouveau registre ne fonctionnera pas si tous les registres\nsont déjà occupés."
+  },
+  "setWeapon": {
+    "prefix": "setWeapon",
+    "body": "setWeapon(weapon)",
+    "description": "Équipe l'arme <b>weapon</b> sur votre entité."
+  },
+  "shift": {
+    "prefix": "shift",
+    "body": "shift(array)",
+    "description": "Supprime la première case du tableau <b>array</b> et renvoie l'élément correspondant."
+  },
+  "show": {
+    "prefix": "show",
+    "body": "show(cell)",
+    "description": "Montre aux joueurs une cellule <b>cell</b> en noir sur le terrain pour 1 tour. L'utilisation de cette fonction coûte 1PT."
+  },
+  "show_1": {
+    "prefix": "show",
+    "body": "show(cell, color)",
+    "description": "Montre aux joueurs une cellule <b>cell</b> de la couleur <b>color</b> sur le terrain pour 1 tour. L'utilisation de cette fonction coûte 1PT."
+  },
+  "shuffle": {
+    "prefix": "shuffle",
+    "body": "shuffle(array)",
+    "description": "Mélange un tableau de manière aléatoire."
+  },
+  "signum": {
+    "prefix": "signum",
+    "body": "signum(number)",
+    "description": "Détermine le signe du nombre <b>number</b>."
+  },
+  "sin": {
+    "prefix": "sin",
+    "body": "sin(angle)",
+    "description": "Calcule le sinus de l'angle <b>angle</b> passé en paramètre"
+  },
+  "sort": {
+    "prefix": "sort",
+    "body": "sort(array)",
+    "description": "Trie le tableau <b>array</b> selon l'ordre suivant :\n<ul>\n\t<li>Tous les booléens (d'abord faux puis vrais)</li>\n\t<li>Tous les nombres (classés du plus petit au plus grand)</li>\n\t<li>Toutes les chaînes (dans l'ordre alphabétique)</li>\n\t<li>Tous les éléments null.</li>\n</ul>"
+  },
+  "sort_1": {
+    "prefix": "sort",
+    "body": "sort(array, order)",
+    "description": "Trie le tableau <b>array</b> par ordre croissant ou décroissant. Voir #sort pour l'ordre de tri."
+  },
+  "split": {
+    "prefix": "split",
+    "body": "split(string, delimiter)",
+    "description": "Découpe la chaîne <b>string</b> sous-chaînes en délimitées par <b>delimiter</b>."
+  },
+  "split_1": {
+    "prefix": "split",
+    "body": "split(string, delimiter, limit)",
+    "description": "Découpe la chaîne <b>string</b> sous-chaînes en délimitées par <b>delimiter</b>."
+  },
+  "sqrt": {
+    "prefix": "sqrt",
+    "body": "sqrt(number)",
+    "description": "Calcule la racine carrée du nombre <b>number</b>."
+  },
+  "startsWith": {
+    "prefix": "startsWith",
+    "body": "startsWith(string, prefix)",
+    "description": "Vérifie si la chaîne <b>string</b> commence par la chaîne <b>prefix</b>."
+  },
+  "string": {
+    "prefix": "string",
+    "body": "string(value)",
+    "description": "Convertit une valeur en chaîne de caractères.<br>\nSi la valeur est déjà une chaîne, elle est renvoyée.<br>\nSi la valeur est nombre x, \"x\" est renvoyé.<br>\nSi la valeur est un tableau, une chaîne sous la forme \"[clé1 : valeur1, clé2 : valeur2, ...]\" est renvoyée.<br>\nSi la valeur est un booléen, \"true\" et \"false\" sont respectivement renvoyées pour les valeurs true et false.<br>\nSi la valeur est null, \"null\" est renvoyée."
+  },
+  "subArray": {
+    "prefix": "subArray",
+    "body": "subArray(array, start, end)",
+    "description": "Retourne un sous-tableau de <b>array</b> commençant à la position <b>start</b> et finissant à la position <b>end</b>."
+  },
+  "substring": {
+    "prefix": "substring",
+    "body": "substring(string, start)",
+    "description": "Retourne la sous-chaîne de la chaîne <b>string</b> à partir du caractère à l'indice <b>start</b>."
+  },
+  "substring_1": {
+    "prefix": "substring",
+    "body": "substring(string, start, length)",
+    "description": "Retourne la sous-chaîne de la chaîne <b>string</b> à partir du caractère à l'indice <b>start</b> et de taille <b>length</b>."
+  },
+  "sum": {
+    "prefix": "sum",
+    "body": "sum(array)",
+    "description": "Retourne la somme de tous les éléments numériques du tableau <b>array</b>."
+  },
+  "summon": {
+    "prefix": "summon",
+    "body": "summon(chip, cell, ai)",
+    "description": "Invoque une entité déterminée par la puce <b>chip</b> sur la cellule <b>cell</b> ayant pour IA la fonction <b>ai</b>."
+  },
+  "tan": {
+    "prefix": "tan",
+    "body": "tan(angle)",
+    "description": "Calcule la tangente de l'angle <b>angle</b> (en radians)."
+  },
+  "toDegrees": {
+    "prefix": "toDegrees",
+    "body": "toDegrees(radians)",
+    "description": "Convertit l'angle <b>radians</b> en degrés."
+  },
+  "toLower": {
+    "prefix": "toLower",
+    "body": "toLower(string)",
+    "description": "Convertit les caractères majuscules de la chaîne <b>string</b> en minuscules."
+  },
+  "toRadians": {
+    "prefix": "toRadians",
+    "body": "toRadians(degrees)",
+    "description": "Convertit l'angle <b>degrees</b> en radians."
+  },
+  "toUpper": {
+    "prefix": "toUpper",
+    "body": "toUpper(string)",
+    "description": "Convertit les caractères minuscules de la chaîne <b>string</b> par des majuscules."
+  },
+  "typeOf": {
+    "prefix": "typeOf",
+    "body": "typeOf(value)",
+    "description": "Renvoie le type de la valeur <b>value</b>, parmis les types : #TYPE_NULL, #TYPE_NUMBER, #TYPE_BOOLEAN, #TYPE_STRING, #TYPE_ARRAY, #TYPE_FUNCTION."
+  },
+  "unshift": {
+    "prefix": "unshift",
+    "body": "unshift(array, element)",
+    "description": "Ajoute l'élément <b>element</b> au début du tableau <b>array</b>."
+  },
+  "useChip": {
+    "prefix": "useChip",
+    "body": "useChip(chip, entity)",
+    "description": "Utilise le chip <b>chip</b> sur l'entité <b>entity</b>."
+  },
+  "useChipOnCell": {
+    "prefix": "useChipOnCell",
+    "body": "useChipOnCell(chip, cell)",
+    "description": "Utilise le chip <b>chip</b> sur la cellule <b>cell</b>."
+  },
+  "useWeapon": {
+    "prefix": "useWeapon",
+    "body": "useWeapon(entity)",
+    "description": "Utilise l'arme sélectionnée sur l'entité <b>entity</b>."
+  },
+  "useWeaponOnCell": {
+    "prefix": "useWeaponOnCell",
+    "body": "useWeaponOnCell(cell)",
+    "description": "Utilise l'arme sélectionnée sur la cellule <b>cell</b>."
+  },
+  "weaponNeedLos": {
+    "prefix": "weaponNeedLos",
+    "body": "weaponNeedLos()",
+    "description": "Renvoie si l'arme courante a besoin d'une ligne de vue pour tirer."
+  },
+  "weaponNeedLos_1": {
+    "prefix": "weaponNeedLos",
+    "body": "weaponNeedLos(weapon)",
+    "description": "Renvoie si l'arme <b>weapon</b> a besoin d'une ligne de vue pour tirer."
+  }
+}

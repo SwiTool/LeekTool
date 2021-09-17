@@ -1,13 +1,9 @@
-import _got from 'got';
+import { got } from './helpers/got';
 import { Account } from './types/Account';
 
 // eslint-disable-next-line @typescript-eslint/naming-convention
 const FormData = require('form-data');
 
-
-const got = _got.extend({
-    prefixUrl: 'https://leekwars.com/api/',
-});
 
 function makeForm(json: any) {
     const form = new FormData();

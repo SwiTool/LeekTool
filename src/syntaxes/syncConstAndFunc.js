@@ -15,18 +15,18 @@ async function getDoc(type) {
 }
 
 async function updateConfigFile(consts, funcs) {
-    file = await fs.readFile(syntaxFile);
-    config = JSON.parse(file.toString());
-    config.patterns[7].match = `\\b(${consts})`;
-    config.patterns[8].match = `\\b(${funcs})`;
+    const file = await fs.readFile(syntaxFile);
+    const config = JSON.parse(file.toString());
+    config.patterns[7].match = `\\b(${consts})\\b`;
+    config.patterns[8].match = `\\b(${funcs})\\b`;
     await fs.writeFile(syntaxFile, Buffer.from(JSON.stringify(config)));
 }
 
 async function main() {
-    funcs = await getDoc('function');
-    funcsString = Array.from(new Set(funcs.map(func => func.name))).join('|');
-    consts = await getDoc('constant');
-    constsString = consts.map(const_ => const_.name).join('|');
+    const funcs = await getDoc('function');
+    const funcsString = Array.from(new Set(funcs.map(func => func.name))).join('|');
+    const consts = await getDoc('constant');
+    const constsString = Array.from(new Set(consts.map(const_ => const_.name))).join('|');
     updateConfigFile(constsString, funcsString);
 }
 
