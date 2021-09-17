@@ -3,8 +3,10 @@ import { IncomingHttpHeaders } from "http";
 import { CookieJar } from "tough-cookie";
 import { debug } from "./debug";
 import { Account } from "./types/Account";
+import { Constant } from "./types/Constants";
 import { FarmerAIs } from "./types/Farmer";
 import { AIContent } from "./types/FileTree";
+import { Functions } from "./types/Functions";
 
 const cookieJar = new CookieJar();
 
@@ -73,6 +75,14 @@ class LeekApi {
 
   aiGetFarmerAi(id: number): Promise<{ ai: AIContent }> {
     return this.request("get", `ai/get/${id}`);
+  }
+
+  functionGetAll(): Promise<{ functions: Functions[] }> {
+    return this.request("get", "function/get-all");
+  }
+
+  constantGetAll(): Promise<{ constants: Constant[] }> {
+    return this.request("get", "constant/get-all");
   }
 }
 
