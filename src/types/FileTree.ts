@@ -15,7 +15,6 @@ export interface Folder {
   folder: number;
   id: number;
   name: string;
-  path: string;
 }
 
 export interface AIContent extends BasicAIInfos {

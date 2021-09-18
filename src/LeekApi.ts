@@ -42,19 +42,25 @@ class LeekApi {
     T extends Record<string, string | number | boolean | null>,
     U extends unknown
   >(
-    method: "get" | "post",
+    method: "get" | "post" | "put" | "delete",
     path: string,
     opts?: T,
     reqHeaders?: Record<string, string | string[] | undefined> | undefined
   ): Promise<U> => {
     debug(`requesting ${path}`);
-    const { body } = await this.client[method](path, {
-      headers: reqHeaders,
-      searchParams: method === "get" ? opts : undefined,
-      form: method === "post" ? opts : undefined,
-      responseType: "json"
-    });
-    return body as U;
+    try {
+      const { body } = await this.client[method](path, {
+        headers: reqHeaders,
+        searchParams: method === "get" ? opts : undefined,
+        form: method === "get" ? undefined : opts,
+        responseType: "json"
+      });
+
+      return body as U;
+    } catch (e: any) {
+      console.error(e.response);
+      throw e;
+    }
   };
 
   setToken(token: string) {
@@ -75,6 +81,29 @@ class LeekApi {
 
   aiGetFarmerAi(id: number): Promise<{ ai: AIContent }> {
     return this.request("get", `ai/get/${id}`);
+  }
+
+  aiChangeFolder(id: number, folderId: number) {
+    return this.request("post", "ai/change-folder", {
+      ai_id: id,
+      folder: folderId
+    });
+  }
+
+  aiSave(id: number, code: string) {
+    return this.request("post", "ai/save", { ai_id: id, code });
+  }
+
+  aiNewName(
+    folder_id: number,
+    version: number,
+    name: string
+  ): Promise<{ ai: AIContent }> {
+    return this.request("post", "ai/new-name", { folder_id, version, name });
+  }
+
+  aiDelete(id: number) {
+    return this.request("delete", "ai/delete", { ai_id: id });
   }
 
   functionGetAll(): Promise<{ functions: Functions[] }> {
