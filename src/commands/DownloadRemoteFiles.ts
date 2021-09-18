@@ -6,7 +6,9 @@ import {
   FolderState,
   AIState,
   instanceOfFolderState
-} from "../State";
+} from "../FileTreeState";
+import { setToWorkspaceState } from "../helpers/fileTreeState";
+import { debug } from "../debug";
 
 const state: FileTreeState = {};
 
@@ -39,8 +41,11 @@ async function createDirectories(farmerAis: FarmerAIs) {
     return value;
   }, {} as Record<number, FolderState>);
   folders[0] = baseFolderState;
+  debug(folders);
 
   function myRecFunc(folder: FolderState): string {
+    debug(folder.folder);
+
     if (
       folders[folder.folder].folders.findIndex(f => f.id === folder.id) === -1
     ) {
@@ -79,8 +84,9 @@ async function createFiles(farmerAis: FarmerAIs) {
     if (!folder || !instanceOfFolderState(folder)) {
       return;
     }
-
-    file.ai.name += ".leek";
+    if (!file.ai.name.endsWith(".leek")) {
+      file.ai.name += ".leek";
+    }
     const path = (folder.path ? folder.path + "/" : "") + file.ai.name;
     const aiState = { ...ai, parentFolder: folder.path, path } as AIState;
     if (folder.ais.findIndex(a => a.id === ai.id) === -1) {
@@ -98,14 +104,10 @@ async function createFiles(farmerAis: FarmerAIs) {
 export async function DownloadRemoteFiles(context: vscode.ExtensionContext) {
   const ais = await Api.aiGetFarmerAis();
 
-  // try {
   await createDirectories(ais);
   await createFiles(ais);
-  await context.workspaceState.update("fileTree", state);
-  const workspaceState = context.workspaceState.get<FileTreeState>("fileTree");
+  await setToWorkspaceState(context, state);
+
   console.dir(state, { depth: null });
-  // } catch (e) {
-  //   console.error(e);
-  // }
-  return workspaceState;
+  return state;
 }

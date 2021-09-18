@@ -3,27 +3,27 @@
 import * as vscode from "vscode";
 import { DownloadRemoteFiles } from "./commands/DownloadRemoteFiles";
 import { getAccount } from "./login";
-import { FileTreeState } from "./State";
-import { Api } from "./LeekApi";
-import { UpdateRemoteFileOnSave } from "./events/UpdateRemoteFileOnSave";
-import { debounce } from "./utils/debounce";
+import {
+  createRemoteFile,
+  updateRemoteFileOnSave,
+  deleteRemoteFile
+} from "./events/fileEvents";
+import { debounce } from "./helpers/debounce";
+import { getFromWorkspaceState } from "./helpers/fileTreeState";
+import { debug } from "./debug";
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export async function activate(context: vscode.ExtensionContext) {
-  // console.log(context.globalStorageUri, context.storageUri);
+  // debug(context.globalStorageUri, context.storageUri);
   const leekAccount = await getAccount(context);
   if (!leekAccount) {
     return;
   }
-  console.log(leekAccount);
+  debug(leekAccount);
 
-  let state = context.workspaceState.get<FileTreeState>("fileTree");
-  if (state === undefined) {
-    state = await DownloadRemoteFiles(context);
-  }
-
-  console.log("begin state", state);
+  const state = await getFromWorkspaceState(context);
+  debug("begin state", state);
 
   // The command has been defined in the package.json file
   // Now provide the implementation of the command with registerCommand
@@ -37,12 +37,20 @@ export async function activate(context: vscode.ExtensionContext) {
   );
 
   vscode.workspace.onWillSaveTextDocument(
-    debounce(UpdateRemoteFileOnSave.bind(null, state!), 5000)
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    debounce(updateRemoteFileOnSave.bind(null, state!), 5000)
   );
-  // vscode.workspace.onWillDeleteFiles();
-  // vscode.workspace.onWillCreateFiles();
+  vscode.workspace.onDidCreateFiles(
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    createRemoteFile.bind(null, context, state!)
+  );
+  vscode.workspace.onDidDeleteFiles(
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    deleteRemoteFile.bind(null, context, state!)
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+  );
   vscode.workspace.onWillRenameFiles((e: vscode.FileWillRenameEvent) => {
-    console.log(e.files);
+    debug(e.files);
   });
 }
 
