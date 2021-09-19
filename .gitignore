@@ -4,4 +4,5 @@ node_modules
 .vscode-test/
 *.vsix
 tsconfig.tsbuildinfo
-src/images/t*_*_*.svg
+src/images/area/*
+src/images/chip/*

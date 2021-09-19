@@ -1,4 +1,6 @@
 const fs = require("fs");
+const got = require("got");
+const sharp = require("sharp");
 
 const SQUARE_SIZE = 10;
 
@@ -59,6 +61,31 @@ const results = generateAllTypes((type, min, max) => {
   };
 });
 
-results.forEach(res => {
-  fs.writeFileSync(`../images/t${res.type}_${res.min}_${res.max}.svg`, res.svg);
-});
+// GENERATE AREAS SVG
+
+console.log("Generating area svg...");
+// fs.mkdirSync("../images/area", { recursive: true });
+// results.forEach(res => {
+//   fs.writeFileSync(
+//     `../images/area/t${res.type}_${res.min}_${res.max}.svg`,
+//     res.svg
+//   );
+// });
+
+// GENERATE CHIPS IMG
+
+console.log("Downloading chips...");
+fs.mkdirSync("../images/chip", { recursive: true });
+got
+  .get("https://leekwars.com/api/chip/get-all")
+  .json()
+  .then(data => {
+    Object.values(data.chips).forEach(c => {
+      got
+        .get(`https://leekwars.com/image/chip/${c.name}.png`)
+        .buffer()
+        .then(r => {
+          sharp(r).resize(32, 32).toFile(`../images/chip/${c.name}.png`);
+        });
+    });
+  });
