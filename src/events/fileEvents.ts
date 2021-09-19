@@ -5,7 +5,7 @@ import {
   FileTreeState,
   FolderState,
   instanceOfFolderState
-} from "../FileTreeState";
+} from "../states/FileTreeState";
 import { AIContent } from "../types/FileTree";
 import { setToWorkspaceState, getFileInfo } from "../helpers/fileTreeState";
 import { getElementPath } from "../helpers/workspace";
@@ -43,7 +43,7 @@ function removeAIFromTreeState(
   fileName: string
 ) {
   if (!state[folderPath] || !instanceOfFolderState(state[folderPath])) {
-    return "";
+    return;
   }
   const path = `${folderPath ? folderPath + "/" : ""}${fileName}`;
   const aiIndex = (state[folderPath] as FolderState).ais.findIndex(

@@ -1,4 +1,4 @@
-import { AI, Folder } from "./types/FileTree";
+import { AI, Folder } from "../types/FileTree";
 
 export type FolderState = Folder & {
   ais: AIState[];

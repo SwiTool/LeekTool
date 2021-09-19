@@ -1,7 +1,7 @@
 import * as vscode from "vscode";
 import { getElementPath } from "./workspace";
 import { DownloadRemoteFiles } from "../commands/DownloadRemoteFiles";
-import { FileTreeState, instanceOfFolderState } from "../FileTreeState";
+import { FileTreeState, instanceOfFolderState } from "../states/FileTreeState";
 import { debug } from "../debug";
 
 export function getFileInfo(file: vscode.Uri) {

@@ -13,6 +13,11 @@ async function getDocDefinition(type) {
   return data[`${type}s`];
 }
 
+async function getDocDescription() {
+  const data = await got.get(`api/lang/get/documentation/fr`).json();
+  return data.lang;
+}
+
 async function updateSnippetFile(docObj) {
   const snippetObj = {};
   for (const key in docObj) {
@@ -32,15 +37,6 @@ async function updateSnippetFile(docObj) {
     snippetFile,
     Buffer.from(JSON.stringify(snippetObj, null, 2))
   );
-}
-
-function getDocDescription() {
-  return _got
-    .get(
-      "https://raw.githubusercontent.com/leek-wars/leek-wars/master/src/lang/doc.fr.lang",
-      { accept: "application/json" }
-    )
-    .json();
 }
 
 function docArrayToObj(docDefinitions) {

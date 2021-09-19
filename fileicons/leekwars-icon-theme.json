@@ -1,0 +1,22 @@
+{
+  "iconDefinitions": {
+    "leek": {
+      "iconPath": "./images/leek.svg"
+    },
+    "leek_folder": {
+      "iconPath": "./images/leek_folder.svg"
+    },
+    "leek_folder_open": {
+      "iconPath": "./images/leek_folder_open.svg"
+    },
+    "banana": {
+      "iconPath": "./images/banana.svg"
+    }
+  },
+  "fileExtensions": {
+    "leek": "leek",
+  },
+  "file": "banana",
+  "folder": "leek_folder",
+  "folderExpanded": "leek_folder_open",
+}

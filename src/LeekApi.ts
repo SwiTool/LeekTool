@@ -3,10 +3,12 @@ import { IncomingHttpHeaders } from "http";
 import { CookieJar } from "tough-cookie";
 import { debug } from "./debug";
 import { Account } from "./types/Account";
+import { Chip } from "./types/Chip";
 import { Constant } from "./types/Constants";
 import { FarmerAIs } from "./types/Farmer";
 import { AIContent } from "./types/FileTree";
 import { Functions } from "./types/Functions";
+import { Weapon } from "./types/Weapon";
 
 const cookieJar = new CookieJar();
 
@@ -112,6 +114,14 @@ class LeekApi {
 
   constantGetAll(): Promise<{ constants: Constant[] }> {
     return this.request("get", "constant/get-all");
+  }
+
+  chipGetAll(): Promise<{ chips: Chip[] }> {
+    return this.request("get", "chip/get-all");
+  }
+
+  weaponGetAll(): Promise<{ weapons: Weapon[] }> {
+    return this.request("get", "weapon/get-all");
   }
 }
 

@@ -6,7 +6,7 @@ import {
   FolderState,
   AIState,
   instanceOfFolderState
-} from "../FileTreeState";
+} from "../states/FileTreeState";
 import { setToWorkspaceState } from "../helpers/fileTreeState";
 import { debug } from "../debug";
 

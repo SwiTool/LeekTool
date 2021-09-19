@@ -37,6 +37,13 @@
         }
       }
     },
+    "iconThemes": [
+      {
+        "id": "leektool",
+        "label": "LeekTool",
+        "path": "./fileicons/leekwars-icon-theme.json"
+      }
+    ],
     "languages": [
       {
         "id": "leekscript v1.1",
@@ -61,7 +68,7 @@
   },
   "scripts": {
     "vscode:prepublish": "yarn run compile",
-    "compile": "tsc -p ./",
+    "compile": "tsc -p ./ && cp -r ./src/images ./out/images",
     "watch": "tsc -watch -p ./",
     "pretest": "yarn run compile && yarn run lint",
     "lint": "eslint src --ext ts",
