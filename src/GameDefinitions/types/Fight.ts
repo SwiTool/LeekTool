@@ -18,4 +18,4 @@ export interface Fight {
   composition1: null;
   composition2: null;
   result: FightOutcome;
-};
+}

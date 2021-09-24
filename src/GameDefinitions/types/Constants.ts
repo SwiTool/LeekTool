@@ -1,4 +1,4 @@
-export interface Constant {
+export interface Constants {
   id: number;
   name: string;
   value: string;
@@ -6,4 +6,5 @@ export interface Constant {
   category: number;
   deprecated: number;
   replacement: number | null;
+  description: string;
 }

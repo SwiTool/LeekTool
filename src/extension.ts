@@ -1,33 +1,41 @@
 import * as vscode from "vscode";
-import { DownloadRemoteFiles } from "./commands/DownloadRemoteFiles";
-import { getAccount } from "./login";
-import { getFromWorkspaceState } from "./helpers/fileTreeState";
-import { debug } from "./debug";
-import { loadAllConstantDetails } from "./states/ConstantsDetailsState";
-import { getChipHover } from "./helpers/hovers";
-import { debounce } from "./helpers/debounce";
+import { debounce } from "./commons/helpers/debounce";
+import { debug } from "./commons/helpers/debug";
 import {
   createRemoteFile,
   deleteRemoteFile,
   updateRemoteFileOnSave
-} from "./events/fileEvents";
+} from "@/FileTree/events/files";
+import { DownloadRemoteFiles } from "./FileTree/commands/DownloadRemoteFiles";
+import { getFromWorkspaceState } from "./FileTree/helpers/workspace";
+import { LeekAPI } from "./LeekAPI";
+import { getAccount } from "./LeekAPI/helpers/login";
+import { getChipHover } from "./Provider/hover/helpers/hovers";
+import { syncLeekwarsVersion } from "./GameDefinitions/commands/syncLeekwarsVersion";
 
 export async function activate(context: vscode.ExtensionContext) {
+  LeekAPI.context = context;
   const leekAccount = await getAccount(context);
   if (!leekAccount) {
     return;
   }
   debug(leekAccount);
+  syncLeekwarsVersion(context);
 
   const state = await getFromWorkspaceState(context);
   debug("begin state", state);
-
-  await loadAllConstantDetails();
 
   context.subscriptions.push(
     vscode.commands.registerCommand(
       "leektool.downloadRemoteFiles",
       DownloadRemoteFiles.bind(null, context)
+    )
+  );
+
+  context.subscriptions.push(
+    vscode.commands.registerCommand(
+      "leektool.syncLeekwarsVersion",
+      syncLeekwarsVersion.bind(null, context)
     )
   );
 

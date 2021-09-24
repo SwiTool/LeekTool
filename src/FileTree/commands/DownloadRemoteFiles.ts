@@ -1,14 +1,10 @@
 import * as vscode from "vscode";
-import { Api } from "../LeekApi";
-import { FarmerAIs } from "../types/Farmer";
-import {
-  FileTreeState,
-  FolderState,
-  AIState,
-  instanceOfFolderState
-} from "../states/FileTreeState";
-import { setToWorkspaceState } from "../helpers/fileTreeState";
-import { debug } from "../debug";
+import { FarmerAIs } from "@/GameDefinitions/types/Farmer";
+import { debug } from "@/commons/helpers/debug";
+import { AIState, FileTreeState, FolderState } from "@/FileTree/types/states";
+import { instanceOfFolderState } from "@/FileTree/helpers/isInstance";
+import { setToWorkspaceState } from "@/FileTree/helpers/workspace";
+import { Api } from "@/LeekAPI";
 
 const state: FileTreeState = {};
 
@@ -36,10 +32,13 @@ async function createDirectories(farmerAis: FarmerAIs) {
     ais: []
   };
 
-  const folders = farmerAis.folders.reduce((value, c) => {
-    value[c.id] = { ...c, path: c.name, ais: [], folders: [] };
-    return value;
-  }, {} as Record<number, FolderState>);
+  const folders = farmerAis.folders.reduce<Record<number, FolderState>>(
+    (value, c) => {
+      value[c.id] = { ...c, path: c.name, ais: [], folders: [] };
+      return value;
+    },
+    {} as Record<number, FolderState>
+  );
   folders[0] = baseFolderState;
   debug(folders);
 
@@ -101,7 +100,9 @@ async function createFiles(farmerAis: FarmerAIs) {
   }
 }
 
-export async function DownloadRemoteFiles(context: vscode.ExtensionContext) {
+export async function DownloadRemoteFiles(
+  context: vscode.ExtensionContext
+): Promise<FileTreeState> {
   const ais = await Api.aiGetFarmerAis();
 
   await createDirectories(ais);

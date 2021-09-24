@@ -1,61 +1,14 @@
 import * as vscode from "vscode";
-import { Api } from "../LeekApi";
+import { Api } from "@/LeekAPI";
+import { FileTreeState } from "@/FileTree/types/states";
+import { getElementPath } from "@/commons/helpers/workspace";
+import { debug } from "@/commons/helpers/debug";
+import { setToWorkspaceState } from "@/FileTree/helpers/workspace";
+import { getFileInfo } from "@/FileTree/helpers/fileInfo";
 import {
-  AIState,
-  FileTreeState,
-  FolderState,
-  instanceOfFolderState
-} from "../states/FileTreeState";
-import { AIContent } from "../types/FileTree";
-import { setToWorkspaceState, getFileInfo } from "../helpers/fileTreeState";
-import { getElementPath } from "../helpers/workspace";
-import { debug } from "../debug";
-
-function addAIToTreeState(
-  state: FileTreeState,
-  folderPath: string,
-  ai: AIContent
-): string {
-  if (!state[folderPath] || !instanceOfFolderState(state[folderPath])) {
-    return "";
-  }
-  const parentFolder = folderPath ? folderPath + "/" : "";
-  const path = `${parentFolder}${ai.name}.leek`;
-  const aiState = <AIState>{
-    id: ai.id,
-    name: ai.name,
-    valid: ai.valid,
-    total_lines: ai.total_lines,
-    entrypoints: [],
-    folder: state[folderPath].id,
-    total_chars: 0,
-    parentFolder: folderPath,
-    path: path
-  };
-  state[path] = aiState;
-  (state[folderPath] as FolderState).ais.push(aiState);
-  return path;
-}
-
-function removeAIFromTreeState(
-  state: FileTreeState,
-  folderPath: string,
-  fileName: string
-) {
-  if (!state[folderPath] || !instanceOfFolderState(state[folderPath])) {
-    return;
-  }
-  const path = `${folderPath ? folderPath + "/" : ""}${fileName}`;
-  const aiIndex = (state[folderPath] as FolderState).ais.findIndex(
-    (a: AIState) => a.name === fileName
-  );
-  if (aiIndex !== -1) {
-    (state[folderPath] as FolderState).ais.splice(aiIndex, 1);
-  }
-  if (state[path]) {
-    delete state[path];
-  }
-}
+  addAIToTreeState,
+  removeAIFromTreeState
+} from "@/FileTree/helpers/treeManagement";
 
 async function updateRemoteFile(ai_id: number, code: string) {
   await Api.aiSave(ai_id, code);

@@ -1,6 +1,6 @@
-import { debug } from "./debug";
 import * as vscode from "vscode";
-import { Api } from "./LeekApi";
+import { debug } from "@/commons/helpers/debug";
+import { Api } from "@/LeekAPI";
 
 export async function login(context: vscode.ExtensionContext) {
   const conf = vscode.workspace.getConfiguration("leektool");

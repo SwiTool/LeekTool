@@ -1,14 +1,17 @@
 import got, { Got } from "got";
 import { IncomingHttpHeaders } from "http";
 import { CookieJar } from "tough-cookie";
-import { debug } from "./debug";
-import { Account } from "./types/Account";
-import { Chip } from "./types/Chip";
-import { Constant } from "./types/Constants";
-import { FarmerAIs } from "./types/Farmer";
-import { AIContent } from "./types/FileTree";
-import { Functions } from "./types/Functions";
-import { Weapon } from "./types/Weapon";
+import { debug } from "@/commons/helpers/debug";
+import { login } from "./helpers/login";
+import { Account } from "@/GameDefinitions/types/Account";
+import { Chip } from "@/GameDefinitions/types/Chip";
+import { Constants } from "@/GameDefinitions/types/Constants";
+import { FarmerAIs } from "@/GameDefinitions/types/Farmer";
+import { AIContent } from "@/types/FileTree";
+import { Functions } from "@/GameDefinitions/types/Functions";
+import { Weapon } from "@/GameDefinitions/types/Weapon";
+import * as vscode from "vscode";
+import { sleep } from "@/commons/helpers/sleep";
 
 const cookieJar = new CookieJar();
 
@@ -30,13 +33,12 @@ export type HttpClient = {
   lang: Lang;
 };
 
-class LeekApi {
+export class LeekAPI {
   private client: Got;
 
-  // private lang: Lang;
+  static context: vscode.ExtensionContext;
 
   constructor(httpClient: HttpClient) {
-    // this.lang = httpClient.lang;
     this.client = httpClient.client;
   }
 
@@ -50,19 +52,27 @@ class LeekApi {
     reqHeaders?: Record<string, string | string[] | undefined> | undefined
   ): Promise<U> => {
     debug(`requesting ${path}`);
-    try {
-      const { body } = await this.client[method](path, {
-        headers: reqHeaders,
-        searchParams: method === "get" ? opts : undefined,
-        form: method === "get" ? undefined : opts,
-        responseType: "json"
-      });
+    for (let tries = 1; tries < 4; ++tries) {
+      try {
+        const { body } = await this.client[method](path, {
+          headers: reqHeaders,
+          searchParams: method === "get" ? opts : undefined,
+          form: method === "get" ? undefined : opts,
+          responseType: "json"
+        });
 
-      return body as U;
-    } catch (e: any) {
-      console.error(e.response);
-      throw e;
+        return body as U;
+      } catch (e: any) {
+        if (e.response?.body?.error === "wrong_token") {
+          await sleep(2000 * Math.pow(tries, tries));
+          await login(LeekAPI.context);
+        } else {
+          throw e;
+        }
+        console.error(e.response);
+      }
     }
+    throw new Error("cannot make request...");
   };
 
   setToken(token: string) {
@@ -112,7 +122,7 @@ class LeekApi {
     return this.request("get", "function/get-all");
   }
 
-  constantGetAll(): Promise<{ constants: Constant[] }> {
+  constantGetAll(): Promise<{ constants: Constants[] }> {
     return this.request("get", "constant/get-all");
   }
 
@@ -123,9 +133,13 @@ class LeekApi {
   weaponGetAll(): Promise<{ weapons: Weapon[] }> {
     return this.request("get", "weapon/get-all");
   }
+
+  leekWarsVersion(): Promise<{ version: number }> {
+    return this.request("get", "leek-wars/version");
+  }
 }
 
-export const Api = new LeekApi({
+export const Api = new LeekAPI({
   client,
   lang: "fr"
 });

@@ -2061,22 +2061,22 @@
   "getPath": {
     "prefix": "getPath",
     "body": "getPath(cell1, cell2)",
-    "description": "Renvoie le chemin en évitant les obstacles entre deux cellules <b>cell1</b> et <b>cell2</b>, si celui-ci existe."
+    "description": "Renvoie le chemin en évitant les obstacles entre deux cellules <b>cell1</b> et <b>cell2</b>, si celui-ci existe.<br /><br />\nLa cellule de départ <b>cell1</b> ne fait jamais partie du chemin résultant. La cellule <b>cell2</b> fait partie du chemin résultant si et seulement si elle est vide.<br /><br />\nSi aucun chemin n'existe entre les deux cellules, <b>getPath</b> renvoie <i>null</i>."
   },
   "getPath_1": {
     "prefix": "getPath",
     "body": "getPath(start, end, ignoredCells)",
-    "description": "Renvoie le chemin en évitant les obstacles entre deux cellules <b>cell1</b> et <b>cell2</b>, si celui-ci existe, en ignorant les cellules contenues dans le tableau <b>ignoredCells</b>. Si un joueur se situe sur une cellule ignorée, le chemin peut passer sur lui."
+    "description": "Renvoie le chemin en évitant les obstacles entre deux cellules <b>cell1</b> et <b>cell2</b>, si celui-ci existe, en ignorant les cellules contenues dans le tableau <b>ignoredCells</b>. Si un joueur se situe sur une cellule ignorée, le chemin peut passer sur lui.<br /><br />\nLa cellule de départ <b>cell1</b> ne fait jamais partie du chemin résultant. La cellule <b>cell2</b> fait partie du chemin résultant si et seulement si elle est vide ou ignorée par <b>ignoredCells</b>.<br /><br />\nSi aucun chemin n'existe entre les deux cellules, <b>getPath</b> renvoie <i>null</i>."
   },
   "getPathLength": {
     "prefix": "getPathLength",
     "body": "getPathLength(cell1, cell2)",
-    "description": "Renvoie la longueur du chemin entre deux cellules <b>cell1</b> et <b>cell2</b>, en esquivant les obstacles. Cette fonction équivaut à <i>count(getPath(<b>cell1</b>, <b>cell2</b>))</i>.<br /><br />\nPour obtenir la distance à vol d'oiseau, utilisez #getDistance, et pour obtenir la distance entre deux cellules sans tenir compte des obstacles, utilisez #getCellDistance."
+    "description": "Renvoie la longueur du chemin entre deux cellules <b>cell1</b> et <b>cell2</b>, en esquivant les obstacles. Cette fonction équivaut à <i>count(getPath(<b>cell1</b>, <b>cell2</b>))</i>.<br /><br />\nLa cellule de départ <b>cell1</b> n'est jamais comptée dans le résultat. La cellule <b>cell2</b> est comptée dans le résultat si et seulement si elle est vide.<br /><br />\nSi aucun chemin n'existe entre les deux cellules, <b>getPathLength</b> renvoie <i>null</i>.<br /><br />\nPour obtenir la distance à vol d'oiseau, utilisez #getDistance, et pour obtenir la distance entre deux cellules sans tenir compte des obstacles, utilisez #getCellDistance."
   },
   "getPathLength_1": {
     "prefix": "getPathLength",
     "body": "getPathLength(cell1, cell2, ignoredCells)",
-    "description": "Renvoie la longueur du chemin entre deux cellules <b>cell1</b> et <b>cell2</b>, en esquivant les obstacles, en ignorant les cellules contenues dans le tableau <b>ignoredCells</b>.\nSi un joueur se situe sur une cellule ignorée, le chemin peut passer sur lui."
+    "description": "Renvoie la longueur du chemin entre deux cellules <b>cell1</b> et <b>cell2</b>, en esquivant les obstacles, en ignorant les cellules contenues dans le tableau <b>ignoredCells</b>. Cette fonction équivaut à <i>count(getPath(<b>cell1</b>, <b>cell2</b>, <b>ignoredCells</b>))</i>.\nSi un joueur se situe sur une cellule ignorée, le chemin peut passer sur lui.<br /><br />\nLa cellule de départ <b>cell1</b> n'est jamais comptée dans le résultat. La cellule <b>cell2</b> est comptée dans le résultat si et seulement si elle est vide ou ignorée par <b>ignoredCells</b>.<br /><br />\nSi aucun chemin n'existe entre les deux cellules, <b>getPathLength</b> renvoie <i>null</i>."
   },
   "getPower": {
     "prefix": "getPower",

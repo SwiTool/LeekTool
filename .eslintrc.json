@@ -12,7 +12,10 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended"
   ],
-  "plugins": ["@typescript-eslint", "prettier"],
+  "plugins": [
+    "@typescript-eslint",
+    "prettier"
+  ],
   "parserOptions": {
     "ecmaVersion": 2020,
     "sourceType": "module",
@@ -35,32 +38,46 @@
       "off",
       {
         "selector": "default",
-        "format": ["camelCase"]
+        "format": [
+          "camelCase"
+        ]
       },
-
       {
         "selector": "variable",
-        "format": ["camelCase", "UPPER_CASE"]
+        "format": [
+          "camelCase",
+          "UPPER_CASE"
+        ]
       },
       {
         "selector": "parameter",
-        "format": ["camelCase"],
+        "format": [
+          "camelCase"
+        ],
         "leadingUnderscore": "allow"
       },
-
       {
         "selector": "memberLike",
-        "modifiers": ["private"],
-        "format": ["camelCase"],
+        "modifiers": [
+          "private"
+        ],
+        "format": [
+          "camelCase"
+        ],
         "leadingUnderscore": "require"
       },
       {
         "selector": "typeLike",
-        "format": ["PascalCase"]
+        "format": [
+          "PascalCase"
+        ]
       },
       {
         "selector": "enumMember",
-        "format": ["PascalCase", "UPPER_CASE"]
+        "format": [
+          "PascalCase",
+          "UPPER_CASE"
+        ]
       }
     ],
     "prefer-const": "error",
@@ -70,8 +87,9 @@
     "no-constant-condition": "warn"
   },
   "ignorePatterns": [
-      "out",
-      "dist",
-      "**/*.d.ts"
+    "out",
+    "dist",
+    "scripts",
+    "**/*.d.ts"
   ]
 }

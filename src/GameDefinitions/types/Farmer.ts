@@ -1,5 +1,5 @@
+import { AI, BasicAIInfos, Folder } from "@/types/FileTree";
 import { BasicAccountInfo } from "./Account";
-import { AI, BasicAIInfos, Folder } from "./FileTree";
 import { Fight } from "./Fight";
 import { Leek } from "./Leek";
 import { Potion } from "./Potion";

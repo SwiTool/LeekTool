@@ -1,3 +1,9 @@
+export type TypedElement = {
+  name: string;
+  type: string;
+  description: string;
+};
+
 export interface Functions {
   id: number;
 
@@ -9,15 +15,13 @@ export interface Functions {
 
   operations: number;
 
-  arguments_names: string[];
+  arguments: TypedElement[];
 
-  arguments_types: string[];
-
-  return_name: string | null;
-
-  return_type: number;
+  return: TypedElement;
 
   deprecated: number;
+
+  description: string;
 
   replacement: number | null;
 }
