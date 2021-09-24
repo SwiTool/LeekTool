@@ -1,0 +1,71 @@
+import { AI, BasicAIInfos, Folder } from "@/types/FileTree";
+import { BasicAccountInfo } from "./Account";
+import { Fight } from "./Fight";
+import { Leek } from "./Leek";
+import { Potion } from "./Potion";
+import { Tournament } from "./Tournament";
+
+export interface Farmer {
+  id: number;
+  login: string;
+  team: null;
+  name: string;
+  talent: number;
+  leeks: Record<string, Leek>;
+  avatar_changed: number;
+  talent_more: number;
+  victories: number;
+  draws: number;
+  defeats: number;
+  ratio: string;
+  connected: boolean;
+  last_connection: number;
+  register_date: number;
+  fight_history: Fight[];
+  tournaments: [];
+  admin: boolean;
+  moderator: boolean;
+  country: null;
+  godfather: BasicAccountInfo;
+  godsons: [];
+  color: string;
+  banned: number;
+  won_solo_tournaments: number;
+  won_farmer_tournaments: number;
+  won_team_tournaments: number;
+  won_battle_royale: number;
+  total_level: number;
+  leek_count: number;
+  in_garden: number;
+  fights: number;
+  github: string | null;
+  website: null;
+  forum_messages: number;
+  didactitiel_seen: 1;
+  contributor: boolean;
+  trophies: number;
+  points: number;
+  language: string;
+  title: [];
+  show_ai_lines: boolean;
+  ranking: number;
+  pass: boolean;
+  habs: number;
+  crystals: number;
+  weapons: [];
+  chips: [];
+  ais: BasicAIInfos[];
+  potions: Potion[];
+  hats: [];
+  tournament: Tournament;
+  candidacy: null;
+  pomps: [];
+  rewards: [];
+}
+
+export interface FarmerAIs {
+  ais: AI[];
+  bin: AI[];
+  folders: Folder[];
+  leek_ais: Record<number, number>;
+}

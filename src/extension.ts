@@ -1,33 +1,29 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
 import * as vscode from "vscode";
-import { DownloadRemoteFiles } from "./commands/DownloadRemoteFiles";
-import { getAccount } from "./login";
+import { debounce } from "./commons/helpers/debounce";
+import { debug } from "./commons/helpers/debug";
 import {
   createRemoteFile,
-  updateRemoteFileOnSave,
-  deleteRemoteFile
-} from "./events/fileEvents";
-import { debounce } from "./helpers/debounce";
-import { getFromWorkspaceState } from "./helpers/fileTreeState";
-import { debug } from "./debug";
+  deleteRemoteFile,
+  updateRemoteFileOnSave
+} from "@/FileTree/events/files";
+import { DownloadRemoteFiles } from "./FileTree/commands/DownloadRemoteFiles";
+import { getFromWorkspaceState } from "./FileTree/helpers/workspace";
+import { LeekAPI } from "./LeekAPI";
+import { getAccount } from "./LeekAPI/helpers/login";
+import { getChipHover } from "./Provider/hover/helpers/hovers";
+import { syncLeekwarsVersion } from "./GameDefinitions/commands/syncLeekwarsVersion";
 
-// this method is called when your extension is activated
-// your extension is activated the very first time the command is executed
 export async function activate(context: vscode.ExtensionContext) {
-  // debug(context.globalStorageUri, context.storageUri);
+  LeekAPI.context = context;
   const leekAccount = await getAccount(context);
   if (!leekAccount) {
     return;
   }
   debug(leekAccount);
+  syncLeekwarsVersion(context);
 
   const state = await getFromWorkspaceState(context);
   debug("begin state", state);
-
-  // The command has been defined in the package.json file
-  // Now provide the implementation of the command with registerCommand
-  // The commandId parameter must match the command field in package.json
 
   context.subscriptions.push(
     vscode.commands.registerCommand(
@@ -35,6 +31,25 @@ export async function activate(context: vscode.ExtensionContext) {
       DownloadRemoteFiles.bind(null, context)
     )
   );
+
+  context.subscriptions.push(
+    vscode.commands.registerCommand(
+      "leektool.syncLeekwarsVersion",
+      syncLeekwarsVersion.bind(null, context)
+    )
+  );
+
+  vscode.languages.registerHoverProvider("leekscript v1.1", {
+    provideHover(document, position) {
+      const range = document.getWordRangeAtPosition(position);
+      const text = document.getText(range);
+      const message: string[] = [];
+      if (text.startsWith("CHIP_")) {
+        message.push(...getChipHover(text));
+      }
+      return new vscode.Hover(message.map(m => new vscode.MarkdownString(m)));
+    }
+  });
 
   vscode.workspace.onWillSaveTextDocument(
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
@@ -54,5 +69,4 @@ export async function activate(context: vscode.ExtensionContext) {
   });
 }
 
-// this method is called when your extension is deactivated
 // export function deactivate() { }
