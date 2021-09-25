@@ -20,6 +20,10 @@
       {
         "command": "leektool.downloadRemoteFiles",
         "title": "Download remote files"
+      },
+      {
+        "command": "leektool.syncLeekwarsVersion",
+        "title": "Sync game constants"
       }
     ],
     "configuration": {
@@ -52,6 +56,7 @@
           ".lk"
         ],
         "aliases": [
+          "leekscript",
           "LeekScript",
           "LeekScript V1.1"
         ],

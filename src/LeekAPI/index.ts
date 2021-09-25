@@ -134,6 +134,13 @@ export class LeekAPI {
     return this.request("get", "weapon/get-all");
   }
 
+  langGet(
+    type: string,
+    lang = "fr"
+  ): Promise<{ lang: Record<string, string> }> {
+    return this.request("get", `lang/get/${type}/${lang}`);
+  }
+
   leekWarsVersion(): Promise<{ version: number }> {
     return this.request("get", "leek-wars/version");
   }

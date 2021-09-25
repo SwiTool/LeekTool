@@ -16,6 +16,7 @@ export const constantDetailsState: ConstantDetailsState = {
   weapons: {},
   constants: {},
   functions: {},
+  lang: {},
   version: 0
 };
 
@@ -46,13 +47,16 @@ async function getDocDescription() {
 
   const result: DocObj = {
     constants: {},
-    functions: {}
+    functions: {},
+    lang: {}
   };
   for (const index of Object.keys(data)) {
     if (index.substr(0, 5) === "const") {
       result.constants[index] = data[index] as Constants;
     } else if (index.substr(0, 4) === "func") {
       result.functions[index] = data[index] as Functions[];
+    } else {
+      result.lang[index] = data[index];
     }
   }
   return result;
@@ -61,7 +65,8 @@ async function getDocDescription() {
 function docArrayToObj(docDefinitions: DocDef) {
   const docObj: DocObj = {
     constants: {},
-    functions: {}
+    functions: {},
+    lang: {}
   };
   for (const defType of Object.keys(docDefinitions)) {
     for (const def of docDefinitions[defType]) {
@@ -133,6 +138,18 @@ function addDescription(docObj: DocObj, docDesc: DocDef) {
   }
 }
 
+async function loadLang(docDesc: DocDef) {
+  const { lang } = await Api.langGet("effect");
+  for (const [k, value] of Object.entries(
+    docDesc.lang as Record<string, string>
+  )) {
+    constantDetailsState.lang[k] = value;
+  }
+  for (const [k, value] of Object.entries(lang)) {
+    constantDetailsState.lang[k] = value;
+  }
+}
+
 export async function syncLeekwarsVersion(context: vscode.ExtensionContext) {
   const { version } = await Api.leekWarsVersion();
   const state =
@@ -142,6 +159,7 @@ export async function syncLeekwarsVersion(context: vscode.ExtensionContext) {
     constantDetailsState.constants = state.constants;
     constantDetailsState.weapons = state.weapons;
     constantDetailsState.chips = state.chips;
+    constantDetailsState.lang = state.lang;
     constantDetailsState.version = state.version;
     return;
   }
@@ -155,7 +173,7 @@ export async function syncLeekwarsVersion(context: vscode.ExtensionContext) {
     functions: funcDefinitions
   });
   addDescription(docObj, docDesc);
-  console.dir(constantDetailsState);
+  loadLang(docDesc);
   constantDetailsState.constants = docObj.constants;
   constantDetailsState.functions = docObj.functions;
   await context.workspaceState.update("gameConstants", constantDetailsState);

@@ -12,15 +12,16 @@ import { LeekAPI } from "./LeekAPI";
 import { getAccount } from "./LeekAPI/helpers/login";
 import { getChipHover } from "./Provider/hover/helpers/hovers";
 import { syncLeekwarsVersion } from "./GameDefinitions/commands/syncLeekwarsVersion";
+import IntellisenseProvider from "./Provider/completion/CompletionProvider";
 
 export async function activate(context: vscode.ExtensionContext) {
   LeekAPI.context = context;
+  syncLeekwarsVersion(context);
   const leekAccount = await getAccount(context);
   if (!leekAccount) {
     return;
   }
   debug(leekAccount);
-  syncLeekwarsVersion(context);
 
   const state = await getFromWorkspaceState(context);
   debug("begin state", state);
@@ -37,6 +38,11 @@ export async function activate(context: vscode.ExtensionContext) {
       "leektool.syncLeekwarsVersion",
       syncLeekwarsVersion.bind(null, context)
     )
+  );
+
+  vscode.languages.registerCompletionItemProvider(
+    IntellisenseProvider.languageSelector,
+    new IntellisenseProvider()
   );
 
   vscode.languages.registerHoverProvider("leekscript v1.1", {
