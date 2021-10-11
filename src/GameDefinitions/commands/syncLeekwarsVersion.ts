@@ -143,9 +143,11 @@ async function loadLang(docDesc: DocDef) {
   for (const [k, value] of Object.entries(
     docDesc.lang as Record<string, string>
   )) {
+    // console.log(k, value);
     constantDetailsState.lang[k] = value;
   }
   for (const [k, value] of Object.entries(lang)) {
+    // console.log(k, value);
     constantDetailsState.lang[k] = value;
   }
 }
@@ -173,7 +175,7 @@ export async function syncLeekwarsVersion(context: vscode.ExtensionContext) {
     functions: funcDefinitions
   });
   addDescription(docObj, docDesc);
-  loadLang(docDesc);
+  await loadLang(docDesc);
   constantDetailsState.constants = docObj.constants;
   constantDetailsState.functions = docObj.functions;
   await context.workspaceState.update("gameConstants", constantDetailsState);

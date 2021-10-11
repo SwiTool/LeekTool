@@ -16,7 +16,7 @@ import IntellisenseProvider from "./Provider/completion/CompletionProvider";
 
 export async function activate(context: vscode.ExtensionContext) {
   LeekAPI.context = context;
-  syncLeekwarsVersion(context);
+  await syncLeekwarsVersion(context);
   const leekAccount = await getAccount(context);
   if (!leekAccount) {
     return;

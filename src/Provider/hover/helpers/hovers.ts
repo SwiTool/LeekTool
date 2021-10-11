@@ -1,5 +1,9 @@
 import { Area } from "@/GameDefinitions/types/Area";
-import { EffectModifier, EffectType } from "@/GameDefinitions/types/Effect";
+import {
+  Effect,
+  EffectModifier,
+  EffectType
+} from "@/GameDefinitions/types/Effect";
 import { constantDetailsState } from "@/GameDefinitions/commands/syncLeekwarsVersion";
 import * as vscode from "vscode";
 
@@ -32,6 +36,44 @@ function getEffectModifiers(modifiers: number) {
   return mods;
 }
 
+function getEffectTypeLang(effect: Effect) {
+  const minDmg = effect.value1;
+  const maxDmg = effect.value1 + effect.value2;
+  const type = effect.id;
+  const fixed = minDmg === maxDmg;
+  const lang =
+    constantDetailsState.lang[`type_${type}${fixed ? "_fixed" : ""}`];
+
+  if (!lang) {
+    return EffectType[type];
+  }
+
+  let str = lang.replace("%d", minDmg.toString());
+  if (!fixed) {
+    str = str.replace("%d", maxDmg.toString());
+  }
+  return str;
+}
+
+function getEffectTargets(target: number) {
+  const ts = Object.values(constantDetailsState.constants).filter(v =>
+    v.name.includes("EFFECT_TARGET_")
+  );
+  if (!ts.length || target === 31) {
+    return "";
+  }
+  const descs: string[] = [];
+  ts.forEach(t => {
+    if ([0, 4].includes(+t.value)) {
+      return;
+    }
+    if ((target & +t.value) === +t.value) {
+      descs.push(t.description);
+    }
+  });
+  return descs.join("  \n");
+}
+
 export function getChipHover(text: string): string[] {
   const message = [];
   const chipName = text.substr(5).toLocaleLowerCase();
@@ -59,15 +101,10 @@ export function getChipHover(text: string): string[] {
   message.push(tmpStr);
 
   tmpStr = "Effects:  \n  \n";
-  chip.effects.forEach((e, i) => {
+  chip.effects.forEach(e => {
     const mods = getEffectModifiers(e.modifiers);
-    const minDmg = e.value1;
-    const maxDmg = e.value1 + e.value2;
-    tmpStr += `**${EffectType[e.id]}** | `;
-    tmpStr += minDmg > 0 ? `**${minDmg}` : " &nbsp; ";
-    const endStr = minDmg > 0 ? "**" : "";
-    tmpStr += minDmg > 0 && maxDmg !== minDmg ? ` - ${maxDmg}**` : endStr;
-    tmpStr += i === 0 ? `  \n:--- | :---  \n` : "  \n";
+    tmpStr += `**${getEffectTypeLang(e)}**  \n`;
+    tmpStr += `${getEffectTargets(e.targets)}  \n`;
     if (mods.length) {
       tmpStr += ` &nbsp; | _${mods.join("_, _")}_  \n`;
     }
